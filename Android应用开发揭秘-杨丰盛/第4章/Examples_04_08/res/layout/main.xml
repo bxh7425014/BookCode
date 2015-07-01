@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+  	android:id="@+id/TextView1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<CheckBox
+  android:id="@+id/CheckBox1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="@string/CheckBox1"
+>
+</CheckBox>
+<CheckBox
+  android:id="@+id/CheckBox2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="@string/CheckBox2"
+>
+</CheckBox>
+<CheckBox
+android:id="@+id/CheckBox3"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="@string/CheckBox3"
+>
+</CheckBox>
+<CheckBox
+android:id="@+id/CheckBox4"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="@string/CheckBox4"
+>
+</CheckBox>
+    <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="提交"
+    >
+    </Button>
+</LinearLayout>

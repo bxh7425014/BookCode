@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">歡迎回來</string>
+  <string name="app_name">EX08_16</string>
+  <string name="app_name_sub">EX08_16_02</string>
+  <string name="str_id">帳號</string>
+  <string name="str_pwd">密碼</string>
+  <string name="str_login">登入</string>
+  <string name="str_logout">登出</string>
+</resources>

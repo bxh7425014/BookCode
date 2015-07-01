@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">IRDC雙向簡訊服務(Service)</string>
+  <string name="app_name">EX06_17</string>
+  <string name="str_button1">開始聆聽雙向簡訊</string>
+  <string name="str_button2">終止聆聽雙向簡訊</string>
+  <string name="str_service_online">雙向簡訊服務已開始執行</string>
+  <string name="str_service_offline">雙向簡訊服務已停止</string>
+  <string name="str_err_stopservicefailed">錯誤：終止Service</string>
+  <string name="str_cmd_sms_catched">攔截到雙向簡訊KeyWord</string>
+  <string name="str_cmd_sms_sending">發送回傳簡訊予電話：</string>
+  <string name="str_cmd_sms_returned">Congratulations!</string>
+</resources>

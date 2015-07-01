@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:mobile="http://mobile.blogjava.net" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<net.blogjava.mobile.widget.FileBrowser
+		android:id="@+id/filebrowser" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" mobile:folderImage="@drawable/folder"
+		mobile:extName1="jpg" mobile:fileImage1="@drawable/jpg"
+	
+		mobile:otherFileImage="@drawable/other" />
+</LinearLayout> 
+  

@@ -1,0 +1,90 @@
+body {
+	  font-size: 10pt;
+	  background-color:#fff;	  
+}
+a{ 
+	text-decoration:none;
+	color:#fff;	
+	font:"Arial" normal ;
+	font-size:18px;
+}
+
+a:hover{color:#11ecef;}
+
+a.method_style{color:#043e7a;}
+
+.bodyStyle {
+	position: absolute; 
+	top:0px;
+	left:0px;
+	width:295px; 
+	height:412px;
+	display:block;
+	padding-bottom:5px;
+	background-color:#fff;
+}
+
+#showDetail{
+	display: none;
+}
+
+.oBodyStyle
+{
+	background:url(res/APIobg_l.png) no-repeat left bottom;
+}
+
+.obStyle
+{
+	width:300px;
+	height:30px;
+	font-size:16px;
+	background-color:#3a6ea5;
+}
+
+.mStyle {
+	width:300px;
+	height:30px;
+	font-size:16px;
+	background:url(res/APImbg_l.png) no-repeat left bottom;
+}
+
+.mStyle,.obStyle,.ExplanationClass,.ClickClass{
+	font:bold "Arial" normal ;
+	text-align: left;
+	margin: 0px; 
+    margin-left: 0px;
+	padding: 7px;
+	padding-left: 8px;         
+}
+
+.Nameclass {
+    background-color:#3a6ea5;
+	font:18pt/20pt bold "Arial" normal ;
+    font-size: 24px;
+	color: white; 
+	margin: 0px;
+	padding: 7px;
+	width:300px;
+	padding-left: 8px; 
+    padding-bottom:15px;
+	line-height:35px;
+}
+
+.ExplanationClass {	
+	padding-bottom:30px;
+	line-break : strict;
+	word-wrap: break-word;
+    word-break: normal; 
+    display:block;
+}
+
+#back_table{margin-left:100px;margin-top:10px;}
+#back_table td{width:130px;}
+/*#textdivshowback{width:68px;height:20px;background:url(res/back.png) no-repeat;}
+#textdivshowback:hover{background:url(res/back_light.png) no-repeat;}
+#textdivshowSurfaceMethod{width:81px;height:20px;background:url(res/gotop.png) no-repeat;}
+#textdivshowSurfaceMethod:hover{background:url(res/gotop_light.png) no-repeat;}
+#textdivshowClick{width:128px;height:19px;background:url(res/run.png) no-repeat;}
+#textdivshowClick:hover{background:url(res/run_light.png) no-repeat;}*/
+#textdivshowResult{ color:red;}
+

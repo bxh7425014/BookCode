@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RadioGroup android:id="@+id/radiogroup" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<RadioButton android:id="@+id/radiobutton1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:drawableRight="@drawable/clock1_check"
+			android:drawablePadding="20dp" android:layout_marginTop="10dp" />
+		<RadioButton android:id="@+id/radiobutton2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:drawableRight="@drawable/clock2_check"
+			android:drawablePadding="20dp" android:layout_marginTop="10dp"  />
+	</RadioGroup>
+	<Button android:id="@+id/btnOK" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="确定"   android:layout_marginTop="10dp"/>
+  
+</LinearLayout>
+
+  

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX07_15</string>
+  <string name="app_name">EX07_15</string>
+  <string name="str_button1">相機Preview</string>
+  <string name="str_button2">關相機</string>
+  <string name="str_take_picture">拍照</string>
+  <string name="str_err_nosd">※未發現安裝SD記憶卡※</string>
+</resources>

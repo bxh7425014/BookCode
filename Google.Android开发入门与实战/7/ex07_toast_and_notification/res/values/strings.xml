@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ActivityMain</string>
+    <string name="app_name">test_toast_and_notification</string>
+    <string name="content">内容</string>
+</resources>

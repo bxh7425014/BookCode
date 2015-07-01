@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/textview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="16dp" />
+	<Button android:id="@+id/btnBindAIDLService"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="绑定AIDL服务" android:layout_marginTop="10dp" />
+	<Button android:id="@+id/btnInvokeAIDLService"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="调用AIDL服务" android:layout_marginTop="10dp" />
+</LinearLayout>

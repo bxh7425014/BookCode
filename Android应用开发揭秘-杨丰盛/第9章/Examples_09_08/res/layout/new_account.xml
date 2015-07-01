@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="用户名"
+		></TextView>
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/new_account_username"
+		android:text="请输入用户名"
+		></EditText>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="密码"
+		></TextView>
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/new_account_password"
+		android:text="请输入密码"
+		></EditText>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="服务器"
+		></TextView>
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/new_account_server"
+		android:text="请输入账户服务器"
+		></EditText>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/new_account_done"
+		android:text="完成"
+		></Button>
+</LinearLayout>

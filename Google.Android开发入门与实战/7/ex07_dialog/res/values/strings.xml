@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ActivityMain</string>
+	<string name="app_name">对话框</string>
+	<string name="alert_dialog_two_buttons_title">
+		这是一个提示框。 点击取消后可以返回。
+	</string>
+	<string name="alert_dialog_two_buttons_msg">标题部分，可以自定义</string>
+	<string name="alert_dialog_two_buttons2_msg">
+		对话框虽然在我们的程序当中不是必备的，但是用好对话框能对我们编写的应用增色不少。采用对话框可以大大的增强应用的友好性。在这个用户至上的时代，如果你的应用没有了用户，也就没有多大意义的。所以我们要学好对话框，并在适当的地方灵活运用。比较常用的场景是，用户登录、网络正在下载，下载成功或失败的提示。
+	</string>
+	<string name="alert_dialog_ok">确定</string>
+	<string name="alert_dialog_hide">隐藏</string>
+	<string name="alert_dialog_something">进入详细</string>
+	<string name="alert_dialog_cancel">取消</string>
+	<string name="alert_dialog_text_entry">请输入</string>
+</resources>

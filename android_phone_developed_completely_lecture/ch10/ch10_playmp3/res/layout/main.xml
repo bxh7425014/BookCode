@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<Button android:id="@+id/btnStart1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="播放MP3资源文件" />
+	<Button android:id="@+id/btnStart2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="播放SD卡中的MP3文件" />
+
+	<Button android:id="@+id/btnStop" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="停止" />
+	<Button android:id="@+id/btnPause" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="暂停" />
+</LinearLayout>
+ 

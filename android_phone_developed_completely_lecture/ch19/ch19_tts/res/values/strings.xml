@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main!</string>
+	<string name="app_name">朗读文本</string>
+	<string name="text">Android 2.1 is a minor platform release deployable
+		to Android-powered handsets starting in January 2010. This release
+		includes new API changes and bug fixes. For information on changes,
+		see the Framework API section.\n
+
+		For developers, the Android 2.1 platform is available as a downloadable
+		component for the Android SDK. The downloadable platform includes a
+		fully compliant Android library and system image, as well as a set of
+		emulator skins, sample applications, and more. The downloadable
+		platform includes no external libraries.\n
+
+		To get started developing or testing against the Android 2.1 platform,
+		use the Android SDK and AVD Manager tool to download the platform into
+		your Android SDK. For more information, see Adding SDK Components.
+	</string>
+</resources>

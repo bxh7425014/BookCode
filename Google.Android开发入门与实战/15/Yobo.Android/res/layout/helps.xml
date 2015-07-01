@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="关于Yobo:"
+		android:textSize="18sp" android:paddingTop="14dip" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:autoLink="all"
+		android:text="@string/helps_yobo" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="关于Yobo.Android:"
+		android:textSize="18sp" android:paddingTop="14dip" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:autoLink="all"
+		android:text="@string/helps_text" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="关于作者:"
+		android:textSize="18sp" android:paddingTop="14dip" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:autoLink="all"
+		android:text="@string/author_text" />
+</LinearLayout>

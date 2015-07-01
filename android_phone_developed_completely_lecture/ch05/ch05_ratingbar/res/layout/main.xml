@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView  android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="3颗星，步长是0.5" />
+	<RatingBar android:id="@+id/ratingbar1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:numStars="3"
+		android:rating="2" />
+	<TextView  android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="5颗星，步长是0.1" />
+	<RatingBar android:id="@+id/ratingbar2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:numStars="5"
+		android:stepSize="0.1" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="10dip">
+
+		<TextView android:id="@+id/textview" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<RatingBar android:id="@+id/smallRatingbar" style="?android:attr/ratingBarStyleSmall"
+			android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  />
+
+	</LinearLayout>
+	<RatingBar android:id="@+id/indicatorRatingbar" style="?android:attr/ratingBarStyleIndicator"
+		android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</LinearLayout>

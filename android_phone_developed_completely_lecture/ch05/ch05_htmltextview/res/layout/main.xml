@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFFFFF">
+	<TextView android:id="@+id/tvWebURL" 
+		android:layout_marginTop="20dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#000000" android:autoLink="web" />
+	<TextView android:id="@+id/tvEmail" 
+		android:layout_marginTop="20dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#000000" android:autoLink="email" />
+	<TextView android:id="@+id/tvPhone" 
+		android:layout_marginTop="20dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#000000" android:autoLink="phone" />
+
+	<TextView android:id="@+id/textview1"
+		android:layout_marginTop="20dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#000000" android:text="@string/link_text_manual"/>
+	<TextView android:id="@+id/textview2"
+		android:layout_marginTop="20dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#000000" />
+</LinearLayout>
+  

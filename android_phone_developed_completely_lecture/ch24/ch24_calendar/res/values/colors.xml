@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calendar_background">#000000</color> 
+    <color name="recordremind_background">#FFFFFF</color> 
+    
+
+    <color name="border_color">#FFFFFF</color>
+    <color name="weekname_color">#FFFFFF</color>
+    <color name="day_color">#FFFFFF</color>
+    <color name="inner_grid_color">#FFFFFF</color>
+    <color name="prev_next_month_day_color">#999999</color>
+    
+    <color name="text_color">#FFFF00</color>
+    <color name="recordremindtext_color">#000000</color>
+    
+    <color name="current_day_color">#FF0000</color>
+    <color name="today_background_color">#FF0000</color>
+    <color name="today_color">#FFFFFF</color>
+    <color name="sunday_saturday_color">#FF0000</color>
+    <color name="sunday_saturday_prev_next_month_day_color">#990000</color>
+</resources>
+  

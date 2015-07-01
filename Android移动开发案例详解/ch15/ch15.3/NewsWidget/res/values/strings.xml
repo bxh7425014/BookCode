@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsWidget</string>
+	<string name="widget_name">News</string>
+	<string name="str_input">Please input the URL address for RSS:</string>
+	<string name="str_order">Order</string>
+	<string name="str_disorder">Disorder</string>
+	<string name="str_autonext">Auto next news</string>
+	<string name="str_autotime">Auto time interval(S)</string>
+	<string name="str_save">Save</string>
+	<string name="str_exit">Exit</string>
+</resources>

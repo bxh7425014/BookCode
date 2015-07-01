@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main!</string>
+	<string name="app_name">显示URL、不同颜色和字体大小的Textview</string>
+	<string name="link_text_manual">作者博客：<a href='http://nokiaguy.blogjava.net'>http://nokiaguy.blogjava.net</a>
+	</string>
+
+</resources>

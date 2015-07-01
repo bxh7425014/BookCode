@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="DeviceInfo.js"></script>
+<script type="text/javascript" src="ownerInfo.js"></script>
+<script type="text/javascript" src="Device_run.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>	
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showDeviceInfotest();"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+<div id="DeviceInfotest"  class="bodyStyle">
+	<div id="textdivphoneFirmware" class="oBodyStyle obStyle" onclick="clickItphoneFirmware();"><a href="#">phoneFirmware</a></div>	
+	<div id="textdivphoneManufacturer" class="oBodyStyle obStyle" onclick="clickItphoneManufacturer();"><a href="#">phoneManufacturer</a></div>	
+	<div id="textdivphoneModel" class="oBodyStyle obStyle" onclick="clickItphoneModel();"><a href="#">phoneModel</a></div>	
+	<div id="textdivphoneOS" class="oBodyStyle obStyle" onclick="clickItphoneOS();"><a href="#">phoneOS</a></div>		
+	<div id="textdivphonescreenHeightDefault" class="oBodyStyle obStyle" onclick="clickItphonescreenHeightDefault();"><a href="#">phonescreenHeightDefault</a></div>	
+	<div id="textdivphonescreenWidthDefault" class="oBodyStyle obStyle" onclick="clickItphonescreenWidthDefault();"><a href="#">phonescreenWidthDefault</a></div>
+	<div id="textdivtotalMemory" class="oBodyStyle obStyle" onclick="clickIttotalMemory();"><a href="#">totalMemory</a></div>	
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop"  href="SystemInfo.html"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

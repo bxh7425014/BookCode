@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="Hardware.js"></script>
+<script type="text/javascript" src="Device_run.js"></script>
+<script type="text/javascript" src="Device.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>	
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showFiletest();"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+<div id="Hardwaretest" class="bodyStyle">	
+	<div id="textdivshowCameratest" class="oBodyStyle obStyle"><a href="Camera.html">拍照</a></div>
+	<div id="textdivinitiateVoiceCall" class="oBodyStyle obStyle"	onclick="clickinitiateVoiceCall();"><a href="#" class="method_style">打电话</a></div>
+	<div id="textdivVibrate" class="oBodyStyle obStyle"	onclick="clickItvibrate();"><a href="#" class="method_style">震动</a></div>
+		
+</div>	
+</body>
+</html>

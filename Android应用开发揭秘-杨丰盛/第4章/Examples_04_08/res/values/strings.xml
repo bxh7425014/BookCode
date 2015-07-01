@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">调查：你喜欢Android的原因？</string>
+    <string name="app_name">Examples_04_08</string>
+    <string name="CheckBox1">无界限的应用程序</string>
+    <string name="CheckBox2">应用程序是在平等的条件下创建的</string>
+    <string name="CheckBox3">应用程序可以轻松地嵌入网络</string>
+    <string name="CheckBox4">应用程序可以并行运行</string>
+</resources>

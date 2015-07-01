@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/tvTitle" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="标题" android:layout_marginTop="10dp"
+	/>
+	<EditText android:id="@+id/etTitle" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:singleLine="true" />
+	<TextView android:id="@+id/tvTitle" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="内容" android:layout_marginTop="10dp"
+	/>
+	<EditText android:id="@+id/etContent" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="left"/>
+</LinearLayout>
+
+  

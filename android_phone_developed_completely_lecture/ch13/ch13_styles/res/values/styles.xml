@@ -1,0 +1,23 @@
+<resources>
+	<style name="style1">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#FFFF00</item>
+	</style>
+	<!-- 
+	<style name="style2" parent="@style/style1">
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+	<style name="style3" parent="@style/style2">
+		<item name="android:gravity">right</item>
+		<item name="android:textColor">#FF0000</item>
+	</style>
+	 -->
+	 	<style name="style1.style2">
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+	<style name="style1.style2.style3">
+		<item name="android:gravity">right</item>
+		<item name="android:textColor">#FF0000</item>
+	</style>
+	 
+</resources>

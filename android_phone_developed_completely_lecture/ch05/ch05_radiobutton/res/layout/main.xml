@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RadioGroup android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="选项1" />
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="选项2" />
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="选项3"
+			android:drawableLeft="@drawable/star" android:drawableTop="@drawable/circle"
+			android:drawableRight="@drawable/star" android:drawableBottom="@drawable/circle" android:drawablePadding="20dp" />
+	</RadioGroup>
+</LinearLayout>

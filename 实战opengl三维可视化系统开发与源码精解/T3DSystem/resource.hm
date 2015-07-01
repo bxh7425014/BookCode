@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by T3DSystem.rc
+//
+#define HIDC_STATIC                     0x813bffff    // IDD_DIALOG_PLANE_R_l0

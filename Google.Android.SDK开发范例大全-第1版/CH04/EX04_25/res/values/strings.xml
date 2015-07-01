@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">你我心有靈犀～</string>
+  <string name="app_name">EX04_25</string>
+  <string name="str_button1">回答</string>
+  <string name="str_button2">清空</string>
+  <string name="str_radio_question1">請用念力看看我在想什麼？</string>
+  <string name="str_radio_op1">忍者狂刀</string>
+  <string name="str_radio_op2">最後一戰：星環戰役</string>
+  <string name="str_radio_op3">吉他英雄：世界巡迴 樂團</string>
+  <string name="str_guess_correct">猜對了！</string>
+  <string name="str_guess_error">猜錯，再猜看看...</string>
+</resources>

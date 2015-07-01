@@ -1,0 +1,16 @@
+一.加载Skin++
+
+1.在(VC6)"Project->Settings->Link->Object/library"中加入SkinPlusPlusDLL.lib 
+
+2.在你的程序中包含头文件
+#inlcude "SkinPPWTL.h"
+
+3.在程序中加入初始化语句InitInstance()
+skinppLoadSkin(_T("DameK UltraBlue.ssk")); //加载皮肤
+
+
+二.卸载Skin++
+
+在程序的卸载函数中加入ExitInstance()
+skinppExitSkin(); //退出界面库，做清理工作。
+

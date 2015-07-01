@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFF">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/url_string"
+		android:autoLink="web" android:textSize="25sp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/quoted_string"
+		android:textColor="#000" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/double_quoted_string"
+		android:textColor="#000" />
+	<TextView android:id="@+id/tvformatted" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textColor="#000" />
+	<TextView android:id="@+id/tvTagged" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:autoLink="web" />
+	<TextView android:id="@+id/tvTagged1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/styled_welcome_message"
+		android:textColor="#000" />
+</LinearLayout> 

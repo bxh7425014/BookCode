@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:orientation="vertical" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  > 
+  <TextView 
+  android:id="@+id/TextView01" 
+  android:layout_width="fill_parent"  
+  android:layout_height="wrap_content"  
+  android:text="选择下面按钮来设置铃声"
+  />
+  <Button 
+  android:id="@+id/ButtonRingtone" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:text="设置来电铃声" 
+  />
+  <Button 
+  android:id="@+id/ButtonAlarm" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:text="设置闹钟铃声" 
+  />
+  <Button 
+  android:id="@+id/ButtonNotification" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:text="设置通知铃声" 
+  />
+</LinearLayout>

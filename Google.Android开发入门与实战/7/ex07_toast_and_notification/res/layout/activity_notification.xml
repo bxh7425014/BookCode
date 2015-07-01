@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        
+            <Button
+                android:id="@+id/sun_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晴空万里" />
+        
+            <Button
+                android:id="@+id/cloudy_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阴云密布" />
+                
+              <Button
+                android:id="@+id/rain_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大雨连绵" />
+                
+        </LinearLayout>
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="高级的notification" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        
+            <Button
+                android:id="@+id/defaultSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发声的notification" />
+        
+            <Button
+                android:id="@+id/defaultVibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="振动的notification" />
+                
+              <Button
+                android:id="@+id/defaultAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="既发声又振动的notification" />
+                
+        </LinearLayout>
+        
+        <Button android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="清除notification" />
+            
+    </LinearLayout>
+
+</ScrollView>

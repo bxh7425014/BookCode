@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">Sample2_10</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">鍙戦€?/string>
+    <string name="not_connected">娌℃湁杩炴帴鍒拌澶?/string>
+    <string name="bt_not_enabled_leaving">钃濈堕涓嶅彲浣跨敤锛岄€€鍑虹▼搴?/string>
+    <string name="title_connecting">姝ｅ湪杩炴帴钬︹€?/string>
+    <string name="title_connected_to">宸茶繛鎺ワ细 </string>
+    <string name="title_not_connected">链繛鎺?/string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">姝ｅ湪镓弿璁惧钬︹€?/string>
+    <string name="select_device">阃夋嫨瑕佽繛鎺ョ殑璁惧</string>
+    <string name="none_paired">娌℃湁鍙厤瀵圭殑璁惧</string>
+    <string name="none_found">链垒鍒拌澶?/string>
+    <string name="title_paired_devices">宸查厤瀵圭殑璁惧</string>
+    <string name="title_other_devices">鍏跺畠鍙敤璁惧</string>
+    <string name="button_scan">镓弿璁惧</string>
+<string name="hint">鍦ㄦ杈揿叆瑕佸彂阃佺殑淇℃伅</string>
+</resources>

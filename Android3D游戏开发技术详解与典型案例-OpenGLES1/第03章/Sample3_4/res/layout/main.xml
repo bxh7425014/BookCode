@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   <Button 
+     android:text="打开" 
+     android:id="@+id/Button01" 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+   </Button>					<!-- 添加一个Button -->
+   <ScrollView 
+     android:id="@+id/ScrollView01" 
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content">
+     <EditText 
+	     android:editable="false"
+	     android:id="@+id/EditText01" 
+	     android:layout_width="fill_parent" 
+	     android:layout_height="wrap_content">
+	 </EditText>					<!-- 添加一个EditText -->
+   </ScrollView>    				<!-- 添加一个ScrollView -->
+</LinearLayout>

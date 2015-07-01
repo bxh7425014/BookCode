@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/image">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="红色字体蓝色背景"
+		android:textSize="25sp" android:textColor="@color/red_color"
+		android:background="@color/blue_color" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="120dp" android:text="蓝色字体半透明绿色背景"
+		android:textSize="25sp" android:textColor="@color/blue_color"
+		android:background="@color/green_color" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="蓝色字体红色背景"
+		android:textSize="25sp" android:textColor="@color/blue_color" 
+		android:background="@color/red_color" />
+	<TextView android:id="@+id/textview" android:layout_width="fill_parent"
+		android:layout_height="120dp" android:text="蓝色字体半透明白色背景"
+		android:textSize="25sp" />
+</LinearLayout>

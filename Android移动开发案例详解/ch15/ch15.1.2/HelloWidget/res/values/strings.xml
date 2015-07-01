@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HelloWidget!</string>
+    <string name="app_name">HelloWidget</string>
+	<string name="str_widget">PinkDream will be come true</string>
+</resources>

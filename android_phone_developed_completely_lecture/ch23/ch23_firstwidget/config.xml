@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget  xmlns="http://www.jil.org/ns/widgets"
+         id="8b05c211-e38b-4580-85ff-b6ed50667996"
+         version="01.00.beta"
+         height="170"
+         width="275">
+    <name>ch23_firstwidget</name>
+    <description>This is my first Widget.</description>
+    <author email="myname@host">myname</author>
+    <license href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache v2</license>
+    <maximum_display_mode height="450" width="320"/>
+    <update href="http://www.jil.org/widgets/" period="2"/>
+    <icon src="Icon.png"/>
+    <content src="ch23_firstwidget.html"/>
+    <access network="true" localfs="true" remote_scripts="false"/>
+    <billing required="false"/>
+</widget>

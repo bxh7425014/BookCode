@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	>
+	<TextView  
+	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/hello"
+    />
+    	<VideoView 
+    	android:id="@+id/VideoView01" 
+    	android:layout_width="320px"
+   	android:layout_height="240px"
+     />
+  	<Button android:id="@+id/LoadButton"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="装载"
+  	android:layout_x="30px"
+  	android:layout_y="300px"
+    	/>  
+  	<Button android:id="@+id/PlayButton"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="播放"
+  	android:layout_x="120px"
+  	android:layout_y="300px"
+    	/>
+  	<Button android:id="@+id/PauseButton"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="暂停"
+  	android:layout_x="210px"
+  	android:layout_y="300px"
+   	/>
+</AbsoluteLayout>

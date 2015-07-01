@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <string name="app_name">EX05_03</string> 
+  <string name="str_button1">按我傳送簡訊</string> 
+  <string name="str_textview">收件人</string>
+</resources> 

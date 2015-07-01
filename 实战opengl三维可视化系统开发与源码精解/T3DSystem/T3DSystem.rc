@@ -1,0 +1,1696 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\T3DSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\T3DSystem.ico"
+IDR_T3DSYSTYPE          ICON    DISCARDABLE     "res\\T3DSystemDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TOOLBAR_ORTHO       BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_TOOLBAR_ZDM         BITMAP  DISCARDABLE     "res\\bmp00016.bmp"
+IDB_SNOW_LARGE          BITMAP  DISCARDABLE     "res\\SnowLarge.bmp"
+IDB_SNOW_MIDDLE         BITMAP  DISCARDABLE     "res\\SnowMiddle.bmp"
+IDB_SNOW_SMALL          BITMAP  DISCARDABLE     "res\\SnowSmall.bmp"
+IDB_SNOW_FLOOR          BITMAP  DISCARDABLE     "res\\SnowFloor.bmp"
+IDR_TOOLBAR_PLANE       BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MENU_NEWPROJECT
+    BUTTON      ID_MENU_OPENPROJECT
+    BUTTON      ID_MENU_LINESAVESCHEME
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_TOOL_SCHEME
+END
+
+IDR_TOOLBAR_ORTHO TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ORTHO_ZOOMIN
+    BUTTON      ID_ORTHO_ZOOMOUT
+    BUTTON      ID_ORTHO_ZOOWINDOW
+    BUTTON      ID_ORTHO_ZOOMORIGIN
+    SEPARATOR
+    BUTTON      ID_ORTHO_PAN
+END
+
+IDR_TOOLBAR_ZDM TOOLBAR DISCARDABLE  18, 17
+BEGIN
+    BUTTON      ID_MENU_ZDM_SLOPEDATA
+    BUTTON      ID_ZDM_GEOFEATURE
+    SEPARATOR
+    BUTTON      ID_ZDM_GRAPHBRIDGE
+    BUTTON      ID_ZDM_GRAPHTUNNEL
+    BUTTON      ID_ZDM_GRAPHSTATION
+    SEPARATOR
+    BUTTON      ID_ZDM_BRIDGE
+    BUTTON      ID_ZDM_TUNNEL
+    BUTTON      ID_MENU_STATIONDATAS
+    SEPARATOR
+    BUTTON      ID_ZDM_PENSET
+    BUTTON      ID_ZDM_LMBZ
+    BUTTON      ID_ZDM_BACKGRID
+    SEPARATOR
+    BUTTON      ID_MENU_ZDM_EXIT
+    SEPARATOR
+    BUTTON      ID_TOOL_ZDM_SCHEME
+    SEPARATOR
+    BUTTON      ID_TOOL_ZDM_YSCALETEXT
+    BUTTON      ID_TOOL_ZDM_YSCALE
+    BUTTON      ID_TOOL_ZDM_XSCALETEXT
+    BUTTON      ID_TOOL_ZDM_XSCALE
+    SEPARATOR
+    BUTTON      ID_TOOL_ZDM_LC_HINFO
+    BUTTON      ID_TOOL_ZDM_PROGRESS
+END
+
+IDR_TOOLBAR_PLANE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ZOOMWINDOW
+    BUTTON      ID_ZOOMIN
+    BUTTON      ID_ZOOMOUT
+    BUTTON      ID_ZOOMINOUTDYNAMIC
+    BUTTON      ID_MENU_PLANE_FULLSCREEN
+    SEPARATOR
+    BUTTON      ID_GRAPH_MOVE1
+    BUTTON      ID_GRAPH_MOVE2
+    BUTTON      ID_GRAPH_MOVE3
+    SEPARATOR
+    BUTTON      ID_MENU_PLANE_FIRSTSCREEN
+    BUTTON      ID_MENU_PLANE_PRESCREEN
+    BUTTON      ID_MENU_PLANE_NEXTSCREEN
+    SEPARATOR
+    BUTTON      ID_MENU_PLANE_OUTCAD
+    SEPARATOR
+    BUTTON      ID_MENU_PLANE_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "项目管理(&P)"
+    BEGIN
+        MENUITEM "新建项目(&N)",                ID_MENU_NEWPROJECT
+        MENUITEM "打开项目(&O)",                ID_MENU_OPENPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "数模与纹理(&D)"
+    BEGIN
+        MENUITEM "数模读取与分块处理(&E)",      ID_MENU_DEM
+        MENUITEM "纹理影像入库(&T)",            ID_MENU_TEXTUREIMAGE
+        MENUITEM SEPARATOR
+        POPUP "纹理管理(&T)"
+        BEGIN
+            MENUITEM "边坡纹理",                    ID_MENU_TEXTUREBP
+            MENUITEM "路肩纹理",                    ID_MENU_TEXTURELJ
+            MENUITEM "桥梁护坡面纹理",              ID_MENU_TEXTUREQLHPM
+            MENUITEM "隧道内墙纹理",                ID_MENU_TEXTURETUNNEL
+            MENUITEM "隧道洞门纹理",                ID_MENU_TEXTURETUNNEL_DM
+        END
+        MENUITEM SEPARATOR
+        POPUP "模型管理"
+        BEGIN
+            MENUITEM "桥墩模型",                    ID_MENU_MODLEQD
+        END
+    END
+    POPUP "绘图模式(&M)"
+    BEGIN
+        MENUITEM "线框模式",                    ID_DRAWMODE_LINE
+        MENUITEM "渲晕模式",                    ID_DRAWMODE_RENDER
+        MENUITEM "纹理模式",                    ID_DRAWMODE_TEXTURE
+    END
+    POPUP "显示模式(&M)"
+    BEGIN
+        MENUITEM "双目立体方式(&S)",            ID_MENU_STEREO
+        MENUITEM SEPARATOR
+        MENUITEM "正射投影方式(&O)",            ID_MENU_PROJECTTIONORTHO
+        MENUITEM "透视投影方式(&P)",            ID_MENU_PERSPECTIVE
+    END
+    POPUP "空间查询(&Q)"
+    BEGIN
+        MENUITEM "查询标识设置",                ID_SPACEQUERY_SET
+        MENUITEM "查询三维坐标(&Q)",            ID_QUERY_COORDINATE
+        MENUITEM "查询空间距离(&D)",            ID_QUERY_DISTENCE
+    END
+    POPUP "选线设计(&S)"
+    BEGIN
+        MENUITEM "线路方案控制参数",            ID_MENU_LINESCHEME
+        MENUITEM "三维选线设计",                ID_MENU_LINEDESIGN
+        MENUITEM SEPARATOR
+        MENUITEM "保存方案",                    ID_MENU_LINESAVESCHEME
+        MENUITEM SEPARATOR
+        MENUITEM "平面方案图",                  ID_MENU_PLANE_GRAPH
+        MENUITEM "纵断面设计(&D)",              ID_MENU_ZDMDESIGN
+        MENUITEM SEPARATOR
+        MENUITEM "线路三维建模",                ID_MENU_BUILD3DLINEMODLE
+    END
+    POPUP "参数设置(&P)"
+    BEGIN
+        MENUITEM "隧道参数设置",                ID_MENU_TUNNELSET
+        MENUITEM "桥梁参数设置",                ID_MENU_BRIDGESET
+    END
+    POPUP "三维漫游(&B)"
+    BEGIN
+        POPUP "飞行路径"
+        BEGIN
+            MENUITEM "手动设置路径",                ID_PATH_MANUINPUT
+            MENUITEM "飞行路径插值",                ID_FLPPATH_INTERPOLATION
+            MENUITEM "保存飞行路径",                ID_FLYPATH_SAVE
+        END
+        MENUITEM "打开飞行路径",                ID_FLY_OPENPATH
+        MENUITEM "显示飞行路径",                ID_FLY_ONOFFPATH
+        MENUITEM SEPARATOR
+        POPUP "沿路径漫游"
+        BEGIN
+            MENUITEM "按固定高度漫游",              ID_FLY_STATICHEIGHT
+            MENUITEM "按相对高度漫游",              ID_FLY_ROUTINEHEIGHT
+        END
+        MENUITEM "沿方案线漫游(&Z)",            ID_FLY_ROUTINSCHEMELINE
+        MENUITEM SEPARATOR
+        MENUITEM "开始/暂停漫游",               ID_FLY_PLAYPAUSE
+        MENUITEM "停止漫游",                    ID_FLY_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "单步前进",                    ID_FLY_ONESTEP
+        MENUITEM SEPARATOR
+        POPUP "飞行视野调整"
+        BEGIN
+            MENUITEM "增大 &F",                     ID_FLY_VIEW_ENLARGE
+            MENUITEM "缩小 &V",                     ID_FLY_VIEW_SMALL
+        END
+        POPUP "飞行高度调整"
+        BEGIN
+            MENUITEM "升高 &G",                     ID_FLY_HEIGHT_UP
+            MENUITEM "降低 &B",                     ID_FLY_HEIGHT_DOWN
+        END
+        POPUP "飞行倾角调整"
+        BEGIN
+            MENUITEM "上倾 &H",                     ID_FLY_VIEW_UP
+            MENUITEM "下倾 &N",                     ID_FLY_VIEW_DOWN
+        END
+        POPUP "飞行速度调整"
+        BEGIN
+            MENUITEM "加速 &J",                     ID_FLY_SPEED_UP
+            MENUITEM "减速 &M",                     ID_FLY_SPEED_DOWN
+        END
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "输出线路三维模型到CAD",       ID_MENU_OUPTCAD3DLINEMODEL
+        MENUITEM SEPARATOR
+        POPUP "AVI动画录制"
+        BEGIN
+            MENUITEM "动画录制参数",                ID_AVI_PARAMETER
+            MENUITEM "开始录制动画(&Q)",            ID_AVI_START
+            MENUITEM "暂停录制动画(&W)",            ID_AVI_PAUSE
+            MENUITEM "结束录制动画(&E)",            ID_AVI_END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        POPUP "录制图像"
+        BEGIN
+            MENUITEM "图像采集频率",                ID_SAVEPICTURE_SPEED
+            MENUITEM "录像(图像序列)",              ID_SAVEPICTURE_CONTINUE
+            MENUITEM "停止录像图像",                ID_SAVEPICTURE_STOP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "保存屏幕到位图",              ID_MENU_SAVESCREENTOBMP
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 T3DSystem(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_PLANE MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "关闭(&C)",                    ID_MENU_PLANE_EXIT
+    END
+    POPUP "图形操作"
+    BEGIN
+        POPUP "图形缩放"
+        BEGIN
+            MENUITEM "窗口放大",                    ID_ZOOMWINDOW
+            MENUITEM "放大",                        ID_ZOOMIN
+            MENUITEM "缩小",                        ID_ZOOMOUT
+            MENUITEM "选中点为中心缩小/放大",       ID_ZOOMINOUTDYNAMIC
+        END
+        MENUITEM SEPARATOR
+        POPUP "图形移动"
+        BEGIN
+            MENUITEM "移动方式1(移动有连接线)",     ID_GRAPH_MOVE1
+            MENUITEM "移动方式2(移动无连接线)",     ID_GRAPH_MOVE2
+            MENUITEM "移动方式3(选中点为屏幕中心)", ID_GRAPH_MOVE3
+        END
+        MENUITEM SEPARATOR
+        POPUP "屏幕操作"
+        BEGIN
+            MENUITEM "显示首屏",                    ID_MENU_PLANE_FIRSTSCREEN
+
+            MENUITEM "显示上一屏",                  ID_MENU_PLANE_PRESCREEN
+            MENUITEM "显示下一屏",                  ID_MENU_PLANE_NEXTSCREEN
+            MENUITEM SEPARATOR
+            MENUITEM "显示全图",                    ID_MENU_PLANE_FULLSCREEN
+        END
+    END
+    POPUP "绘图输出"
+    BEGIN
+        MENUITEM "输出图形到CAD",               ID_MENU_PLANE_OUTCAD
+    END
+END
+
+IDR_MENU_ZDM MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "起点里程标高",                ID_ZDM_STARTLC_H
+        MENUITEM SEPARATOR
+        MENUITEM "保存设计",                    ID_ZDM_MENU_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&C)",                    ID_MENU_ZDM_EXIT
+    END
+    POPUP "数据资料"
+    BEGIN
+        MENUITEM "坡度设计资料",                ID_MENU_ZDM_SLOPEDATA
+        MENUITEM SEPARATOR
+        MENUITEM "工程地质特征",                ID_ZDM_GEOFEATURE
+    END
+    POPUP "设计方式"
+    BEGIN
+        MENUITEM "坡长坡率法",                  ID_MENU_ZDM_JDLPPCPD
+        MENUITEM SEPARATOR
+        MENUITEM "插入变坡点",                  ID_ZDM_DESIGN_ADDPT
+    END
+    POPUP "桥隧设计"
+    BEGIN
+        POPUP "图形选择方式"
+        BEGIN
+            MENUITEM "隧道设计",                    ID_ZDM_GRAPHTUNNEL
+            MENUITEM SEPARATOR
+            MENUITEM "桥梁设计",                    ID_ZDM_GRAPHBRIDGE
+        END
+        MENUITEM SEPARATOR
+        POPUP "数据输入方式"
+        BEGIN
+            MENUITEM "隧道数据",                    ID_ZDM_TUNNEL
+            MENUITEM SEPARATOR
+            MENUITEM "桥梁数据",                    ID_ZDM_BRIDGE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 T3DSystem"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "T3DSystem 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_DEMSEPERATE DIALOG DISCARDABLE  0, 0, 236, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数模读取与分块处理"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_DEMFILE,63,15,118,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览...",IDC_BUTTON_BROWSE,182,15,44,13
+    PUSHBUTTON      "开始分块入库处理...",IDC_BUTTON_SEPERATE,5,58,81,13
+    DEFPUSHBUTTON   "退出",IDOK,151,58,81,13
+    GROUPBOX        "",IDC_STATIC,5,0,227,55
+    LTEXT           "DEM数据文件",IDC_STATIC,13,17,48,10
+    LTEXT           "分块大小",IDC_STATIC,12,37,35,9
+    LTEXT           "子块大小",IDC_STATIC,12,38,35,9,NOT WS_VISIBLE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    NOT WS_VISIBLE | WS_BORDER,5,69,228,12
+    COMBOBOX        IDC_COMBO_BLOCKSIZE,150,37,77,74,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BLOCKINFOR,191,39,6,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_SUBBLOCKINFOR,154,37,19,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_SUBBLOCKSIZE,62,37,167,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_LOADTEXTURE DIALOG DISCARDABLE  0, 0, 172, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "影像入库"
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LIST_FILES,13,21,147,57,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "纹理影像",-1,13,11,38,10
+    PUSHBUTTON      "浏览...",IDC_BUTTON_BROWSE,121,7,38,14
+    DEFPUSHBUTTON   "确定",IDOK,8,99,54,14
+    PUSHBUTTON      "取消",IDCANCEL,117,99,46,14
+    GROUPBOX        "",-1,4,1,162,82
+    LTEXT           "分割高度",-1,14,34,33,8,NOT WS_VISIBLE
+    LTEXT           "分割宽度",-1,39,43,34,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FG_HEIGHT,50,30,38,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FG_WIDTH,67,35,30,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    NOT WS_VISIBLE | WS_BORDER,5,85,159,11
+END
+
+IDD_DIALOG_NEWPROJECT DIALOG DISCARDABLE  0, 0, 182, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建项目"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_PROJECTNAME,55,12,113,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SYSTEM_NAME,55,55,113,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SYSTEM_PASSWORD,55,71,113,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,7,108,64,14
+    PUSHBUTTON      "取消",IDCANCEL,108,108,67,14
+    LTEXT           "项目名称",IDC_STATIC,14,14,33,10
+    GROUPBOX        "Oracle系统管理员",IDC_STATIC,6,40,170,66
+    LTEXT           "用户名",IDC_STATIC,14,55,25,9
+    LTEXT           "密码",IDC_STATIC,14,73,25,9
+    GROUPBOX        "",IDC_STATIC,6,2,170,29
+    EDITTEXT        IDC_SYSTEM_SERVERNAME,55,89,113,13,ES_AUTOHSCROLL
+    LTEXT           "服务器名",IDC_STATIC,13,91,33,9
+END
+
+IDD_DIALOG_OPENPROJECT DIALOG DISCARDABLE  0, 0, 207, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打开项目"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "打开",IDC_BUTTON_OPEN,3,113,55,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,73,113,55,14
+    PUSHBUTTON      "取消",IDCANCEL,143,113,55,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,4,4,197,102
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,4,105,197,8
+END
+
+IDD_DIALOG_SPACESELECTSET DIALOGEX 0, 0, 131, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "空间查询标识设置"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SHIZXLENGTH,69,13,50,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SHUZXHEIGHT,69,30,50,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    COMBOBOX        IDC_COMBOL_WIDTH,69,47,50,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BUTTON_COLOR,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_GROUP | WS_TABSTOP,69,63,50,13,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,8,87,50,14
+    PUSHBUTTON      "取消",IDCANCEL,75,89,50,14
+    LTEXT           "十字线长度",IDC_STATIC,13,15,41,9
+    LTEXT           "竖直线高度",IDC_STATIC,13,31,41,9
+    LTEXT           "颜色",IDC_STATIC,13,65,17,9
+    LTEXT           "线宽",IDC_STATIC,13,49,17,9
+    GROUPBOX        "",IDC_STATIC,7,3,119,80
+END
+
+IDD_DIALOG_SCHEME DIALOG DISCARDABLE  0, 0, 232, 256
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "线路方案控制参数"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "铁路等级",IDC_STATIC,13,35,34,8
+    COMBOBOX        IDC_COMBO_GRADE,53,33,62,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "牵引种类",IDC_STATIC,124,35,34,8
+    COMBOBOX        IDC_COMBO_DRAUGHTSTYLE,161,33,62,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "方案名称",IDC_STATIC,13,16,34,8
+    LTEXT           "设计速度",IDC_STATIC,13,72,33,10
+    PUSHBUTTON      "保存方案",IDC_BUTTON_SAVE,3,237,50,13
+    PUSHBUTTON      "修改方案",IDC_BUTTON_EDIT,61,237,50,13
+    PUSHBUTTON      "删除方案",IDC_BUTTON_DELETE,119,237,50,13
+    PUSHBUTTON      "返回",IDC_BUTTON_EXIT,179,237,50,13
+    COMBOBOX        IDC_COMBO_SCHEMENAME,53,14,169,121,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,3,4,225,184
+    COMBOBOX        IDC_COMBO_DESIGNSPEED,53,71,62,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工程条件",IDC_STATIC,124,73,33,8
+    COMBOBOX        IDC_COMBO_ENGINEERINGCONDITION,161,71,62,77,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "地形分类",IDC_STATIC,124,53,33,10
+    COMBOBOX        IDC_COMBO_TERRAINSTYLE,161,52,62,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "方案线起点里程",IDC_STATIC,12,197,62,8
+    EDITTEXT        IDC_EDIT_STARTLC,78,195,142,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "方案线终点里程",IDC_STATIC,12,217,60,8
+    EDITTEXT        IDC_EDIT_ENDLC,77,215,143,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "到发线有效长度",IDC_STATIC,13,91,57,8
+    COMBOBOX        IDC_COMBO_DFXEFFICIENTLENGTH,71,89,43,63,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "机车类型",IDC_STATIC,13,53,34,8
+    COMBOBOX        IDC_COMBO_LOCOMOTIVE,53,51,62,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "闭塞方式",IDC_STATIC,123,91,34,8
+    COMBOBOX        IDC_COMBO_BSSTYLE,161,89,62,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "最小曲线半径",IDC_STATIC,13,111,52,8
+    EDITTEXT        IDC_EDIT_MINRADIUS,66,108,47,14,ES_AUTOHSCROLL
+    LTEXT           "缺省值",IDC_STATIC,123,111,27,8
+    EDITTEXT        IDC_EDIT_CRITERIONMINR,161,108,62,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MAXSLOPEPDDSC,66,169,47,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "最大坡度",IDC_STATIC,13,148,33,10
+    EDITTEXT        IDC_EDIT_MAXSLOPEPD,66,148,47,14,ES_AUTOHSCROLL
+    LTEXT           "最小坡长",IDC_STATIC,13,129,33,10
+    EDITTEXT        IDC_EDIT_MINPC,66,127,47,14,ES_AUTOHSCROLL
+    LTEXT           "最大坡度差",IDC_STATIC,13,171,46,10
+    LTEXT           "缺省值",IDC_STATIC,123,130,27,8
+    EDITTEXT        IDC_EDIT_CRITERIONMINPC,161,127,62,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    LTEXT           "缺省值",IDC_STATIC,123,151,27,8
+    EDITTEXT        IDC_EDIT_CRITERIONMAXSLOPEPD,161,148,62,14,
+                    ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    LTEXT           "缺省值",IDC_STATIC,123,172,27,8
+    EDITTEXT        IDC_EDIT_CRITERIONMAXSLOPEPDDSC,161,169,62,14,
+                    ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,3,186,224,46
+END
+
+IDD_DIALOG_PLANE_R_l0 DIALOGEX 0, 0, 158, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "曲线R和L0"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,79,11,64,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_R,80,32,64,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_L0,80,51,64,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,8,155,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,154,50,14
+    LTEXT           "曲线半径R",IDC_STATIC,14,34,39,8
+    LTEXT           "缓和曲线长度L0",IDC_STATIC,14,54,62,8
+    LTEXT           "最小曲线半径R:",IDC_STATIC,11,114,60,8
+    EDITTEXT        IDC_EDIT_MINl0,87,130,57,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "最小缓和曲线长度L0",IDC_STATIC,11,132,73,8
+    EDITTEXT        IDC_EDIT_MINR,87,112,57,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "平面曲线半径优先取值范围[规范]",IDC_STATIC1,12,87,129,8
+    GROUPBOX        "",IDC_STATIC,4,3,150,68
+    GROUPBOX        "",IDC_STATIC,4,72,150,77
+    EDITTEXT        IDC_EDIT_RANGER,13,97,132,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "交点编号",IDC_STATIC,14,14,39,8,NOT WS_GROUP,0,
+                    HIDC_STATIC
+END
+
+IDD_DIALOG_PLANEGRAPHIC DIALOG DISCARDABLE  0, 0, 188, 95
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_VSCROLL | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "平面方案图"
+MENU IDR_MENU_PLANE
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_DIALOG_ZDMDESIGN DIALOGEX 0, 0, 266, 151
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_VSCROLL | 
+    WS_HSCROLL | WS_SYSMENU | WS_THICKFRAME
+CAPTION "纵断面设计"
+MENU IDR_MENU_ZDM
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_LCCORINFO,179,9,70,15,NOT WS_VISIBLE | 
+                    WS_BORDER,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_ZDMGEOFEATURES DIALOG DISCARDABLE  0, 0, 291, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工程地质特征"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "分段起始里程",IDC_STATIC,13,13,48,10
+    EDITTEXT        IDC_EDIT_STARTLC,65,11,73,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "分段终点里程",IDC_STATIC,155,13,48,10
+    EDITTEXT        IDC_EDIT_ENDLC,207,11,73,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "工程地质特征",IDC_STATIC,14,30,48,10
+    EDITTEXT        IDC_EDIT_GEOFEATURE,65,30,216,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,5,66,240,57
+    GROUPBOX        "",IDC_STATIC,4,2,282,61
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,247,65,37,13,BS_FLAT
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DELETE,247,80,37,13,BS_FLAT
+    PUSHBUTTON      "修改(&M)",IDC_BUTTON_EDIT,247,95,37,13,BS_FLAT
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,247,110,37,13,BS_FLAT
+END
+
+IDD_DIALOG_ZDM_SLOPEDATA DIALOG DISCARDABLE  0, 0, 253, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "坡度设计资料"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "坡长",IDC_STATIC,12,17,17,9
+    EDITTEXT        IDC_EDIT_L,57,14,59,14,ES_AUTOHSCROLL
+    LTEXT           "坡率",IDC_STATIC,12,35,17,9
+    EDITTEXT        IDC_EDIT_PD,57,32,59,14,ES_AUTOHSCROLL
+    LTEXT           "变坡点桩号",IDC_STATIC,12,70,41,9
+    EDITTEXT        IDC_EDIT_T,179,49,59,14,ES_AUTOHSCROLL
+    LTEXT           "标高",IDC_STATIC,132,16,17,9
+    EDITTEXT        IDC_EDIT_H,179,14,59,14,ES_AUTOHSCROLL
+    LTEXT           "竖曲线半经",IDC_STATIC,132,34,41,9
+    EDITTEXT        IDC_EDIT_R,179,32,59,14,ES_AUTOHSCROLL
+    LTEXT           "外矢距",IDC_STATIC,12,53,28,9
+    EDITTEXT        IDC_EDIT_E,57,50,59,14,ES_AUTOHSCROLL
+    LTEXT           "切线长",IDC_STATIC,132,51,37,9
+    EDITTEXT        IDC_EDIT_LC,57,68,59,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,4,4,243,88
+    LTEXT           "坡度代数差",IDC_STATIC,134,72,41,9
+    EDITTEXT        IDC_EDIT_PDDSC,180,68,59,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,205,188,37,13,BS_FLAT
+    PUSHBUTTON      "输出到EXCEL(&U)",IDC_BUTTON_OUTPUT,122,188,72,13,
+                    BS_FLAT
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,4,96,242,88
+END
+
+IDD_DIALOG_ZDM_R DIALOG DISCARDABLE  0, 0, 126, 62
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,8,40,39,14
+    PUSHBUTTON      "取消",IDCANCEL,73,39,39,14
+    LTEXT           "竖曲线半径",IDC_STATIC,5,15,43,10
+    EDITTEXT        IDC_EDIT_R,49,13,69,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+END
+
+IDD_DIALOG_ZDM_STARTLC_H DIALOG DISCARDABLE  0, 0, 138, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "起点里程和标高"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "起点里程",IDC_STATIC,18,16,34,10
+    EDITTEXT        IDC_EDIT_STARTLC,60,15,63,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    LTEXT           "起点标高",IDC_STATIC,18,40,34,10
+    EDITTEXT        IDC_EDIT_STARTH,60,39,63,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,8,4,123,57
+    DEFPUSHBUTTON   "确定",IDOK,15,64,39,14
+    PUSHBUTTON      "取消",IDCANCEL,81,63,39,14
+END
+
+IDD_DIALOG_ZDM_JTPCPD DIALOG DISCARDABLE  0, 0, 292, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改坡长坡率"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "坡长",IDC_STATIC,20,23,17,9
+    EDITTEXT        IDC_EDIT_L,41,20,74,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "坡率",IDC_STATIC,20,42,17,9
+    EDITTEXT        IDC_EDIT_PD,41,40,74,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "变坡点桩号",IDC_STATIC,148,22,41,9
+    LTEXT           "变坡点标高",IDC_STATIC,148,42,42,9
+    EDITTEXT        IDC_EDIT_H,195,40,77,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_DISABLED
+    EDITTEXT        IDC_EDIT_LC,196,20,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,11,11,112,49
+    GROUPBOX        "",IDC_STATIC,140,10,143,49
+    CONTROL         "坡长坡率",IDC_RADIO_PCPD,"Button",BS_AUTORADIOBUTTON,12,
+                    180,45,11
+    CONTROL         "桩号标高",IDC_RADIO_ZHBG,"Button",BS_AUTORADIOBUTTON,59,
+                    180,48,11
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,257,179,26,13,BS_FLAT
+    PUSHBUTTON      "修改",IDC_BUTTON_EDIT,107,179,26,13,BS_FLAT
+    GROUPBOX        "",IDC_STATIC,7,4,280,60
+    GROUPBOX        "",IDC_STATIC,8,172,280,26
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,137,179,26,13,BS_FLAT
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,197,179,26,13,BS_FLAT
+    PUSHBUTTON      "输出",IDC_BUTTON_OUTPUT,227,179,26,13,BS_FLAT
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,7,66,279,104
+    PUSHBUTTON      "插入",IDC_BUTTON_ADD,85,122,26,13,BS_FLAT | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "检查",IDC_BUTTON_CHECK,167,179,26,13,BS_FLAT
+END
+
+IDD_DIALOG_TUNNEL DIALOG DISCARDABLE  0, 0, 262, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隧道数据"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,49,12,71,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_STARTLC,176,11,71,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_LENGTH,176,33,71,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_DISABLED
+    LTEXT           "隧道名称",IDC_STATIC,12,14,34,8
+    LTEXT           "起点里程",IDC_STATIC_X,139,13,34,8
+    LTEXT           "隧道长度",IDC_STATIC,139,33,34,8
+    EDITTEXT        IDC_EDIT_ENDLC,49,33,71,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "终点里程",IDC_STATIC_Y,11,35,34,8
+    GROUPBOX        "",IDC_STATIC,3,3,251,49
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,3,56,252,61
+    PUSHBUTTON      "修改(&E)",IDC_BUTTON_EDIT,49,125,37,13,BS_FLAT
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DELETE,93,125,37,13,BS_FLAT
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,5,125,37,13,BS_FLAT
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,216,125,37,13,BS_FLAT
+    PUSHBUTTON      "输出到EXCEL(&U)",IDC_BUTTON_OUTPUT,137,125,72,13,
+                    BS_FLAT
+    GROUPBOX        "",IDC_STATIC,1,118,256,25
+END
+
+IDD_DIALOG_BRIDGE DIALOG DISCARDABLE  0, 0, 263, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "桥梁数据"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,52,12,71,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_STARTLC,179,11,71,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_LENGTH,179,33,71,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_DISABLED
+    LTEXT           "桥梁名称",IDC_STATIC,15,14,34,8
+    LTEXT           "起点里程",IDC_STATIC_X,142,13,34,8
+    LTEXT           "桥梁长度",IDC_STATIC,144,35,34,8
+    EDITTEXT        IDC_EDIT_ENDLC,52,33,71,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "终点里程",IDC_STATIC_Y,14,35,34,8
+    GROUPBOX        "",IDC_STATIC,6,3,253,49
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,6,56,252,61
+    PUSHBUTTON      "修改(&E)",IDC_BUTTON_EDIT,53,125,37,13,BS_FLAT
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DELETE,95,125,37,13,BS_FLAT
+    PUSHBUTTON      "增加(&A)",IDC_BUTTON_ADD,11,125,37,13,BS_FLAT
+    PUSHBUTTON      "退出(&X)",IDC_BUTTON_EXIT,214,125,37,13,BS_FLAT
+    PUSHBUTTON      "输出到EXCEL(&U)",IDC_BUTTON_OUTPUT,137,125,72,13,
+                    BS_FLAT
+    GROUPBOX        "",IDC_STATIC,6,118,252,25
+END
+
+IDD_DIALOG_GZWNAME DIALOG DISCARDABLE  0, 0, 174, 55
+STYLE DS_MODALFRAME | WS_CAPTION
+CAPTION "请输入隧道名称"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,11,12,152,16,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,12,38,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,38,50,14
+    GROUPBOX        "",IDC_STATIC_FRAME,1,1,170,32
+END
+
+IDD_DIALOG_TUNNNELSET DIALOG DISCARDABLE  0, 0, 176, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隧道参数设置"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_TUNNELHEIGHT,100,14,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ARCHEIGHT,100,31,61,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_ARCSEGMENTNUMBERS,100,67,61,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,11,129,50,14
+    PUSHBUTTON      "取消",IDCANCEL,116,129,50,14
+    LTEXT           "隧道顶端圆弧高度(h1)",IDC_STATIC,13,33,82,10
+    LTEXT           "隧道顶端圆弧分段数",IDC_STATIC,13,69,73,10
+    GROUPBOX        "",IDC_STATIC,6,4,164,122
+    LTEXT           "隧道总高度H(=h1+h2)",IDC_STATIC,13,16,79,10
+    LTEXT           "隧道下端立墙高度(h2)",IDC_STATIC,13,51,83,10
+    EDITTEXT        IDC_EDIT_WALLHEIGHT,100,49,61,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "圆弧顶端向上高度",IDC_STATIC,13,89,68,10
+    EDITTEXT        IDC_EDIT_H,100,87,61,14,ES_AUTOHSCROLL
+    LTEXT           "洞门顶端两侧延伸宽度 ",IDC_STATIC,13,107,84,12
+    EDITTEXT        IDC_EDIT_L,100,106,61,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_BRIDGESET DIALOG DISCARDABLE  0, 0, 203, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "桥梁参数设置"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_MSFLEXGRID,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,42,19,50,14
+    EDITTEXT        IDC_EDIT_HLWIDTH,135,19,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HLSPACE,42,39,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HLHEIGHT,135,39,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QDSPACE,39,81,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HPANGLE,143,81,50,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,7,103,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,103,50,14
+    LTEXT           "颜色",IDC_STATIC,14,23,19,8
+    LTEXT           "间距",IDC_STATIC,15,43,21,8
+    LTEXT           "高度",IDC_STATIC,108,41,20,9
+    LTEXT           "宽度",IDC_STATIC,107,23,19,8
+    LTEXT           "间距",IDC_STATIC,12,82,21,8
+    EDITTEXT        IDC_EDIT_SETBRIDGEHEIGHT,145,83,33,12,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "护坡倾角",IDC_STATIC,104,84,35,8
+    GROUPBOX        "桥墩",IDC_STATIC,6,65,191,35
+    GROUPBOX        "护栏",IDC_STATIC,7,5,190,56
+END
+
+IDD_DIALOG_TEXTURE_BP DIALOG DISCARDABLE  0, 0, 186, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "边坡纹理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,5,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,111,50,14
+    LISTBOX         IDC_LIST,11,19,74,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,89,20,82,78,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "纹理类型",IDC_STATIC,5,6,175,102
+END
+
+IDD_DIALOG_TEXTURE_LJ DIALOG DISCARDABLE  0, 0, 187, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路肩纹理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,5,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,111,50,14
+    LISTBOX         IDC_LIST,11,19,74,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,89,20,82,78,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "纹理类型",IDC_STATIC,5,6,175,102
+END
+
+IDD_DIALOG_TEXTURE_BRIDGEHPM DIALOG DISCARDABLE  0, 0, 182, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "桥梁护坡面纹理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,3,111,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,113,50,14
+    LISTBOX         IDC_LIST,9,21,74,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,87,21,82,78,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "纹理类型",IDC_STATIC,3,7,175,102
+END
+
+IDD_DIALOG_TEXTURE_TUNNELDM DIALOG DISCARDABLE  0, 0, 205, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隧道洞门纹理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,5,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,111,50,14
+    LISTBOX         IDC_LIST,11,19,74,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,89,20,103,78,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "纹理类型",IDC_STATIC,5,6,193,102
+END
+
+IDD_DIALOG_TEXTURE_TUNNEL DIALOG DISCARDABLE  0, 0, 186, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隧道内墙纹理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,5,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,111,50,14
+    LISTBOX         IDC_LIST,11,19,74,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,89,20,82,78,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "纹理类型",IDC_STATIC,5,6,175,102
+END
+
+IDD_DIALOG_MODEL_QD DIALOG DISCARDABLE  0, 0, 211, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "桥墩模型"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,134,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,136,50,14
+    LISTBOX         IDC_LIST,11,19,89,103,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BMP,106,21,89,101,SS_NOTIFY | SS_SUNKEN
+    GROUPBOX        "模型类型",IDC_STATIC,5,6,199,124
+END
+
+IDD_DIALOG_AVIPARAMETER DIALOG DISCARDABLE  0, 0, 223, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "动画录制参数"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_FILENAME,14,26,165,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE,181,26,28,14
+    GROUPBOX        "捕捉帧率",IDC_STATIC,10,53,203,30
+    CONTROL         "Slider1",IDC_SLIDER_FRAME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,15,66,160,13
+    EDITTEXT        IDC_EDIT_FRAME,177,65,29,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,5,3,214,147
+    GROUPBOX        "文件名",IDC_STATIC,10,12,203,36
+    GROUPBOX        "捕捉区域",IDC_STATIC,10,89,203,54
+    LTEXT           "宽度",IDC_STATIC,18,105,18,12
+    LTEXT           "高度",IDC_STATIC,17,122,18,12
+    CONTROL         "Slider1",IDC_SLIDER_MOVIE_WIDTH,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,103,138,13
+    CONTROL         "Slider2",IDC_SLIDER_MOVIE_HEIGHT,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,122,138,13
+    EDITTEXT        IDC_EDIT_MOVIE_WIDTH,177,103,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MOVIE_HEIGHT,177,121,29,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确    定",IDOK,45,155,50,14
+    PUSHBUTTON      "取    消",IDCANCEL,133,155,50,14
+END
+
+IDD_DIALOG_RECORDPICTURESPEED DIALOG DISCARDABLE  0, 0, 185, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像采集频率设置"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "参数设置",IDC_STATIC,5,5,169,40
+    CONTROL         "Slider1",IDC_SLIDER_RECORDPICTURE_SPEED,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    9,21,125,12
+    EDITTEXT        IDC_EDIT_RECORDPICTURESPEED,137,20,32,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,14,50,49,14
+    PUSHBUTTON      "取消",IDCANCEL,108,51,49,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "T3DSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "T3DSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "T3DSystem.EXE\0"
+            VALUE "ProductName", "T3DSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_DEMSEPERATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_LOADTEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG_NEWPROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOG_OPENPROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOG_SPACESELECTSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DIALOG_SCHEME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_DIALOG_PLANE_R_l0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DIALOG_PLANEGRAPHIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_ZDMDESIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOG_ZDMGEOFEATURES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_ZDM_SLOPEDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DIALOG_ZDM_R, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_ZDM_STARTLC_H, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG_ZDM_JTPCPD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG_TUNNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DIALOG_BRIDGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG_GZWNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_TUNNNELSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DIALOG_BRIDGESET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DIALOG_TEXTURE_BP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_DIALOG_TEXTURE_LJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_TEXTURE_BRIDGEHPM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DIALOG_TEXTURE_TUNNELDM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_TEXTURE_TUNNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_MODEL_QD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DIALOG_AVIPARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_RECORDPICTURESPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_ZDMGEOFEATURES DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2535, 0x0000, 0x08e3, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x000a, 0x0000, 
+0x0007, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x8080, 0x0080, 0x8000, 0x00ff, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_ZDM_SLOPEDATA DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2584, 0x0000, 0x0da5, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x000a, 0x0000, 
+0x0007, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x8080, 0x0080, 0x8000, 0x00ff, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_ZDM_JTPCPD DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2b4e, 0x0000, 0x1020, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x000a, 0x0000, 
+0x0006, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x8080, 0x0080, 0x8000, 0x00ff, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_TUNNEL DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2711, 0x0000, 0x0982, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x000a, 0x0000, 
+0x0007, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x8080, 0x0080, 0x8000, 0x00ff, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_BRIDGE DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2711, 0x0000, 0x0982, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x000a, 0x0000, 
+0x0007, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x8080, 0x0080, 0x8000, 0x00ff, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_BRIDGESET DLGINIT
+BEGIN
+    IDC_MSFLEXGRID, 0x37a, 303, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x07c0, 0x0000, 0x022c, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xff80, 
+0x0000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0006, 0x0000, 0x0000, 0x0069, 0x0000, 0x5203, 0x0be3, 
+0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 
+0x5f90, 0x0001, 0xcb04, 0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 
+0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "T3DSystem\n\nT3DSys\n\n\nT3DSystem.Document\nT3DSys Document"
+    ID_INDICATOR_MESSAGE    "显示信息"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "T3DSystem"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    ID_INDICATOR_LOADRENDERDEM "【内存/渲染块数】="
+    ID_INDICATOR_FPS        "刷新频率"
+    ID_INDICATOR_TRINUMBER  "三角形数"
+    ID_INDICATOR_FSANGLE    "【俯视角】="
+    ID_INDICATOR_VIEWPOS    "视点坐标"
+    ID_INDICATOR_PROGRESSBAR " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_DEM             "数模读取与分块处理\n数模读取与分块处理"
+    ID_MENU_NEWPROJECT      "新建项目\n新建项目"
+    ID_MENU_OPENPROJECT     "打开项目\n打开项目"
+    ID_DRAWMODE_LINE        "线框模式\n线框模式"
+    ID_DRAWMODE_RENDER      "渲晕模式\n渲晕模式"
+    ID_DRAWMODE_TEXTURE     "纹理模式\n纹理模式"
+    ID_SELECT_SET           "查询标识设置\n查询标识设置"
+    ID_QUERY_COORDINATE     "查询三维坐标\n查询三维坐标"
+    ID_QUERY_DISTENCE       "查询空间距离\n查询空间距离"
+    ID_MENU_STEREO          "双目立体方式\n双目立体方式"
+    ID_MENU_PERSPECTIVE     "透视投影方式\n透视投影方式"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_PROJECTTIONORTHO "正射投影方式\n正射投影方式"
+    ID_ORTHO_ZOOMIN         "放大影像\n放大影像"
+    ID_ORTHO_ZOOMOUT        "缩小影像\n缩小影像"
+    ID_BUTTON32787          "开窗缩放\n开窗缩放"
+    ID_ORTHO_ZOOMORIGIN     "恢复初始大小\n恢复初始大小"
+    ID_ORTHO_PAN            "移动影像\n移动影像"
+    ID_MENU_LINESCHEME      "线路方案控制参数\n线路方案控制参数"
+    ID_MENU_LINEDESIGN      "三维选线设计\n三维选线设计"
+    ID_MENU_LINESAVESCHEME  "保存方案\n保存方案"
+    ID_MENU_PLANE_GRAPH     "平面设计图\n平面设计图"
+    ID_MENU_PLANE_EXIT      "关闭\n关闭"
+    ID_GRAPH_MOVE2          "移动方式2(移动无连接线)\n移动方式2(移动无连接线)"
+    ID_ZOOMWINDOW           "窗口放大\n窗口放大"
+    ID_ZOOMIN               "放大图形\n放大图形"
+    ID_ZOOMOUT              "缩小图形\n缩小图形"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ZDM_GEOFEATURE       "工程地质特征\n工程地质特征"
+    ID_ZDM_DESIGN_ADDPT     "增加变坡点\n增加变坡点"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ZDM_TUNNEL           "隧道数据\n隧道数据"
+    ID_ZDM_BRIDGE           "桥梁数据\n桥梁数据"
+    ID_PROGRESS             " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_ZDMDESIGN       "纵断面设计\n纵断面设计"
+    ID_MENU_BUILD3DLINEMODLE "线路三维建模\n线路三维建模"
+    ID_FLY_ROUTINSCHEMELINE "沿方案线漫游\n沿方案线漫游"
+    ID_FLY_STOP             "停止漫游\n停止漫游"
+    ID_MENU_TUNNELSET       "隧道参数设置\n隧道参数设置"
+    ID_MENU_BRIDGESET       "桥梁参数设置\n桥梁参数设置"
+    ID_MENUITEM32809        "路肩纹理\n路肩纹理"
+    ID_PATH_MANUINPUT       "手动设置路径\n设置路径"
+    ID_PATH_SETUP           "路径坐标插值\n路径坐标插值"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ZDM_GRAPHBRIDGE      "桥梁设计/图形方式"
+    ID_ZDM_GRAPHTUNNEL      "隧道设计/图形方式"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_ZDM_EXIT        "退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FLYPATH_SAVE         "保存飞行路径\n保存飞行路径"
+    ID_FLY_DISPALYPATH      "显示飞行路径\n显示飞行路径"
+    ID_FLY_PAUSE            "暂停漫游\n暂停漫游"
+    ID_FLY_ONESTEP          "单步前进\n单步前进"
+    ID_FLY_OPENPATH         "打开飞行路径\n打开飞行路径"
+    ID_FLY_PLAYPAUSE        "开始/暂停漫游\n开始/暂停漫游"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_OUPTCAD3DLINEMODEL "输出线路三维模型到CAD\n输出线路三维模型到CAD"
+    ID_AVI_PARAMETER        "动画录制参数\n动画录制参数"
+    ID_MENUITEM32838        "开始录制动画\n开始录制动画"
+    ID_AVI_START            "开始录制动画\n开始录制动画"
+    ID_AVI_PAUSE            "暂停录制动画\n暂停录制动画"
+    ID_AVI_END              "结束录制动画\n结束录制动画"
+    ID_SAVEPICTURE_SPEED    "图像采集频率\n图像采集频率"
+    ID_GRAPH_MOVE1          "移动方式1(移动有连接线)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_MOVE3          "指定中心点移动\n指定中心点移动"
+    ID_ZOOMINOUTDYNAMIC     "选中点为中心缩小/放大\n选中点为中心缩小/放大"
+    ID_MENU_PLANE_FIRSTSCREEN "显示首屏\n显示首屏"
+    ID_MENU_PLANE_PRESCREEN "前一屏幕\n前一屏幕"
+    ID_MENU_PLANE_NEXTSCREEN "显示下一屏\n显示下一屏"
+    ID_MENU_PLANE_OUTCAD    "输出图形到CAD\n输出图形到CAD"
+    ID_BUTTON32858          "ID_MENU_PLANE_FULLSCREEN"
+    ID_BUTTON32861          "ID_MENU_PLANE_FIRSTSCREEN"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\T3DSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

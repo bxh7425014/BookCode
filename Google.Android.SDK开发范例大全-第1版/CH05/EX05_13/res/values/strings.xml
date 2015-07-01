@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">按圖換桌布</string>
+  <string name="app_name">EX05_13</string>
+  <string name="app_about">重要</string>
+  <string name="my_gallery_text_pre">已經更換桌布</string>
+  <string name="my_gallery_text_no">已取消</string>
+  <string name="app_about_msg">確定要換桌布嗎!?</string>
+  <string name="str_ok">確定</string>
+  <string name="str_no">取消</string> 
+</resources>

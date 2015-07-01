@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<Button 
+		android:text="播放音乐" 
+		android:id="@+id/ButtonPlay" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>								<!-- 播放音乐按钮 -->									
+	<Button 
+		android:text="暂停音乐" 
+		android:id="@+id/ButtonPause" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>								<!-- 暂停音乐按钮 -->
+	<Button 
+		android:text="停止音乐" 
+		android:id="@+id/ButtonStop" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>								<!-- 停止音乐按钮 -->
+	<Button 
+		android:text="增大音乐" 
+		android:id="@+id/ButtonVAdd" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>								<!-- 增大音乐按钮 -->
+	<Button 
+		android:text="降低音乐" 
+		android:id="@+id/ButtonVReduce" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>								<!-- 降低音乐按钮 -->
+</LinearLayout>

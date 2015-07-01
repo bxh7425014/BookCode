@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Android底层是基于什么操作系统？</string>
+    <string name="app_name">Examples_04_07</string>
+    <string name="RadioButton1">Windows</string>
+    <string name="RadioButton2">Linux</string>
+    <string name="RadioButton3">Moc os</string>
+    <string name="RadioButton4">Java</string>
+</resources>

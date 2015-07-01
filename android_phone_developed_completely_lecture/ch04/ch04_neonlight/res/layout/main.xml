@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:id="@+id/textview1" android:layout_width="300dp"
+		android:layout_height="300dp" android:layout_gravity="center" />
+	<TextView android:id="@+id/textview2" android:layout_width="240dp"
+		android:layout_height="240dp" android:layout_gravity="center" />
+	<TextView android:id="@+id/textview3" android:layout_width="180dp"
+		android:layout_height="180dp" android:layout_gravity="center" />
+	<TextView android:id="@+id/textview4" android:layout_width="120dp"
+		android:layout_height="120dp" android:layout_gravity="center" />
+	<TextView android:id="@+id/textview5" android:layout_width="60dp"
+		android:layout_height="60dp" android:layout_gravity="center" />
+</FrameLayout>
+ 

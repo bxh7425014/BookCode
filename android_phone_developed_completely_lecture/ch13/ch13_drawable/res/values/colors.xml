@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="solid_blue">#0000FF</drawable>
+    <drawable name="solid_yellow">#FFFF00</drawable>
+    <color name="solid_blue">#0000FF</color>
+    <color name="solid_yellow">#FFFF00</color>  
+</resources>
+ 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX09_06</string>
+  <string name="app_name">EX09_06</string>
+  <string name="str_longitude">經度(Longitude)：</string>
+  <string name="str_latitude">緯度(Latitude)：</string>
+  <string name="str_err_address">地址不存在</string>
+  <string name="str_err_location">無法取得Location</string>
+  <string name="str_my_location">目前所在地址：</string>
+  <string name="str_default_address">台北市圓山捷運站</string>
+  <string name="str_button1">查詢地址</string>
+  <string name="str_button2">+</string>
+  <string name="str_button3">-</string>
+</resources>

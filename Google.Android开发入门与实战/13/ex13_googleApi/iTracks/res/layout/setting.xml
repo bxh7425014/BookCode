@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/setting_tips" 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/setting_gps" />
+		
+
+    <Spinner android:id="@+id/setting_gps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spinner_gps_prompt"
+    />
+		
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/setting_map_level" />
+
+		
+    <Spinner android:id="@+id/setting_map_level"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spinner_map_prompt"
+    />
+		
+	<Button android:id="@+id/setting_submit" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/setting_submit" />
+
+</LinearLayout>

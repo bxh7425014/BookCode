@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * This file is a copy of the file from the eyes-free project:
+ * http://code.google.com/p/eyes-free/source/browse/#svn/trunk/AndroidTTS/res/values
+ -->
+
+<resources  xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="language_entries">
+        <item>Afrikaans [af]</item>
+        <item>Bosnian [bs]</item>
+        <item>Chinese (Cantonese) [zh-yue]</item>
+        <item>Chinese (Mandarin) [zh]</item>
+        <item>Croatian [hr]</item>
+        <item>Czech [cz]</item>
+        <item>Dutch [nl]</item>
+        <item>English (American) [en-us]</item>
+        <item>English (British) [en-uk]</item>
+        <item>Esperanto [eo]</item>
+        <item>Finnish [fi]</item>
+        <item>French [fr]</item>
+        <item>German [de]</item>
+        <item>Greek [el]</item>
+        <item>Hindi [hi]</item>
+        <item>Hungarian [hu]</item>
+        <item>Icelandic [is]</item>
+        <item>Indonesian [id]</item>
+        <item>Italian [it]</item>
+        <item>Kurdish [ku]</item>
+        <item>Latin [la]</item>
+        <item>Macedonian [mk]</item>
+        <item>Norwegian [no]</item>
+        <item>Polish [pl]</item>
+        <item>Portuguese [pt]</item>
+        <item>Romanian [ro]</item>
+        <item>Russian [ru]</item>
+        <item>Serbian [sr]</item>
+        <item>Slovak [sk]</item>
+        <item>Spanish [es]</item>
+        <item>Spanish (Latin America) [es-la]</item>
+        <item>Swahili [sw]</item>
+        <item>Swedish [sv]</item>
+        <item>Tamil [ta]</item>
+        <item>Turkish [tr]</item>
+        <item>Vietnamese [vi]</item>
+        <item>Welsh [cy]</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>af</item>
+        <item>bs</item>
+        <item>zh-rHK</item>
+        <item>zh</item>
+        <item>hr</item>
+        <item>cz</item>
+        <item>nl</item>
+        <item>en-rUS</item>
+        <item>en-rGB</item>
+        <item>eo</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>el</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>is</item>
+        <item>id</item>
+        <item>it</item>
+        <item>ku</item>
+        <item>la</item>
+        <item>mk</item>
+        <item>no</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sr</item>
+        <item>sk</item>
+        <item>es</item>
+        <item>es-rMX</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>tr</item>
+        <item>vi</item>
+        <item>cy</item>
+    </string-array>
+
+    <string-array name="rate_entries">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Very fast</item>
+    </string-array>
+    <string-array name="rate_values">
+        <item>60</item>
+        <item>100</item>
+        <item>140</item>
+        <item>180</item>
+        <item>220</item>
+    </string-array>
+</resources>

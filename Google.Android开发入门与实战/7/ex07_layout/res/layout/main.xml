@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:id="@+id/button0"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="非洲草原地图：FrameLayout的使用" />
+	<Button android:id="@+id/button1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="个性化表单:RelativeLayout的使用" />
+	<Button android:id="@+id/button2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="LinearLayout和RelativeLayout互助使用" />
+	<Button android:id="@+id/button3"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="整齐的表单：TableLayout的使用" />
+</LinearLayout>

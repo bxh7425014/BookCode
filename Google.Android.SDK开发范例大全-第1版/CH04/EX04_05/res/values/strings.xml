@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+  <string name="app_name">EX04_05</string>
+  <string name="str_title">我的消費券採購單</string>
+  <string name="str_checkbox1">泰國機票一張</string>
+  <string name="str_checkbox2">iPhone一台</string>
+  <string name="str_checkbox3">Android整合應用範例集一本</string>
+</resources>

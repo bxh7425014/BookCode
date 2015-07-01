@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="CheckedTextView"
+		android:background="#FFF" android:textColor="#000" android:gravity="center" />
+	<ListView android:id="@+id/lvCheckedTextView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="RadioButton"
+		android:background="#FFF" android:textColor="#000" android:gravity="center"  />
+	<ListView android:id="@+id/lvRadioButton"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="CheckBox"
+		android:background="#FFF" android:textColor="#000" android:gravity="center"  />
+	<ListView android:id="@+id/lvCheckBox" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <string name="hello">Hello World, EX08_10</string> 
+  <string name="app_name">EX08_10</string>
+  <string name="str_title">輸入圖片網址：</string>
+  <string name="str_button1">預覽圖片</string>
+  <string name="str_button2">設為桌面</string> 
+</resources> 

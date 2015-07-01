@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView
+	    android:text="第一列"
+	    android:gravity="center_horizontal"
+	    android:background="#aa0000"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+	
+	<TextView
+	    android:text="第二列"
+	    android:gravity="center_horizontal"
+	    android:background="#00aa00"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+	
+	<TextView
+	    android:text="第三列"
+	    android:gravity="center_horizontal"
+	    android:background="#0000aa"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+	
+	<TextView
+	    android:text="第四列"
+	    android:gravity="center_horizontal"
+	    android:background="#aaaa00"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+</LinearLayout>

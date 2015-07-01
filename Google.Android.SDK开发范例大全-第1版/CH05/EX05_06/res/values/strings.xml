@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">震動模式, EX05_06</string>
+  <string name="app_name">EX05_06</string>
+  <string name="str_text1">短震動</string>
+  <string name="str_text2">長震動</string>
+  <string name="str_text3">節奏震動</string>
+  <string name="str_ok">執行震動中</string>  
+  <string name="str_end">震動結束!!</string> 
+</resources>

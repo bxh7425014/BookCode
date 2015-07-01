@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/avatar">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="drawable"
+		android:textColor="@drawable/solid_yellow" android:background="@drawable/solid_blue" android:layout_marginTop="200dp"/>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="color"
+		android:textColor="@color/solid_yellow" android:background="@color/solid_blue"
+		android:layout_marginTop="10dp" />
+	<TextView android:id="@+id/textview1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"	
+		android:layout_marginTop="10dp"  android:text ="drawable（Java代码)" />
+	<TextView android:id="@+id/textview2" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"	
+		android:layout_marginTop="10dp"  android:text ="drawable（图像背景，Java代码)" />
+
+</LinearLayout>
+ 

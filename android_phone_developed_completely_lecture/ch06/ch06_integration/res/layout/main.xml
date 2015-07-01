@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView  android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="英文词典" />
+
+	<AutoCompleteTextView android:id="@+id/actvWord"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="10dp" android:singleLine="true" />
+	<Button android:id="@+id/btnSelectWord" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="查单词" />
+	<TextView  android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="联系人列表，单击选项菜单可删除联系人" />
+	<ListView android:id="@+id/lvContacts" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  android:layout_marginTop="10dp"/>
+
+</LinearLayout>

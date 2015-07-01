@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<CheckBox android:id="@+id/chkOpenCloseWifi"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<TextView android:id="@+id/tvScanResult" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  />
+	<TextView android:id="@+id/tvWifiInfo" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="20sp"/>
+
+	<TextView android:id="@+id/tvWifiConfigurations"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" android:textSize="20sp"/>
+
+</LinearLayout>

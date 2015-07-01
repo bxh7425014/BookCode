@@ -1,0 +1,6 @@
+calendar.png,多功能日历,5
+zxyu.png,在线阅读软件,3.5
+ydcd.png,有道词典,4
+qq.png,aQQ 1.1,4.5
+jscb.png,金山词霸,5 
+cctv.png,NBA CCTV-5 直播时间表,4.5

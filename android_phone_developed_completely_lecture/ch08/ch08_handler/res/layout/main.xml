@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/tvCount" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="20dp" />
+	<Button android:id="@+id/btnStart" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="开始计数" />
+	<Button android:id="@+id/btnStop" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="停止计数" />
+	<Button android:id="@+id/btnShowToast" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="15秒后显示Toast信息框" />
+
+</LinearLayout>

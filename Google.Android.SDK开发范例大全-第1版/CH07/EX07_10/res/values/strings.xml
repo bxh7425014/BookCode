@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX07_10</string>
+  <string name="app_name">EX07_10</string>
+  <string name="str_button1">按我播放音樂</string> 
+  <string name="str_button2">停止播放音樂</string> 
+  <string name="str_start">正在播放音樂...</string> 
+  <string name="str_pause">暫停(再按一次繼續)...</string> 
+  <string name="str_finished">音樂播放完畢</string> 
+  <string name="str_stopped">已停止播放音樂</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyActivity!</string>
+    <string name="app_name">Sample4_3</string>
+    <string name="act_name">索引法绘制三角形对</string>
+</resources>

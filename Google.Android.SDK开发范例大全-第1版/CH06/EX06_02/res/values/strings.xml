@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <string name="hello">Hello World, EX06_02</string> 
+  <string name="app_name">EX06_02</string>
+  <string name="str_title">如何取得電池計量？</string>
+  <string name="str_button1">按我取得電池計量</string> 
+  <string name="str_button2">返回</string> 
+  <string name="str_dialog_title">系統資訊</string> 
+  <string name="str_dialog_body">電池計量：</string> 
+</resources> 

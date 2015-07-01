@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="category">
+<item>Walking</item>
+<item>Sports</item>
+<item>Hiking</item>
+<item>Cycle</item>
+<item>Motorcycle</item>
+<item>Car</item>
+<item>Ship</item>
+<item>Train</item>
+<item>Plane</item>
+</string-array>
+</resources>

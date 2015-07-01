@@ -1,0 +1,15 @@
+<resources>
+    <!-- 登录 -->
+	<dimen name="login_textsize">20dp</dimen>
+	<dimen name="login_edittext_marginleft">10dp</dimen>
+	<dimen name="login_edittext_marginright">20dp</dimen>
+	<dimen name="login_textview_marginleft">20dp</dimen>
+	<dimen name="login_loginbutton_marginright">20dp</dimen>
+	<dimen name="login_account_password_margintop">15dp</dimen>	 	 
+	<dimen name="login_password_login_margintop">15dp</dimen>	 	 
+	
+	<dimen name="login_loginbutton_width">70dp</dimen>
+	<dimen name="login_loginbutton_height">40dp</dimen>
+	
+
+</resources>

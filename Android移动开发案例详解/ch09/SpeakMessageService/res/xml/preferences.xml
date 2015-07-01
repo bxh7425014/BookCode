@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen android:persistent="false" android:title="@string/edit_whitelist" android:summary="@string/edit_whitelist_summary" android:key="@string/editWhitelist" android:enabled="true" android:selectable="true"/>
+	<PreferenceScreen android:persistent="false" android:enabled="true" android:selectable="true" android:summary="@string/advanced_settings_summary" android:title="@string/advanced_settings">
+		<ListPreference android:entries="@array/language_entries" android:defaultValue="en-us" android:entryValues="@array/language_values" android:enabled="true" android:summary="@string/language_summary" android:key="@string/ttsLanguage" android:title="@string/language" android:selectable="true"/>
+		<ListPreference android:entries="@array/rate_entries" android:defaultValue="140" android:entryValues="@array/rate_values" android:enabled="true" android:summary="@string/read_speed_summary" android:key="@string/ttsSpeed" android:title="@string/read_speed" android:selectable="true"/>
+		<EditTextPreference android:persistent="true" android:key="@string/delayReadingTime" android:summary="@string/delay_readout_summary" android:title="@string/delay_readout" android:digits="0123456789" android:maxLength="2"></EditTextPreference>	
+	</PreferenceScreen>
+</PreferenceScreen>

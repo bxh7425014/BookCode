@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		<Button android:id="@+id/btnAddText" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="添加文本"/>
+		<Button android:id="@+id/btnAddImage" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="添加图像"/>
+		<Button android:id="@+id/btnRemove" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="删除当前项"/>
+		<Button android:id="@+id/btnRemoveAll" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="清空"/>
+		
+
+	</LinearLayout>
+	<ListView android:id="@+id/lvDynamic" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+</LinearLayout>

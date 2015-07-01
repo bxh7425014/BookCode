@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="AudioPlayertest.js"></script>
+<script type="text/javascript" src="Multimedia_run.js"></script>
+<script type="text/javascript" src="../js/util.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+ 
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="../res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showAudioPlayertest();"><img src="../res/back.png" /></a></td>			
+		</tr>
+	</table>
+</div>
+<div id="AudioPlayertest" class="bodyStyle">
+	<div id="textdivAPOpen" class="mStyle"	onclick="clickItAPopen();"><a href="#" class="method_style">open (file)</a></div>	
+	<div id="textdivAPPlay" class="mStyle"	onclick="clickItAPplay();"><a href="#" class="method_style">play</a></div>
+	<div id="textdivAPPause" class="mStyle"	onclick="clickItAPpause();"><a href="#" class="method_style">pause</a></div>	
+	<div id="textdivAPResume" class="mStyle"	onclick="clickItAPresume();"><a href="#" class="method_style">resume</a></div>
+	<div id="textdivAPStop" class="mStyle"	onclick="clickItAPstop();"><a href="#" class="method_style">stop</a></div>
+	<div id="textdivAPOnStatusChange" class="mStyle" onclick="clickItAPOnStatusChange();"><a href="#" class="method_style">onStateChange</a></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop"  href="Multimedia.html"><img src="../res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

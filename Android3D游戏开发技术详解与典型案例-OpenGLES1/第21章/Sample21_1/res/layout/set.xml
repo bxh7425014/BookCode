@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout01" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/help"
+    >  
+<CheckBox 
+	android:layout_x="40dip" 
+	android:layout_y="40dip"
+	android:text="@string/sound"
+	android:id="@+id/CheckBox01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</CheckBox>
+<TextView 
+	android:layout_x="200dip" 
+	android:layout_y="90dip"
+	android:text="@string/gamemusicvolume"
+	android:id="@+id/TextView01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</TextView>
+
+<SeekBar 
+	android:layout_x="40dip" 
+	android:layout_y="110dip"
+	android:id="@+id/SeekBar01" 
+    android:layout_width="400dip" 
+    android:layout_height="wrap_content"
+    android:max="100"
+    android:progress="20">
+</SeekBar>
+
+<TextView 
+	android:layout_x="200dip" 
+	android:layout_y="160dip"
+	android:text="@string/backmusicvolume"
+	android:id="@+id/TextView02" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</TextView>
+<SeekBar 
+	android:layout_x="40dip" 
+	android:layout_y="180dip"
+	android:id="@+id/SeekBar02"  
+    android:layout_width="400dip" 
+    android:layout_height="wrap_content"
+    android:max="100"
+    android:progress="20">
+</SeekBar>
+</AbsoluteLayout>

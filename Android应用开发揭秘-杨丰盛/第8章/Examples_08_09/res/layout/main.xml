@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="10dip">
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="打开蓝牙"
+		android:onClick="onEnableButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="关闭蓝牙"
+		android:onClick="onDisableButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="允许搜索"
+		android:onClick="onMakeDiscoverableButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="开始搜索"
+		android:onClick="onStartDiscoveryButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="客户端"
+		android:onClick="onOpenClientSocketButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="服务器端"
+		android:onClick="onOpenServerSocketButtonClicked" />
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="OBEX服务器"
+		android:onClick="onOpenOBEXServerSocketButtonClicked" />
+
+</LinearLayout>

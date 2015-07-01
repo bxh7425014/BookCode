@@ -1,0 +1,11 @@
+<resources>
+	<attr name="iconPosition">
+		<enum name="left" value="0" />
+		<enum name="right" value="1" />
+	</attr>
+
+	<declare-styleable name="IconTextView">
+		<attr name="iconSrc" format="reference" />
+		<attr name="iconPosition" />
+	</declare-styleable>
+</resources>

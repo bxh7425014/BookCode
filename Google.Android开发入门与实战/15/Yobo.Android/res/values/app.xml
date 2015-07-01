@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Yobo.Android</string>
+	<string name="app_author">IceskYsl@1.s.t</string>
+	
+
+	<string name="app_title">
+		YOBO: 发掘你的音乐DNA!
+	</string>
+	<string name="app_desc">
+		YOBO要为你解决以下问题：\n
+		想听歌却不知道听什么歌；\n
+		工作忙碌后再也没空去找歌；\n
+		对着搜索引擎不知道搜什么歌；\n
+		挖掘排行榜外那些鲜为人知的好歌！\n
+		YOBO知道音乐对生活的重要，我们用尽一些办法，为你找到属于你的音乐和音乐生活！
+</string>
+
+	<string name="app_start">
+		尚未绑定你在Yobo上的帐号:
+		如果你有帐号，选择“授权”；
+		如果你无帐号，选择“注册”;
+		其会自动打开手机浏览器在Yobo网站上安全操作.
+	</string>
+
+</resources>

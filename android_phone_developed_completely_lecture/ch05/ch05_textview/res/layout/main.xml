@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/textview1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textColor="#0000FF"
+		android:background="#FFFFFF" android:text="可以在这里设置TextView部件的文本" />
+	<TextView android:id="@+id/textview2" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="更复杂的设置"
+		android:textSize="20dp" android:textColor="#FF00FF"
+		android:background="#FFFFFF" android:padding="30dp"
+		android:layout_margin="30dp" />
+	<TextView android:id="@+id/textview3" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textColor="#FF0000"
+		android:background="#FFFFFF" android:text="可以在这里设置TextView部件的文本" />
+
+	<TextView android:id="@+id/textview4" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="30dp"
+		android:text="在代码中设置属性" />
+
+
+</LinearLayout>

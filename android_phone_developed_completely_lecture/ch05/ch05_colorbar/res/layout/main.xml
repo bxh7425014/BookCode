@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ProgressBar android:id="@+id/progressBarHorizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" style="?android:attr/progressBarStyleHorizontal"
+		android:max="100" android:progress="30" android:secondaryProgress="60"
+		android:progressDrawable="@drawable/barcolor" />
+	<SeekBar android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:max="100"
+		android:layout_marginTop="20dp" android:progress="30"
+		android:progressDrawable="@drawable/barcolor" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="20dp"
+		android:text="Face拖动条" />
+
+	<SeekBar android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:max="100"
+		android:progress="30" android:progressDrawable="@drawable/barface" />
+
+
+
+</LinearLayout>

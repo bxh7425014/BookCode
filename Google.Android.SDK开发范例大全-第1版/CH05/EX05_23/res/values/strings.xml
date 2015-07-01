@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX05_23</string>
+  <string name="app_name">EX05_23</string>
+  <string name="str_button1">按我旋轉為LANDSCAPE</string>
+  <string name="str_button2">按我旋轉為PORTRAIT</string>
+  <string name="str_onConfigurationChanged">onConfigurationChanged事件發生了!</string>
+  <string name="str_onConf_LANDSCAPE">視窗變更為LANDSCAPE事件發生了!</string>
+  <string name="str_onConf_PORTRAIT">視窗變更為PORTRAIT事件發生了!</string>
+</resources>

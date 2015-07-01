@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string name="app_name">新闻订阅</string>
+	<string name="widget_name">新闻订阅器</string>
+	<string name="str_input">请输入你要订阅新闻的RSS网址：</string>
+	<string name="str_order">订阅</string>
+	<string name="str_disorder">取消订阅</string>
+	<string name="str_autonext">自动翻页</string>
+	<string name="str_autotime">自动翻页时间设定（S）</string>
+	<string name="str_save">保存</string>
+	<string name="str_exit">退出</string>
+</resources>

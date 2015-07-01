@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">显示数据库中的数据</string>
+    <string name="app_name">Examples_06_07</string>
+</resources>

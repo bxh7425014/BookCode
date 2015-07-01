@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">实时壁纸</string>
+    <string name="settings_title">实时壁纸设置</string>
+    <string name="description">实时壁纸演示</string>
+    <string name="preference_radius_title">配置圆的半径</string>
+    <string name="preference_radius_summary">持续触摸屏幕显示圆的轨迹</string>
+</resources>

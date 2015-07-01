@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="6dip"
+			android:text="手势名" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText android:id="@+id/gesture_name"
+			android:layout_width="0dip" android:layout_weight="1.0"
+			android:layout_height="wrap_content" android:maxLength="40"
+			android:singleLine="true" />
+
+	</LinearLayout>
+
+	<android.gesture.GestureOverlayView
+		android:id="@+id/gestures_overlay" android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight="1.0"
+		android:gestureStrokeType="multiple" />
+</LinearLayout>

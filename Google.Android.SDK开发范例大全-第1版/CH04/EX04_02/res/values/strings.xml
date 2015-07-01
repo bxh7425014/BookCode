@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+  <string name="app_name">EX04_02</string>
+  <string name="str_textview1">圖片按鈕的狀態為:未知</string>
+  <string name="str_button1">一般按鈕</string>
+</resources>

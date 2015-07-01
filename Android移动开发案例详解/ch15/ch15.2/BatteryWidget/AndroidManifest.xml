@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.xmobileapp.BatteryWidget"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:name=".BatteryWidget" android:label="@string/widget_name"> 
+           <intent-filter> 
+               <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> 
+               <action android:name="com.xmobileapp.TestSendAction"/>
+           </intent-filter> 
+           <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_def" /> 
+       </receiver>        
+   	   <service android:name=".BatteryWidget$BatteryService" /> 
+       <receiver android:name=".BatteryReceiver" android:label="BatteryReceiver"> 
+           <intent-filter> 
+               <action android:name="android.intent.action.BATTERY_CHANGED" /> 
+           </intent-filter> 
+       </receiver> 
+       <activity android:name=".BatteryStatus">
+       </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 

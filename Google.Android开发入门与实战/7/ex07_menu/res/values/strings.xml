@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ActivityMenu</string>
+	<string name="app_name">HelloMenu</string>
+	<string name="button1">button1</string>
+	<string name="button2">button2</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">字符串资源</string>
+	<string name="app_name">资源</string>
+
+
+	<string name="url_string"> http://nokiaguy.blogjava.net </string>
+	<string name="quoted_string">"quoted'string"</string>
+	<string name="double_quoted_string">\"double quotes\"</string>
+	<string name="java_format_string">今天是 %1$s，当前的温度： %2$s.</string>
+	<string name="tagged_string">
+		 
+			<h1><i><font color='#0000FF'>every one</font></i></h1>
+	
+	</string>
+
+ 
+
+</resources>

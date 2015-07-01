@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/appwidget_bg">
+
+<ImageButton 
+android:layout_width="35dip" 
+android:layout_height="fill_parent" 
+android:id="@+id/iv_last" 
+android:src="@drawable/appwidget_last"
+android:background="@android:color/transparent"
+android:scaleType="center" android:paddingTop="15px">
+</ImageButton>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:id="@+id/tv_title"></TextView><TextView 
+android:id="@+id/tv_news" 
+android:layout_height="50px" 
+android:text="No News" android:gravity="center_vertical|center_horizontal" android:layout_width="200px">
+</TextView>
+<ImageButton 
+android:layout_width="35dip" 
+android:layout_height="fill_parent"
+android:id="@+id/iv_next" 
+android:src="@drawable/appwidget_next"
+android:background="@android:color/transparent"
+android:scaleType="center" android:paddingTop="15px">
+</ImageButton>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.eoeandroid.layout" android:versionCode="1"
+	android:versionName="1.0.0">
+	<application android:icon="@drawable/icon"
+		android:label="@string/app_name">
+		<activity android:name=".ActivityMain"
+			android:label="ActivityMain，程序主界面">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ActivityLayout"
+			android:label="演示混合Layout布局">
+		</activity>
+		<activity android:name=".ActivityRelativeLayout"
+			android:label="演示RelativeLayout布局">
+		</activity>
+		<activity android:name=".ActivityFrameLayout"
+			android:label="非洲地图">
+		</activity>
+
+		<activity android:name=".ActivityTableLayout"
+			android:label="TableLayout布局">
+		</activity>
+
+	</application>
+</manifest>

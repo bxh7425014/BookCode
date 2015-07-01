@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<net.blogjava.mobile.widget.LabelEditText
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		labelText="姓名：" labelFontSize="16" labelPosition="left" />
+	<net.blogjava.mobile.widget.LabelEditText
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		labelText="兴趣爱好" labelFontSize="26" labelPosition="top" android:layout_marginTop="20dp" />
+</LinearLayout>
+     

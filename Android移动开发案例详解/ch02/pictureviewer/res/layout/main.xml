@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<view class="com.xmobileapp.pictureviewer.PictureShow$PictureSlideView"
+    android:id="@+id/grid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:listSelector="@drawable/grid_background"
+/>
+    
+</RelativeLayout>

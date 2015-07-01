@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX03_06</string>
+  <string name="app_name">EX03_06</string>
+  <string name="str_text_view1">套用DavidStyleText1</string>
+  <string name="str_text_view2">套用DavidStyleText2</string>
+</resources>

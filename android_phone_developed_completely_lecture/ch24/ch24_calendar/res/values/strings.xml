@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main</string>
+	<string name="recordremind_name">记录信息</string>
+	<string name="remindsetting_name">提醒设置</string>
+
+	<string name="app_name">万年历</string>
+	<string name="about">关于</string>
+	<string-array name="week_name">
+		<item>日</item>
+		<item>一</item>
+		<item>二</item>
+		<item>三</item>
+		<item>四</item>
+		<item>五</item>
+		<item>六</item>
+	</string-array>
+	<string-array name="month_name">
+		<item>一月</item>
+		<item>二月</item>
+		<item>三月</item>
+		<item>四月</item>
+		<item>五月</item>
+		<item>六月</item>
+		<item>七月</item>
+		<item>八月</item>
+		<item>九月</item>
+		<item>十月</item>
+		<item>十一月</item>
+		<item>十二月</item>
+	</string-array>
+	<string name="helpMsg">	
+		支持的日期范围：1901-1-1至2100-12-31\n\n
+
+		****今天****\n
+		切换到当前的日期，用红色框围起来的是当前日期\n\n
+
+		****指定日期****\n
+		切换到日期范围内的任意日期\n\n
+
+		****记录/提醒****\n
+		1.可作为日记使用，每一天可以建立任意多个记录（包括标题和内容），如果某天有记录，在日历中显示的天前面会显示一个星号（*）\n
+		2.可以为任何一个记录设置提醒时间（未来的任何时间，精确到分钟），当到了所设置的时间后，系统会通过声音和震动提醒用户，可以利用该功能进行提醒，例如，在10:00开会，可以设置成9:30时提醒一下做一些准备\n\n
+
+		****天气预报****\n
+		可以获得全国所有城市当前的天气预报信息（该功能需要访问互联网）\n\n
+
+		****详细信息****\n
+		查询当年的生肖、农历日期、公历和农历节日、宜忌等信息
+		
+
+
+</string>
+</resources>

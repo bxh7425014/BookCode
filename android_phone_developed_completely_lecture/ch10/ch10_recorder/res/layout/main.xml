@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal" android:layout_marginTop="20dp">
+		<Button android:id="@+id/btnRecord"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="录音" />
+		<Button android:id="@+id/btnStop" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="停止" />
+		<Button android:id="@+id/btnPlay" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="播放" />
+		<Button android:id="@+id/btnDelete" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="删除" />
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:id="@+id/btnAddMenu" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="添加10个菜单项" />
+	<EditText android:id="@+id/edittext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<TextView android:id="@+id/textview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="已被关联上下文菜单"/>
+
+</LinearLayout>

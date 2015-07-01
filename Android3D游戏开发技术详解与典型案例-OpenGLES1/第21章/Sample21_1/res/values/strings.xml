@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GL_Demo!</string>
+    <string name="app_name">抢滩登陆</string>
+    <string name="sound">声音</string>
+    <string name="gamemusicvolume">游戏音乐音量</string>
+    <string name="backmusicvolume">背景音乐音量</string>
+</resources>

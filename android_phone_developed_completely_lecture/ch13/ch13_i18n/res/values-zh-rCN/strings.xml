@@ -1,0 +1,5 @@
+<resources>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="ignore">忽略</string>
+</resources>

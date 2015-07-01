@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="start">
+你尚未创建跟踪.\n
+欢迎使用iTracks,你可以使用iTracks记录你的轨迹,并能将其显示在地图上.点击菜单，选择“新建跟踪”
+或者查看其它功能,预祝使用愉快!
+</string>
+<string name="version_text">Ver 1.0.0 \n</string>
+    <string name="helps_text">这个应用用来读取你的GPS信息,并将其显示在Map上你可以建立多个跟踪，可以设定个人的配置信息,主要功能说明如下 .
+在主界面上点击菜单，选择需要的动作:\n
+<b>新建跟踪:</b> 创建一个新的跟踪记录;\n
+<b>继续跟踪:</b> 选择跟踪记录列表中记录,可以继续跟踪;\n
+<b>个人设置:</b> 配置个性化信息;\n
+<b>帮助信息:</b> 打开iTracks的帮助信息;\n
+<b>退出:</b> 退出应用.\n
+
+    </string>
+    <string name="author_text">Name:IceskYsl \nEmail:Iceskysl@gmail.com \nBlog:http://iceskysl.1sters.com</string>
+
+</resources>
+    

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">成功添加实时文件夹（电话本）</string>
+    <string name="app_name">实时文件夹</string>
+</resources>

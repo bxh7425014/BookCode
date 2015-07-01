@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: T3DSystem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10F.tmp" with contents
+[
+glaux.lib glu32.lib glut32.lib OpenGL32.LIB glew32.lib oci.lib ImageLoad.lib ImageObjectD.lib vfw32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/T3DSystem.pdb" /debug /machine:I386 /out:"Debug/T3DSystem.exe" /pdbtype:sept 
+".\Debug\3DSModel.obj"
+".\Debug\alCulateF.obj"
+".\Debug\AllocUnAlloc2D3D.obj"
+".\Debug\AVICapture.obj"
+".\Debug\AviParameter1.obj"
+".\Debug\BridgeData.obj"
+".\Debug\BridgeSet.obj"
+".\Debug\ClientCapture.obj"
+".\Debug\Delaunay.obj"
+".\Debug\DemLoad.obj"
+".\Debug\DesingScheme.obj"
+".\Debug\DialogInputData.obj"
+".\Debug\DXF.obj"
+".\Debug\font.obj"
+".\Debug\GetDemInsertValue.obj"
+".\Debug\Load3DS.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MainToolBar.obj"
+".\Debug\ModelMangerQD.obj"
+".\Debug\msflexgrid.obj"
+".\Debug\NewProject.obj"
+".\Debug\NewScheme.obj"
+".\Debug\OCIclass.obj"
+".\Debug\OpenProject.obj"
+".\Debug\picture.obj"
+".\Debug\PlaneGraphic.obj"
+".\Debug\PLaneRL0.obj"
+".\Debug\RecordPictureSpeed.obj"
+".\Debug\rowcursor.obj"
+".\Debug\Snow.obj"
+".\Debug\SpaceSearchSet.obj"
+".\Debug\StdAfx.obj"
+".\Debug\T3DSystem.obj"
+".\Debug\T3DSystemDoc.obj"
+".\Debug\T3DSystemView.obj"
+".\Debug\TextProgressCtrl.obj"
+".\Debug\Texture.obj"
+".\Debug\TextureBP.obj"
+".\Debug\TextureLJ.obj"
+".\Debug\TextureLoad.obj"
+".\Debug\TextureQLHpm.obj"
+".\Debug\TextureTunnel.obj"
+".\Debug\TextureTunnelDm.obj"
+".\Debug\TunncelPropertySet.obj"
+".\Debug\TunnelData.obj"
+".\Debug\vector.obj"
+".\Debug\ZdmDesign.obj"
+".\Debug\ZdmGeoSegmentFeatures.obj"
+".\Debug\ZdmJtLpPcPD.obj"
+".\Debug\ZdmR.obj"
+".\Debug\ZdmSlopeData.obj"
+".\Debug\ZdmStartLC_H.obj"
+".\Debug\T3DSystem.res"
+".\SkinPPWTL.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10F.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : LNK6004: Debug/T3DSystem.exe not found or not built by the last incremental link; performing full link
+
+
+
+<h3>Results</h3>
+T3DSystem.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

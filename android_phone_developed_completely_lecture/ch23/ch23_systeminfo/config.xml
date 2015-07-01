@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget  xmlns="http://www.jil.org/ns/widgets"
+         id="0b815d11-25aa-404c-a084-6c852fdc9725"
+         version="01.00.beta"
+         height="400"
+         width="275">
+    <name>系统信息</name>
+    <description>This is my first Widget.</description>
+    <author email="myname@host">myname</author>
+    <license href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache v2</license>
+    <maximum_display_mode height="450" width="320"/>
+    <update href="http://www.jil.org/widgets/" period="2"/>
+    <icon src="Icon.png"/>
+    <content src="SystemInfo.html"/>
+    <access network="true" localfs="true" remote_scripts="false"/>
+    <billing required="false"/>
+    <feature name="http://jil.org/jil/api/1.1/config"/>
+    <feature name="http://jil.org/jil/api/1.1/clipboard"/>
+    <feature name="http://jil.org/jil/api/1.1/location"/>
+    <feature name="http://jil.org/jil/api/1.1/filesystem"/>
+    <feature name="http://jil.org/jil/api/1.1/application"/>
+</widget>

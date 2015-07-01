@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">EX04_10</string>
+  <string name="my_gallery_text_pre">這是圖片</string>
+  <string name="my_gallery_text_post">號</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">这是第一个Activity。</string>
+    <string name="hello2">这是第二个Activity。</string>
+    <string name="app_name">Examples_03_04</string>
+</resources>

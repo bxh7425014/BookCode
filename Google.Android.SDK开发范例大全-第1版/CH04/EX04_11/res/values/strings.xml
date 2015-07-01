@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <string name="hello">Hello World, EX04_11</string>
+    <string name="app_name">EX04_11</string>
+    <string name="str_button">搜尋</string>
+    <string name="str_title">輸入關鍵字：</string>
+  </resources>

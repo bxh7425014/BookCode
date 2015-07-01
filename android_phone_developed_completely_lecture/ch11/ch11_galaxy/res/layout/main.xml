@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bg"
+	android:gravity="center_vertical">
+	<ImageView android:id="@+id/ivEarth" android:layout_width="50dp"
+		android:layout_height="50dp" android:src="@drawable/earth"
+		android:layout_x="50dp" android:layout_y="50dp" />
+	<ImageView android:id="@+id/ivHesper" android:layout_width="35dp"
+		android:layout_height="35dp" android:src="@drawable/hesper"
+		android:layout_x="100dp" android:layout_y="100dp" />
+	<ImageView android:id="@+id/ivSun" android:layout_width="80dp"
+		android:layout_height="80dp" android:src="@drawable/sun"
+		android:layout_x="120dp" android:layout_y="200dp" />
+</AbsoluteLayout>
+ 

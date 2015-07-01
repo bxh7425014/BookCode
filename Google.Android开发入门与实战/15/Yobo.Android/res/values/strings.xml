@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Yobo</string>
+	<!-- Home Menus -->
+
+	<string name="menu_start">开始使用</string>
+	<string name="menu_helps">看看帮助</string>
+
+	<string name="menu_done">完成授权</string>
+	<string name="menu_redo">重新授权</string>
+
+	<string name="menu_box">我的音乐盒</string>
+	<string name="menu_radio">我的电台</string>
+	<string name="menu_ref">刷新我的资料</string>
+
+	<string name="menu_authorize">用户授权</string>
+	<string name="menu_reg">用户注册</string>
+
+	<string name="menu_wallpaper">Yobo电台</string>
+	<string name="menu_search">音乐盒</string>
+	<string name="menu_settings">个人设置</string>
+	<string name="menu_abouts">关于</string>
+	<!-- setting Menus -->
+	<string name="menu_back_home">返回首页</string>
+	<string name="menu_back">返回</string>
+
+	<string name="player_next">下一首</string>
+	<string name="player_prev">上一首</string>
+	<string name="player_stop">停止</string>
+	
+	<string name="remote_service_connected">正在下载歌曲,请稍候.</string>
+	
+</resources>

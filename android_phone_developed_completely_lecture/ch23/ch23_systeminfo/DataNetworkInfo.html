@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="DataNetworkInfo.js"></script>
+<script type="text/javascript" src="Device_run.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showDataNetworkInfotest();"><img src="res/back.png" /></a></td>
+		
+		</tr>
+	</table>
+</div>
+<div id="DataNetworkInfotest"  class="bodyStyle">
+	<div id="isDataNetworkConnected" class="oBodyStyle obStyle"	onclick="clickisDataNetworkConnected();"><a href="#">isDataNetworkConnected</a></div>
+	<div id="networkConnectionType" class="oBodyStyle obStyle"	onclick="clickgetNetworkConnectionType();"><a href="#">networkConnectionType</a></div>
+	<div id="getNetworkConnectionName" class="mStyle"	onclick="clickgetNetWorkConnectName()"><a href="#" class="method_style">getNetworkConnectionName</a></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop"  href="device.html"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources>   
+    <string name="app_name">Battery Widget</string> 
+ 	<string name="widget_name">Battery Widget</string> 
+ 	<string name="str_battery_status">Battery status</string>
+	<string name="str_battery_lever">Battery level</string>
+	<string name="str_battery_scale">Battery scale</string>
+	<string name="str_battery_health">Battery health</string>
+	<string name="str_battery_voltage">Battery voltage</string>
+	<string name="str_battery_temperature">Battery temperature</string>
+	<string name="str_battery_technology">Battery technology</string>
+	<string name="str_degree">°</string>
+</resources>  

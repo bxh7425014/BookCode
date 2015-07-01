@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:id="@+id/btnDeleteFile" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="显示删除文件确认对话框" />
+	<Button android:id="@+id/btnSimpleList" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="显示简单列表对话框" />
+	<Button android:id="@+id/btnSingleChoiceList"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="显示单选列表对话框" />
+	<Button android:id="@+id/btnMultiChoiceList"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="显示多选列表对话框" />
+	<Button android:id="@+id/btnRemoveDialog"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="将所有对话框从Activity的托管中移除" />
+</LinearLayout>

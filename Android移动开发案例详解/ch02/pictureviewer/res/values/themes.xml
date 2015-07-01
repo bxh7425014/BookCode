@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="iTitleTheme" parent="android:Theme">
+		<item name="android:windowTitleSize">30dip</item> 
+		<item name="android:windowContentOverlay">@android:color/transparent</item>
+	</style>
+	
+</resources>

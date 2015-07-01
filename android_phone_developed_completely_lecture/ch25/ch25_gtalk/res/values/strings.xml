@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GTalk!</string>
+    <string name="app_name">GTalk机器人</string>
+    <string name="app_login_name">登录GTalk机器人</string>    
+    <!-- 登录 -->
+    <string name="account">帐号</string>
+    <string name="password">密码</string>
+    
+    
+</resources>

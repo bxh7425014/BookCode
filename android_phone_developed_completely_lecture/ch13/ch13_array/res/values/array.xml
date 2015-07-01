@@ -1,0 +1,39 @@
+<resources>
+
+	<string-array name="provinces">
+		<item>
+			广西省
+        </item>
+		<item>
+			辽宁省
+        </item>
+		<item>
+			江苏省
+        </item>
+		<item>
+			广东省
+        </item>
+		<item>
+			湖北省
+        </item>
+	</string-array>
+
+	<integer-array name="values">
+		<item>
+			100
+        </item>
+		<item> 
+			200
+        </item>
+		<item>
+			300
+        </item>
+		<item>
+			400
+        </item>
+		<item>
+			500
+        </item>
+	</integer-array>
+
+</resources>

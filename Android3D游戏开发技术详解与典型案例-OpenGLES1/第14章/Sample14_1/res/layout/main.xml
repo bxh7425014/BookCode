@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout 
+	android:id="@+id/LinearLayout02" 
+	android:layout_width="wrap_content" 
+	android:layout_height="320dip">
+	</LinearLayout>
+
+
+
+	<LinearLayout
+	android:id="@+id/LinearLayout01" 
+	android:orientation="horizontal"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	<Spinner 
+	android:id="@+id/Spinner01" 
+	android:layout_width="180dip" 
+	android:layout_height="wrap_content">
+	</Spinner>
+	
+	<Spinner 
+	android:id="@+id/Spinner02" 
+	android:layout_width="140dip" 
+	android:layout_height="wrap_content">
+	</Spinner>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:id="@+id/LinearLayout03" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	
+	
+	<TextView 
+	android:text="@string/sybz"
+	android:id="@+id/TextView01" 
+	android:layout_width="100dip" 
+	android:layout_height="wrap_content">
+	</TextView>
+	
+	<TextView 
+	android:text="@string/ljcd" 
+	android:id="@+id/TextView02" 
+	android:layout_width="100dip" 
+	android:layout_height="wrap_content">
+	</TextView>
+	<Button 
+	android:text="@string/GO"
+	android:id="@+id/Button01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+	</LinearLayout>
+	
+	
+	
+	
+	
+
+
+
+
+</LinearLayout>

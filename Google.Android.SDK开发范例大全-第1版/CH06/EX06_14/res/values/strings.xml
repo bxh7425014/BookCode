@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX06_14</string>
+  <string name="app_name">EX06_14</string>
+  <string name="str_mobile_phone">發送門號：</string>
+  <string name="str_sms_body">發送簡訊：</string>
+  <string name="str_button1">發送簡訊</string>
+  <string name="str_sms_sending">已執行發送SMS...</string>
+  <string name="str_sms_sent_success">成功發送簡訊</string>
+  <string name="str_sms_sent_failed">發送簡訊失敗</string>
+</resources>

@@ -1,0 +1,14 @@
+<html>
+ <script language="javascript">
+    function search()
+    {        
+         result.innerHTML = "<font color='red'>" + window.dictionary.searchWord(word.value) + "</font>";
+    }
+</script>
+<body>
+        英文词典<p/>        
+   <input type="text" id="word"/> <input type="button" value="查单词" onclick="search()" />
+   <p/>
+   <div id="result"></div>    
+</body>
+</html>

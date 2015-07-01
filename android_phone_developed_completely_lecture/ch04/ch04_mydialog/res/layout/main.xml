@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="这是一个悬浮对话框"
+		android:layout_marginLeft="20dp" android:layout_marginRight="20dp" />
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center"
+		android:layout_marginTop="20dp">
+		<Button android:id="@+id/btnCurrentDate"
+			android:layout_width="80dp" android:layout_height="wrap_content"
+			android:text="当前日期" />
+		<Button android:id="@+id/btnFinish" android:layout_width="80dp"
+			android:layout_height="wrap_content" android:text="关闭" />
+
+	</LinearLayout>
+</LinearLayout>

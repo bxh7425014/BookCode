@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="Multimediatest.js"></script>
+<script type="text/javascript" src="Multimedia_run.js"></script>
+<script type="text/javascript" src="../js/util.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="../res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showMultimediatest();"><img src="../res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+<div id="Multimediatest"  class="bodyStyle">
+	<div id="textdivshowAudioPlayertest" class="oBodyStyle obStyle"><a href="AudioPlayer.html">播放音频</a></div>		
+	<div id="divVideoPlayertext" class="oBodyStyle obStyle"><a href="VideoPlayer.html">播放视频</a></div>		
+	<div id="textdivMultimediastopall" class="mStyle"	onclick="clickItMultimediastopall();"><a href="#" class="method_style">停止音频和视频</a></div>
+	<div id="textdivisAudioPlaying" class="oBodyStyle obStyle"	onclick="clickIttextdivisAudioPlaying();"><a href="#">是否正在播放音频</a></div>
+	<div id="textdivisAudioPlaying" class="oBodyStyle obStyle"	onclick="clickIttextdivisVideoPlaying();"><a href="#">是否正在播放视频</a></div>	
+</div>
+</body>
+</html>

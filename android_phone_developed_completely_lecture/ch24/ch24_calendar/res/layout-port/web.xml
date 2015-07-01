@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFF">
+	<RelativeLayout android:id="@+id/msgHeader"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:id="@+id/ivSXImage" android:src="@drawable/a01"
+			android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="8dp" android:layout_marginLeft="8dp"/>
+		<ImageView android:id="@+id/ivSXText" android:src="@drawable/b01"
+			android:layout_toRightOf="@id/ivSXImage" android:layout_width="80dp"
+			android:layout_height="80dp" android:layout_margin="@dimen/margin" />
+	</RelativeLayout>
+	<WebView android:id="@+id/myWebView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</LinearLayout>

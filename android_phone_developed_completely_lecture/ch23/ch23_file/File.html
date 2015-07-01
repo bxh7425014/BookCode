@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="File.js"></script>
+<script type="text/javascript" src="Device_run.js"></script>
+<script type="text/javascript" src="Widget.js"></script>
+<script type="text/javascript" src="Device.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult1()" id="textdivshowClick" class="ClickClass"><img src="res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>	
+	<table id="back_table">	 
+		<tr>
+			<td><a class="goTop" onClick="showFiletest();"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+<div id="Filetest" class="bodyStyle">	
+	<div id="textdivcreateDate" class="oBodyStyle obStyle"	onclick="clickItcreateDate();"><a href="#">createDate</a></div>
+	<div id="textdivfileName" class="oBodyStyle obStyle"	onclick="clickItfileName();"><a href="#">fileName</a></div>
+	<div id="textdivfilePath" class="oBodyStyle obStyle"	onclick="clickItfilePath();"><a href="#">filePath</a></div>
+	<div id="textdivfileSize" class="oBodyStyle obStyle"	onclick="clickItfileSize();"><a href="#">fileSize</a></div>
+	<div id="textdivisDirectory" class="oBodyStyle obStyle"	onclick="clickItisDirectory();"><a href="#">isDirectory</a></div>
+	<div id="textdivlastModifyDate" class="oBodyStyle obStyle"	onclick="clickItlastModifyDate();"><a href="#">lastModifyDate</a></div>
+	<div id="textdivcopyFile" class="mStyle"	onclick="clickItcopyFile();"><a href="#" class="method_style">copyFile</a></div>	
+	<div id="textdivgetFile" class="mStyle" onClick="clickItgetFile();"><a href="#" class="method_style">getFile</a></div>
+	<div id="textdivdeleteFile" class="mStyle"	onclick="clickItdeleteFile();"><a href="#" class="method_style">deleteFile</a></div>	
+	<div id="textdivfindFiles" class="mStyle"	onclick="clickItfindFiles();"><a href="#" class="method_style">findFiles</a></div>
+	<div id="textdivmoveFile" class="mStyle"	onclick="clickItmoveFile();"><a href="#" class="method_style">moveFile</a></div>	
+	<div id="textdivcreateFile" class="mStyle"	onclick="clickItcreateFile();"><a href="#" class="method_style">createFile</a></div>	
+	<div id="textdivcreateFolder" class="mStyle"	onclick="clickItcreateFolder();"><a href="#" class="method_style">createFolder</a></div>
+	<div id="textdivcopyFolder" class="mStyle"		onclick="clickItcopyFolder();"><a href="#" class="method_style">copyFolder</a></div>
+	<div id="textdivdeleteFolder" class="mStyle"	onclick="clickItdeleteFolder();"><a href="#" class="method_style">deleteFolder</a></div>
+	<div id="textdivmoveFolder" class="mStyle"		onclick="clickItmoveFolder();"><a href="#" class="method_style">moveFolder</a></div>	
+	<div id="textdivgetWidgetFileNames" class="mStyle"	onclick="clickItgetDirectoryFileNames();"><a href="#" class="method_style">getDirectoryFileNames</a></div>
+		
+</div>	
+</body> 
+</html>

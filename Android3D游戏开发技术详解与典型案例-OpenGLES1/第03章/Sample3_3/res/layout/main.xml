@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<Button 
+		android:text="创建数据库" 
+		android:id="@+id/ButtonCreate" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>									<!--添加一个Button控件-->
+		<Button 
+		android:text="增加数据" 
+		android:id="@+id/ButtonInsert" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>									<!--添加一个Button控件-->
+		<Button 
+		android:text="更新数据" 
+		android:id="@+id/ButtonUpdate" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>									<!--添加一个Button控件-->
+		<Button 
+		android:text="查询数据" 
+		android:id="@+id/ButtonQuery" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</Button>									<!--添加一个Button控件-->
+</LinearLayout>

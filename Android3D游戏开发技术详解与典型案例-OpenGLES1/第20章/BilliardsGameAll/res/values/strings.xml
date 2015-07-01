@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">激情台球</string>
+    <string name="ipAddress">主机IP地址</string>
+    <string name="ip">192.168.9.107</string>
+    <string name="socket">端口号</string>
+    <string name="number">9999</string>
+    <string name="OK">登陆</string>
+    <string name="enter">进入游戏</string>
+    <string name="text"></string>
+    
+</resources>

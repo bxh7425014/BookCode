@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="姓名    "
+					android:textSize="18dp" />
+				<EditText android:id="@+id/etName" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="电话    "
+					android:textSize="18dp" />
+				<EditText android:id="@+id/etTelphone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="Email  "
+					android:textSize="18dp" />
+				<EditText android:id="@+id/etEmail" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<Button android:id="@+id/btnSelectPhoto"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="选择联系人头像" android:textSize="18dp" />
+				<ImageView android:id="@+id/ivPhoto" 
+					android:layout_width="fill_parent" android:layout_height="180dp"
+					android:singleLine="true" />
+			</LinearLayout>
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

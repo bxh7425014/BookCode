@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="200px" android:layout_height="wrap_content"
+		android:background="#FFF" android:textColor="#000" android:text="宽度：200象素" />
+	<TextView android:layout_width="@dimen/size_in" android:layout_height="wrap_content"
+		android:background="#FFF" android:text="宽度：1.5英寸"
+		android:layout_marginTop="10dp" android:textColor="#000"/>
+	<TextView android:layout_width="20mm" android:layout_height="wrap_content"
+		android:background="#FFF" android:text="宽度：20毫米"
+		android:layout_marginTop="10dp" android:textColor="#000"/>
+	<TextView android:layout_width="100pt" android:layout_height="wrap_content"
+		android:background="#FFF" android:text="宽度：100 points"
+		android:layout_marginTop="10dp" android:textColor="#000"/>
+	<TextView android:layout_width="200dp" android:layout_height="@dimen/size_px"
+		android:background="#FFF" android:text="宽度：200 dp\n高度：50 px"
+		android:layout_marginTop="10dp" android:textColor="#000"/>
+	<TextView android:layout_width="200dp" android:layout_height="wrap_content"
+		android:background="#FFF" android:textSize="@dimen/size_sp" android:text="字体尺寸：30sp"
+		android:layout_marginTop="10dp" android:textColor="#000"/>
+</LinearLayout>

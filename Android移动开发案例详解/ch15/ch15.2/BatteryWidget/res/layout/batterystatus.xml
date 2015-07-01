@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
+<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_status" android:layout_marginBottom="10px"></TextView>
+<TextView android:text="TextView02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_status" android:textSize="20px"></TextView>
+<TextView android:id="@+id/TextView03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_lever" android:layout_marginBottom="10px"></TextView>
+<TextView android:text="TextView04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_lever" android:textSize="20px"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_scale" android:layout_marginBottom="10px" android:id="@+id/tv_scale_view"></TextView>
+<TextView android:text="TextView06" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_scale" android:textSize="20px"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_health" android:layout_marginBottom="10px" android:id="@+id/tv_health_view"></TextView>
+<TextView android:text="TextView08" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_health" android:textSize="20px"></TextView>
+<TextView android:id="@+id/TextView09" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_voltage" android:layout_marginBottom="10px"></TextView>
+<TextView android:text="TextView10" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_voltage" android:textSize="20px"></TextView>
+<TextView android:id="@+id/TextView11" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_temperature" android:layout_marginBottom="10px"></TextView>
+<TextView android:text="TextView12" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_temp" android:textSize="20px"></TextView>
+<TextView android:id="@+id/TextView13" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/str_battery_technology" android:layout_marginBottom="10px"></TextView>
+<TextView android:text="TextView14" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tv_tech" android:textSize="20px"></TextView>
+</LinearLayout>

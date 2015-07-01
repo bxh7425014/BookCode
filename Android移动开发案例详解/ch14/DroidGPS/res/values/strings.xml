@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, DroidGPS!</string>
+    <string name="app_name">DroidGPS</string>
+	<string name="str_dialog_title">Select Category</string>
+	<string name="str_cancel">Cancel</string>
+	<string name="str_gps_status">GPS_Status</string>
+	<string name="str_satellite">Satellite Number:</string>
+	<string name="str_time">Time Gps:</string>
+	<string name="str_altitude">Altitude:</string>
+	<string name="str_latitude">Latitude:</string>
+	<string name="str_longitude">Longitude:</string>
+	<string name="str_speed">Speed:</string>
+	<string name="str_meter">meter(s)</string>
+	<string name="str_active">Activer</string>
+	<string name="str_deactive">Desactive</string>
+	<string name="sr_exit">Quit</string>
+	<string name="str_degree">º</string>
+	<string name="str_view_editor">View Record</string>
+	<string name="str_view_animation">View Record By Animation</string>
+	<string name="str_view_delete">Delete</string>
+	<string name="str_view_new_track">New Record</string>
+	<string name="str_view_save">Save(.KML,.KMZ,.GPX)</string>
+	
+	<!--  -->
+	<string name="str_track_name">Name of track</string>
+	<string name="str_track_date">Date</string>
+	<string name="str_track_hour">Hour</string>
+	<string name="str_track_time">Time</string>
+	<string name="str_track_distance">Distance</string>
+	<string name="str_track_avspeed">Average Speed</string>
+	<string name="str_track_maxspeed">Maxinum Speed</string>
+	<string name="str_track_points">Number of Points of Track</string>
+<string name="juhao">º</string>
+<string name="str_send_email">Send Email</string>
+<string name="str_dialog_warning">Warning</string>
+<string name="str_dialog_message_ask">Could you decide to delete this record!</string>
+</resources>

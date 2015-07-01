@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="10dp">
+		<TextView android:id="@+id/tvProvinces" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="省"
+			android:textSize="18dp" android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp" />
+		<Spinner android:id="@+id/spProvinces" android:layout_width="130dp"
+			android:layout_height="wrap_content" android:layout_toRightOf="@id/tvProvinces"
+			android:textColor="#000" />
+		<TextView android:id="@+id/tvCities" android:layout_width="wrap_content"
+			android:layout_below="@id/tvProvinces" android:layout_height="wrap_content"
+			android:text="市" android:textSize="18dp" android:layout_marginTop="30dp"
+			android:layout_marginLeft="10dp" />
+		<Spinner android:id="@+id/spCities" android:layout_width="130dp"
+			android:layout_height="wrap_content" android:layout_toRightOf="@id/tvCities"
+			android:layout_below="@id/spProvinces" android:layout_marginTop="10dp" />
+		<Button android:id="@+id/btnSearchWeather"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="查询天气情况" android:layout_marginTop="10dp"
+			android:layout_marginLeft="30dp" android:layout_below="@id/spCities" />
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="10dp"
+			android:layout_gravity="center_horizontal" android:layout_below="@id/btnSearchWeather">
+			<TextView android:id="@+id/tvDigitalClock"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp" android:textSize="15dp"
+				android:text="当前时间：" />
+			<DigitalClock android:id="@+id/tp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+				android:textSize="15dp" android:layout_toRightOf="@id/tvDigitalClock" />
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:layout_marginLeft="20dp">
+		<TextView android:id="@+id/tvCity" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18dp"
+			android:layout_marginTop="10dp" android:layout_marginLeft="10dp" />
+		<ImageView android:id="@+id/ivWeather1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/tvCity" android:layout_marginTop="12dp"
+			android:layout_marginLeft="10dp" />
+		<ImageView android:id="@+id/ivWeather2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/ivWeather1" android:layout_marginTop="12dp"
+			android:layout_marginLeft="10dp" />
+		<TextView android:id="@+id/tvWeatherForecasting"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" android:layout_marginLeft="10dp"
+			android:singleLine="false" android:textSize="18dp"
+			android:layout_below="@id/tvCity" />
+
+	</RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+     

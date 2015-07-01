@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <string name="hello">Hello World, EX10_02</string> 
+  <string name="app_name">EX10_02</string> 
+  <string name="str_button1">開始記錄</string> 
+  <string name="str_button2">結束記錄</string> 
+  <string name="str_button3">-</string> 
+  <string name="str_button4">+</string> 
+  <string name="str_text1">移動距離：0M</string>
+  <string name="str_message">無法取得Location!</string>
+</resources> 

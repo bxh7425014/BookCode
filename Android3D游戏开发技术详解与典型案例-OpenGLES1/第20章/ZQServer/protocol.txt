@@ -1,0 +1,22 @@
+c-->s  <#ENTER_REQUEST#>
+s-->c  <#USER_FULL#>
+s-->c  <#ALLOW_ENTER#>
+s-->c  <#GAME_START#>
+s-->c  <#HIT_FLAG#>
+s-->c  <#CURRENT_HIT_USER#>xx
+c-->s  <#CUE_ANGLE#>xx  
+s-->c  <#CUE_ANGLE_PUBLISH#>xx  
+c-->s  <#BALL_HIT#>力度|角度
+s-->c  <#BALL_HIT_PUBLISH#>力度|角度
+c-->s  <#BALL_GO_OVER#>
+s-->c  <#GAME_CONTINUE#>
+c-->s  <#BALL_IN_HOLE#>xx
+s-->c <#SCORE_UP#>XX
+s-->c <#YOU_WIN#>
+s-->c <#YOU_LOST#>
+c-->s  <#OVER_OK#>
+c-->s <#EXIT_MAN#>
+s-->c  <#ALLOW_EXIT#>
+
+s-->c  <#YOU_ID#>xx
+

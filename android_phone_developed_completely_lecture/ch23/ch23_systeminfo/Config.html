@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="Config.js"></script>
+<script type="text/javascript" src="Device_run.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="../res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showConfigtest();"><img src="../res/back.png" /></a></td>
+			<td><a class="goTop" href="../main.html"><img src="../res/gotop.png" /></a></td>
+		</tr>
+	</table>
+</div>
+<div id="Configtest" class="bodyStyle">	
+	<div id="textdivmsgRingtoneVolume" class="oBodyStyle obStyle"	onclick="clickItmsgRingtoneVolume();"><a href="#">msgRingtoneVolume</a></div>	
+	<div id="textdivringtoneVolume" class="oBodyStyle obStyle"	onclick="clickItringtoneVolume();"><a href="#">ringtoneVolume</a></div>	
+	<div id="textdivvibration" class="oBodyStyle obStyle"	onclick="clickItvibration();"><a href="#">vibrationSetting</a></div>	
+	<div id="textdivsetDefaultRingtone" class="mStyle"	onclick="clickItsetDefaultRingtone();"><a href="#" class="method_style">setDefaultRingtone</a></div>
+	<div id="textdivsetAsWallpaper" class="mStyle" onclick="clickItsetAsWallpaper();"><a href="#" class="method_style">setAsWallpaper</a></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop"  href="DeviceStateInfo.html"><img src="../res/back.png" /></a></td>
+			<td><a class="goTop" href="../main.html"><img src="../res/gotop.png" /></a></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

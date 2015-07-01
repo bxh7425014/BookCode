@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFF">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="100dp"
+			android:layout_height="40dp" android:layout_marginTop="10dp"
+			android:src="@drawable/google" />
+		<EditText android:id="@+id/etGoogleSearch"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" />
+	</LinearLayout>
+	<Button android:id="@+id/btnSearch" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="搜索" />
+	<Gallery android:id="@+id/gallery" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="30dp" />
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/btnPrev" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="上一页" />
+		<Button android:id="@+id/btnNext" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="下一页" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX08_17</string>
+  <string name="app_name">EX08_17</string>
+  <string name="str_button1">接收地震訊息服務</string>
+  <string name="str_button2">終止地震訊息服務</string>
+  <string name="str_err_nosd">※未發現安裝SD記憶卡※</string>
+  <string name="str_quake_level">規模</string>
+  <string name="str_err_writefile">Write File Error..</string>
+</resources>

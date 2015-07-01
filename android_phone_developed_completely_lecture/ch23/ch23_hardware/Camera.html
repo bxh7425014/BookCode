@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="Cameratest.js"></script>
+<script type="text/javascript" src="Multimedia_run.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="Multimedia.css" />
+</head>
+ 
+<body>
+<div id="showDetail" class="bodyStyle">
+	<div id="textdivshowName" class="Nameclass"></div>	
+	<div id="textdivshowExplanation" class="ExplanationClass"></div>	
+	<div id="textdivshowSampleCode" class="ExplanationClass"></div>	
+	<div id="textdivshowInitialCondition" class="ExplanationClass"></div>
+	<div onclick="clickItResult();" id="textdivshowClick" class="ClickClass"><img src="res/run_light.png" /></div>
+	<div id="textdivshowResult" class="ExplanationClass"></div>
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop" onClick="showCameratest();"><img src="res/back.png" />s</a></td>
+		</tr>
+	</table>
+</div>
+<div id="Cameratest" class="bodyStyle">	
+	<div class="Nameclass">Camera</div>
+<div id="LeaveAblank"> </div>
+		<div>
+			<div id="CameraDiv">This is a preview window for camera.</div>
+			<div id="forCameraInfo">The example code will be showed here.</div>
+		</div>	
+
+<table>
+		<tr>
+			<td><div id="textdivSetWindow" class="SurfaceClass"><a class="Camera_style" href="#"	onclick="CamerasetWindow();"> setWindow</a></div></td>
+			<td><div id="textdivCaptureImage" class="SurfaceClass"><a class="Camera_style" href="#"	onclick="captureImage();"> captureImage</a></div></td>
+		</tr>
+		<tr>
+			<td><div id="textdivstartVideoCapture" class="SurfaceClass"><a class="Camera_style" href="#"	onclick="startVideoCapture();"> startVideoCapture</a></div></td>
+
+
+			<td><div id="textdivstopCameraCapture" class="SurfaceClass"><a class="Camera_style" href="#"	onclick="stopVideoCapture();"> stopVideoCapture</a></div></td>
+	</tr>
+	<tr>
+			<td><div id="textdivOnCameracaptured" class="SurfaceClass"><a class="Camera_style" href="#"	onclick="clickonCameraCaptured();"> onCameraCaptured</a></div></td>
+			
+		</tr>
+
+	</table>	
+	<table id="back_table">	
+		<tr>
+			<td><a class="goTop"  href="Hardware.html"><img src="res/back.png" /></a></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

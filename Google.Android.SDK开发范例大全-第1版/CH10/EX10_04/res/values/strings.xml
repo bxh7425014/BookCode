@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX10_04</string>
+  <string name="app_name">EX10_04</string>
+  <string name="str_qr_gen">大衛的QRCode產生器</string>
+  <string name="str_button1">產生QRCode條碼</string>
+</resources>

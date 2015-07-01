@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">点击每个按钮，看看状态栏的变化！</string>
+    <string name="app_name">Examples_04_23</string>
+</resources>

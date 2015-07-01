@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">文本显示与编辑</string>
+    <string name="link_text_manual"><b>text2:</b> This is some other
+      text, with a <a href="http://www.google.com">link</a> specified
+      via an &lt;a&gt; tag.  Use a \"tel:\" URL
+      to <a href="tel:4155551212">dial a phone number</a>.
+    </string>
+</resources>

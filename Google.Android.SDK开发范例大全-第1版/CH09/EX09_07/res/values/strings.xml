@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX98_30</string> 
+  <string name="app_name">EX09_07</string> 
+  <string name="str_longitude">經度(Longitude)：</string> 
+  <string name="str_latitude">緯度(Latitude)：</string> 
+  <string name="str_default_address">台北市內湖區瑞湖街</string> 
+  <string name="str_button1">規劃路徑</string> 
+  <string name="str_button2">+</string> 
+  <string name="str_button3">-</string> 
+  <string name="str_to">前往：</string> 
+</resources>

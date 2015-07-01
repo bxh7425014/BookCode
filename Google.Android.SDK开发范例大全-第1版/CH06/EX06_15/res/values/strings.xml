@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX06_15</string>
+  <string name="app_name">EX06_15</string>
+  <string name="str_button1">開始Service</string>
+  <string name="str_button2">終止Service</string>
+  <string name="str_service_online">背景服務已開始執行</string>
+  <string name="str_service_offline">背景服務已停止</string>
+  <string name="str_err_stopservicefailed">終止Service</string>
+  <string name="str_message_from_service">來自Service的廣播訊息</string>
+</resources>

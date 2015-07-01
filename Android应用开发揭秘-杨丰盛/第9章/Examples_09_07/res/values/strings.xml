@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Activity01!</string>
+    <string name="app_name">Examples_09_07</string>
+    <string name="appwidget_configure_instructions">Example widget</string>
+    <string name="appwidget_prefix_default">请输入内容</string>
+    <string name="appwidget_text_format">"更新..."</string>
+</resources>

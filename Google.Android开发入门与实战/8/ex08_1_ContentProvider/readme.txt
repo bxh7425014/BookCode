@@ -1,0 +1,1 @@
+本例子主要使用系统的contentProvider。

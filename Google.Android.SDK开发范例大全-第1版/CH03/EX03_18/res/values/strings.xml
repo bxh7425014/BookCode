@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">程式尚未開始背景執行，請按下按鈕開始模擬～</string>
+  <string name="app_name">EX03_18</string>
+  <string name="str_button1">按我開始執行雲端運算...</string>
+  <string name="str_dialog_title">請稍候片刻...</string>
+  <string name="str_dialog_body">正在執行雲端運算中...</string>
+  <string name="str_dialog_done">正確執行完畢！</string>
+</resources>

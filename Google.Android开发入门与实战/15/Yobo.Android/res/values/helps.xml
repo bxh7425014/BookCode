@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<string name="helps_text">
+	本软件是使用YoboAPI专为Android手机用户开发的客户端，使得其可以在手机上随时随地的收听你在Yobo上音乐盒、电台或者Yobo系统的一些榜单；更多功能，不断开发中.
+	</string>
+
+	<string name="helps_yobo">
+	Yobo是中国最有特色的在线音乐服务提供商，其结合Last.fm和Pandora的特点，按照中国用户的习惯，加入诸多新的元素，使得其成为	众多音乐爱好者离不开的网站.
+	</string>
+	
+		<string name="helps_auth">
+		你的授权完成了吗？如果完成了，请选择菜单“完成授权”;\n如果尚未完成，或者授权失败，你可以选择菜单的“再次授权”;\n
+		如果你刚刚完成注册，你需要选择“开始授权”开始授权.
+	</string>
+
+	<string name="author_text">Name:IceskYsl@1.s.t
+		\nEmail:Iceskysl@gmail.com \nBlog:http://iceskysl.1sters.com</string>
+		
+	<string name="helps_auth_ed">您已经给这个客户端完成授权操作，如下是你在Yobo上的个人信息.</string>
+
+</resources>
+    

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.eoeAndroid.list" android:versionCode="1"
+	android:versionName="1.0.0">
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<application android:icon="@drawable/icon"
+		android:label="Android中的列表演示">
+		<activity android:name=".ActivityMain"
+			android:label="Android中的列表演示">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ActivityList1"
+			android:label="ActivityList1:采用ArrayAdapter">
+		</activity>
+		<activity android:name=".ActivityList2" 
+			android:label="ActivityList1:采用SimpleAdapter">
+		</activity>
+		<activity android:name=".ActivityList3" 
+			android:label="演示ListActivity">
+		</activity>
+		<activity android:name=".ActivityList4" 
+			android:label="如何处理对列表的点击操作">
+		</activity>
+	</application>
+</manifest>

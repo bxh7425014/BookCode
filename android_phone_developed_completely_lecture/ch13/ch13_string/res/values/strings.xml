@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">字符串资源</string>
+	<string name="app_name">字符串资源</string>
+	<string name="url_string">http://nokiaguy.blogjava.net </string>
+	<string name="quoted_string">"quoted'string"</string>
+	<string name="double_quoted_string">\"double quotes\"</string>
+	<string name="java_format_string">今天是 %1$s，当前的温度： %2$d℃.</string>
+	<string name="tagged1_string">		 			
+		<![CDATA[<a href='http://nokiaguy.blogjava.net'>http://nokiaguy.blogjava.net</a><h1><font color='#FF0000'>Hello&nbsp;</font><i><font color='#0000FF'>every one</font></i></h1>]]>
+	</string>
+	<string name="tagged_string">	
+		&lt;h1>&lt;font color='#0000FF'>测试&lt;/font>&lt;h1/>		
+	</string>
+	<!-- 必须在XML布局文件中引用 -->
+	<string name="styled_welcome_message">
+		I am
+		<b>
+			<i>so</i>
+		</b>
+		glad to see you.
+	</string>
+
+</resources>
+  

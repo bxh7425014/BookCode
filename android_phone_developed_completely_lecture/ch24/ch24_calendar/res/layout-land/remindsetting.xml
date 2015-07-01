@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+
+		<TimePicker android:id="@+id/tpRemindTime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/tvRemindTime">
+		</TimePicker>
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+			android:layout_toRightOf="@+id/tpRemindTime"  android:layout_marginLeft="10dp">
+			<CheckBox android:id="@+id/cbShake" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="震动" />
+			<CheckBox android:id="@+id/cbRing" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="响铃"
+				android:layout_below="@+id/cbShake" android:layout_marginTop="20dp" />
+		</RelativeLayout>
+	</RelativeLayout>
+
+
+</LinearLayout> 
+ 

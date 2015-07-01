@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	>
+	<EditText 
+	android:id="@+id/EditText01" 
+	android:text="聊天记录：\n" 
+	android:layout_width="fill_parent" 
+	android:layout_height="200px">
+	</EditText>
+	<EditText 
+	android:id="@+id/EditText02" 
+	android:text="输入要发送的内容" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+  	android:layout_y="200px">
+	</EditText>
+  	<Button 
+	android:id="@+id/Button_In"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="登陆"
+  	android:layout_x="30px"
+  	android:layout_y="260px"
+    	/>  
+  	<Button 
+	android:id="@+id/Button_Send"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="发送"
+  	android:layout_x="210px"
+  	android:layout_y="260px"
+    	/>
+</AbsoluteLayout>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+#forPlay {
+	width: 100px;
+	height: 120px;
+	border-color: Blue;
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+	font-size: 8pt;
+	margin: 0 5px
+}
+
+#CameraDiv {
+  width: 80px;
+  height: 200px;
+  border-color: Blue;
+  border-width: 1px;
+  border-style: solid;
+  float: left;
+  font-size: 8pt;
+  margin: 0 5px
+
+}
+#forCameraInfo
+{
+	width: 200px;
+	height: 200px;
+	border-color: Blue;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 8pt;
+	margin: 0 92px
+}
+#LeaveAblank {
+	height: 10px;
+}
+
+#forInfo {
+	width: 180px;
+	height: 120px;
+	border-color: Blue;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 8pt;
+	margin: 0 112px
+}
+
+#videowidthla {
+	float: left;
+}
+
+#videowidth {
+	margin: 0 10px
+}
+
+#videoheightl {
+	float: left;
+}
+
+#videoheight {
+	margin: 0 6px
+}
+
+#videocurrentstatus {
+	width: 200px;
+	height: 20px;
+	border-color: Blue;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0 5px
+}
+
+#videoresult {
+	width: 290px;
+	height: 50px;
+	border-color: Red;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0 5px
+}
+
+#LeaveAblankToo {
+	height: 10px;
+}
+a.Camera_style
+{
+	font-size: 10pt;
+	color:#043e7a;
+}

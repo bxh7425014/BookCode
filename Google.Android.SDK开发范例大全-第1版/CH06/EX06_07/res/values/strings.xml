@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, EX06_07</string>
+  <string name="app_name">EX06_07</string>
+  <string name="str_button1">取得</string> 
+  <string name="str_CALL_STATE_IDLE">電話處於待機狀態</string> 
+  <string name="str_CALL_STATE_OFFHOOK">電話通話中...</string> 
+  <string name="str_CALL_STATE_RINGING">有電話來電：</string>
+  <string name="str_EmailBody">你有電話：</string>
+  <string name="str_message">發信中...</string> 
+</resources>

@@ -1,0 +1,241 @@
+package net.blogjava.mobile;
+
+import java.sql.Date;
+
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.Typeface;
+import android.graphics.BitmapFactory.Options;
+import android.graphics.drawable.BitmapDrawable;
+import android.text.style.StyleSpan;
+import android.view.View;
+
+public class Grid extends CalendarParent
+{
+	private String[] days = new String[42];
+	private int dayColor;
+	private int innerGridColor;
+	private int prevNextMonthDayColor;
+	private int currentDayColor;
+	private float daySize;
+	private float dayTopOffset;
+	private float currentDaySize;
+
+	private float cellX = -1, cellY = -1;
+	private float oldCellX = -1, oldCellY = -1;
+
+	public void setCellX(float cellX)
+	{
+		oldCellX = this.cellX;
+		this.cellX = cellX;
+	}
+
+	public void setCellY(float cellY)
+	{
+		oldCellY = this.cellY;
+		this.cellY = cellY;
+	}
+
+	private int getMonthDays(int year, int month)
+	{
+		switch (month)
+		{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+			{
+				return 31;
+			}
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+			{
+				return 30;
+			}
+			case 2:
+			{
+				if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+					return 29;
+				else
+					return 28;
+			}
+		}
+		return 0;
+	}
+
+	public Grid(Activity activity, View view)
+	{
+		super(activity, view);
+		dayColor = activity.getResources().getColor(R.color.day_color);
+		innerGridColor = activity.getResources().getColor(
+				R.color.inner_grid_color);
+		prevNextMonthDayColor = activity.getResources().getColor(
+				R.color.prev_next_month_day_color);
+		currentDayColor = activity.getResources().getColor(
+				R.color.current_day_color);
+		daySize = activity.getResources().getDimension(R.dimen.day_size);
+		dayTopOffset = activity.getResources().getDimension(
+				R.dimen.day_top_offset);
+		currentDaySize = activity.getResources().getDimension(
+				R.dimen.current_day_size);
+		paint.setColor(activity.getResources().getColor(R.color.border_color));
+		java.util.Calendar calendar = java.util.Calendar.getInstance();
+		calendar.set(calendar.get(calendar.YEAR), calendar.get(calendar.MONTH),
+				1);
+
+		int week = calendar.get(calendar.DAY_OF_WEEK);
+		int currentMonth = calendar.get(calendar.MONTH);
+		int monthDays = 0;
+		int prevMonthDays = 0;
+		int nextMonthDays = 0;
+		monthDays = getMonthDays(calendar.get(calendar.YEAR), currentMonth);
+		if (currentMonth == 0)
+			prevMonthDays = getMonthDays(calendar.get(calendar.YEAR) - 1, 11);
+		else
+			prevMonthDays = getMonthDays(calendar.get(calendar.YEAR),
+					currentMonth - 1);
+
+		if (currentMonth == 11)
+			nextMonthDays = getMonthDays(calendar.get(calendar.YEAR) + 1, 0);
+		else
+			prevMonthDays = getMonthDays(calendar.get(calendar.YEAR),
+					currentMonth + 1);
+
+		for (int i = week, day = prevMonthDays; i > 1; i--, day--)
+		{
+			days[i - 2] = "*" + String.valueOf(day);
+		}
+		for (int day = 1, i = week - 1; day <= monthDays; day++, i++)
+		{
+			days[i] = String.valueOf(day);
+		}
+		for (int i = week + monthDays - 1, day = 1; i < days.length; i++, day++)
+		{
+			days[i] = "*" + String.valueOf(day);
+		}
+
+	}
+
+	private boolean isCurrentDay(int dayIndex, int currentDayIndex,
+			Rect cellRect)
+	{
+
+		if (cellX != -1 && cellY != -1)
+		{
+			if (cellX > cellRect.left && cellX < cellRect.right
+					&& cellY > cellRect.top && cellY < cellRect.bottom)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return dayIndex == currentDayIndex;
+		}
+	}
+
+	@Override
+	public void draw(Canvas canvas)
+	{
+		float left = borderMargin;
+		float top = borderMargin + weekNameSize + weekNameMargin * 2 + 4;
+		float calendarWidth = view.getMeasuredWidth() - borderMargin * 2;
+		float calendarHeight = view.getMeasuredHeight() - top;
+		float cellWidth = calendarWidth / 7;
+		float cellHeight = calendarHeight / 6;
+		paint.setColor(innerGridColor);
+		canvas.drawLine(left, top, left + view.getMeasuredWidth()
+				- borderMargin * 2, top, paint);
+		// 画横线
+		for (int i = 1; i < 6; i++)
+		{
+			canvas.drawLine(left, top + (cellHeight - 1) * i, left
+					+ calendarWidth, top + (cellHeight - 1) * i, paint);
+		}
+		// 画竖线
+		for (int i = 1; i < 7; i++)
+		{
+			canvas.drawLine(left + cellWidth * i, top, left + cellWidth * i,
+					view.getMeasuredHeight() - borderMargin, paint);
+		}
+
+		// 画日期
+		if (cellX < borderMargin
+				|| cellX > (view.getMeasuredWidth() - borderMargin)
+				|| cellY < top
+				|| cellY > (view.getMeasuredHeight() - borderMargin))
+		{
+			cellX = oldCellX;
+			cellY = oldCellY;
+		}
+
+		java.util.Calendar calendar = java.util.Calendar.getInstance();
+		int day = calendar.get(calendar.DATE);
+		calendar.set(calendar.get(calendar.YEAR), calendar.get(calendar.MONTH),
+				1);
+		int week = calendar.get(calendar.DAY_OF_WEEK);
+		int currentDayIndex = week + day - 2;
+		boolean flag = false;
+		for (int i = 0; i < days.length; i++)
+		{
+			int row = i / 7;
+			int col = i % 7;
+			String text = String.valueOf(days[i]);
+			if (text.startsWith("*"))
+			{
+
+				paint.setColor(prevNextMonthDayColor);
+			}
+			else
+			{
+				paint.setColor(dayColor);
+			}
+			text = text.startsWith("*") ? text.substring(1) : text;
+
+			Rect dst = new Rect();
+			dst.left = (int) (left + cellWidth * col);
+			dst.top = (int) (top + (cellHeight - 1) * row);
+			dst.bottom = (int) (dst.top + cellHeight);
+			dst.right = (int) (dst.left + cellWidth + 2);
+
+			paint.setTextSize(daySize);
+			float textLeft = left + cellWidth * col
+					+ (cellWidth - paint.measureText(text)) / 2;
+			float textTop = top + (cellHeight - 1) * row
+					+ (cellHeight - paint.getTextSize()) / 2 + dayTopOffset;
+			if (isCurrentDay(i, currentDayIndex, dst) && flag == false)
+			{
+				paint.setTextSize(currentDaySize);
+				flag = true;
+				Bitmap bitmap = BitmapFactory.decodeResource(activity
+						.getResources(), R.drawable.day);
+				Rect src = new Rect();
+				src.left = 0;
+				src.top = 0;
+				src.right = bitmap.getWidth();
+				src.bottom = bitmap.getHeight();
+				canvas.drawBitmap(bitmap, src, dst, paint);
+				paint.setColor(currentDayColor);
+
+			}
+
+			canvas.drawText(text, textLeft, textTop, paint);
+
+		}
+
+	}
+
+}

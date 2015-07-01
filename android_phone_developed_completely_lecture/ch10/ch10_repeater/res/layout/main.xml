@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFF">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal" android:layout_marginTop="20dp">
+		<ImageView android:id="@+id/ivOpen" android:layout_width="64dp"
+			android:layout_height="64dp" android:src="@drawable/open" />
+		<ImageView android:id="@+id/ivPlay" android:layout_width="64dp"
+			android:layout_height="64dp" android:src="@drawable/play"
+			android:layout_marginLeft="10dp" />
+		<ImageView android:id="@+id/ivPause" android:layout_width="64dp"
+			android:layout_height="64dp" android:src="@drawable/pause"
+			android:layout_marginLeft="10dp" />
+		<ImageView android:id="@+id/ivStop" android:layout_width="64dp"
+			android:layout_height="64dp" android:src="@drawable/stop"
+			android:layout_marginLeft="10dp" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal" android:layout_marginTop="20dp">
+		<Button android:id="@+id/btnStartPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  android:text="开始位置"/>
+		<Button android:id="@+id/btnEndPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  android:text="结束位置"/>
+		<Button android:id="@+id/btnClearPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  android:text="清除位置"/>
+	</LinearLayout>
+
+	<TextView android:id="@+id/tvStartPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#000" android:textSize="18dp"  />
+	<TextView android:id="@+id/tvEndPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#000" android:textSize="18dp"  />
+	<TextView android:id="@+id/tvCurrentPosition" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#000" android:textSize="18dp"  />
+
+</LinearLayout>

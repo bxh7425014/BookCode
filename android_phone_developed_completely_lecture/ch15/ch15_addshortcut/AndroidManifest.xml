@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.blogjava.mobile.shortcut" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".Main" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="net.blogjava.mobile.compass.Compass"
+			android:label="电子罗盘">
+			<intent-filter>
+				<action android:name="net.blogjava.mobile.compass.COMPASS" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:scheme="compass" />
+
+			</intent-filter>
+		</activity>
+		<activity android:name="net.blogjava.mobile.wifi.Wifi"
+			android:label="无线网络">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="net.blogjava.mobile.wifi.WIFI" />
+				<data android:scheme="wifi" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".AddCompassShortcut" android:label="电子罗盘"
+			android:icon="@drawable/compass_shortcut">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".AddWifiShortcut" android:label="无线网络"
+			android:icon="@drawable/wifi_shortcut">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+			</intent-filter>
+		</activity>
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
+</manifest>  

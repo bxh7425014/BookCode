@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	>
+  	<ListView 
+  	android:id="@id/android:list"
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+  	android:layout_weight="1"
+  	android:drawSelectorOnTop="false"/>
+  	<Button 
+	android:id="@+id/StartButton"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="开始"
+  	android:layout_x="70px"
+  	android:layout_y="100px"
+    	/>  
+  	<Button 
+	android:id="@+id/StopButton"
+    	android:layout_width="80px"
+    	android:layout_height="wrap_content"
+    	android:text="停止"
+  	android:layout_x="170px"
+  	android:layout_y="100px"
+    	/>
+</AbsoluteLayout>

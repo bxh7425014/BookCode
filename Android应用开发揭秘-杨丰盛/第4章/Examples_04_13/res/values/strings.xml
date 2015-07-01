@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">主界面,点击关于会跳到另一个界面!（Activity01）</string>
+	<string name="hello2">关于\nAndroid Menu使用范例！（Activity02）</string>
+    <string name="app_name">Examples_04_13</string>
+	<string name="ok">确定</string>
+	<string name="back">返回</string>
+</resources>

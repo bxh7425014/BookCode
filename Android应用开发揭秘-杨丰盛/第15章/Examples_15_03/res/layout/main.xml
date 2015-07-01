@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scaleType="center"
+		android:src="@drawable/golden_gate"
+		/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dip"
+		android:layout_gravity="center_horizontal|bottom"
+		android:padding="12dip"
+		android:background="#AA000000"
+		android:textColor="#ffffffff"
+		android:text="Golden Gate"
+		/>
+</FrameLayout>

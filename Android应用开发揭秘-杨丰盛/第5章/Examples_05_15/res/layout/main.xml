@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+    <Button
+    android:id="@+id/AlphaAnimation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Alpha动画"/>
+    <Button
+    android:id="@+id/ScaleAnimation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Scale动画"/>
+    <Button
+    android:id="@+id/TranslateAnimation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Translate动画"/>
+    <Button
+    android:id="@+id/RotateAnimation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Rotate动画"/>
+</LinearLayout>

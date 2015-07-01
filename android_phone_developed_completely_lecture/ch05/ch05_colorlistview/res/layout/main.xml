@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RadioGroup android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<RadioButton android:id="@+id/rbdefault"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="默认颜色" android:checked="true"/>
+		<RadioButton android:id="@+id/rbGreen"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="绿色" />
+		<RadioButton android:id="@+id/rbSpectrum"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="光谱" />
+	</RadioGroup>
+
+	<ListView android:id="@+id/listview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" /> 
+</LinearLayout>

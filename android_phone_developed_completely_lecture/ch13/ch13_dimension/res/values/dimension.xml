@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="size_px">50px</dimen>
+	<dimen name="size_in">1.5in</dimen>
+	<dimen name="size_sp">30sp</dimen>
+</resources>

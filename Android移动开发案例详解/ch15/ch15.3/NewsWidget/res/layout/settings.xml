@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#FFF" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+<TextView android:id="@+id/TextView01" android:text="@string/str_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000" android:textStyle="bold" android:typeface="serif"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/ed_url"></EditText>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_height="wrap_content" android:text="@string/str_order" android:layout_width="100px" android:layout_marginLeft="60px" android:id="@+id/btn_order"></Button>
+<Button android:layout_height="wrap_content" android:text="@string/str_disorder" android:layout_width="100px" android:id="@+id/btn_disorder"></Button>
+</LinearLayout>
+<CheckBox android:layout_height="wrap_content" android:text="@string/str_autonext" android:textColor="#000" android:layout_marginLeft="20px" android:layout_width="fill_parent" android:id="@+id/cb_auto"></CheckBox>
+<TextView android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="@string/str_autotime" android:textColor="#000" android:textStyle="bold" android:typeface="serif" android:layout_width="fill_parent" android:layout_marginTop="10px" android:layout_marginBottom="20px"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/ed_time" android:numeric="integer|signed|decimal"></EditText>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="100px"><Button android:layout_height="wrap_content" android:text="@string/str_save" android:layout_width="100px" android:layout_marginLeft="60px" android:id="@+id/btn_save"></Button>
+<Button android:layout_height="wrap_content" android:text="@string/str_exit" android:layout_width="100px" android:id="@+id/btn_exit"></Button>
+</LinearLayout>
+</LinearLayout>
