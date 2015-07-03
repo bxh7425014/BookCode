@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, OtherActivity!</string>
+	<string name="app_name">不同Activity的示例</string>
+</resources>

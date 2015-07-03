@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, FirstService!</string>
+	<string name="app_name">绑定Service</string>
+	<string name="bind">绑定Service</string>
+	<string name="unbind">解除绑定</string>	
+	<string name="getServiceStatus">获取Service状态</string>	
+</resources>

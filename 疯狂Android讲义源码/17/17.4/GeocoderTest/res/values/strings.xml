@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, GeocoderTest!</string>
+	<string name="app_name">地址经纬度转换</string>
+	<string name="txtLong">经度:</string>
+	<string name="txtLat">纬度:</string>
+	<string	name="lng">113.39</string>
+	<string	name="lat">23.13</string>
+	<string	name="txtAddress">地址:</string>
+	<string	name="address">广州天河区</string>	
+	<string name="parse">解析</string>
+	<string name="reverse">反向解析</string>	
+</resources>

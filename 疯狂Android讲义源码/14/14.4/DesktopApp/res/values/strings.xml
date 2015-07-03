@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, DesktopApp!</string>
+	<string name="app_name">疯狂Java联盟</string>
+</resources>

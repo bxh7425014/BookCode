@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="bn1">测试按钮1</string>
+	<string name="bn2">测试按钮2</string>
+	<string name="bn3">测试按钮3</string>
+	<string name="bn4">测试按钮4</string>
+	<string name="bn5">测试按钮5</string>	
+	<string name="bn6">测试按钮6</string>			
+	<string name="app_name">线性布局</string>
+</resources>

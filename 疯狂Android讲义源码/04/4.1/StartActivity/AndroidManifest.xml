@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.activity"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<!-- 声明第一个Activity -->
+		<activity android:name=".StartActivity"
+				  android:label="@string/app_name">
+			<!-- 指定该Activity是程序的入口 -->
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>				  
+		</activity>
+		<!-- 声明第二个Activity -->
+		<activity android:name=".SecondActivity"
+				  android:label="第二个Activity">
+				  
+		</activity>
+	</application>
+
+
+</manifest> 

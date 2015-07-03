@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<!-- 定义一个MapView,注意apiKey必须是用户自己申请的 -->
+<com.google.android.maps.MapView
+	android:id="@+id/mv"
+	android:clickable="true"
+	android:enabled="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:apiKey="0fCZu-Do7EMMmmPOuye2MPBlWVJ5Ntx9YB31tTQ" />
+</LinearLayout>

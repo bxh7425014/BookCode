@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	>
+<EditText 
+	android:id="@+id/txt"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:editable="false"
+	android:cursorVisible="false"
+	android:textSize="12pt"
+	/>
+<!-- 定义一个按钮，该按钮将作为事件源 -->
+<Button 
+	android:id="@+id/bn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="单击我"
+	/>	
+</LinearLayout>

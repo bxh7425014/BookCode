@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	>
+<EditText 
+	android:id="@+id/show"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:editable="false"
+	/>
+<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	>
+<Button
+	android:id="@+id/dateBn"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="设置日期"
+	/>
+<Button
+	android:id="@+id/timeBn"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="设置时间"
+	/>	
+</LinearLayout>
+<AnalogClock 
+	android:id="@+id/AnalogClock01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	/>
+</LinearLayout>

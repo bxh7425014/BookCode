@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, DBTest!</string>
+	<string name="app_name">生词本</string>
+	<string name="insert">添加生词</string>
+	<string name="search">查找</string>
+	<string name="detail">解释</string>
+</resources>

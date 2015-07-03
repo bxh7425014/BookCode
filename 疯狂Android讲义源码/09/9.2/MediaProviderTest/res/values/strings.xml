@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MediaProviderTest!</string>
+	<string name="app_name">操作系统的多媒体数据</string>
+	<string name="add">添加</string>
+	<string name="view">查看</string>
+</resources>

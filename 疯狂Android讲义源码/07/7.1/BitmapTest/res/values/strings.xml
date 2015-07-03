@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, BitmapTest!</string>
+	<string name="app_name">Bitmap测试</string>
+	<string name="next">下一张</string>
+</resources>

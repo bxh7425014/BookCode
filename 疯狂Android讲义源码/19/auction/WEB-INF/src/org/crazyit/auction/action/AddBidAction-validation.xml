@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 校验规则文件的DTD信息 -->
+<!DOCTYPE validators PUBLIC 
+	"-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+<!-- 校验规则文件的根元素 -->
+<validators>
+	<!-- 指定itemId参数必须满足的规则 -->
+	<field name="itemId">
+		<field-validator type="int">
+			<param name="min">1</param>
+			<message>您必须选择一个有效的物品进行竞价</message>
+		</field-validator>
+	</field>
+	<!-- 指定bidPrice表单域必须满足的校验规则 -->
+	<field name="bidPrice">
+		<field-validator type="required">
+			<message>竞价价格必填！</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="min">1</param>
+			<message>您的竞价必须大于1元</message>
+		</field-validator>
+	</field>
+	<!-- 指定vercode表单域必须满足的校验规则 -->
+	<field name="vercode">
+		<field-validator type="requiredstring">
+			<message>验证码必填！</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{6,6})]]></param>
+			<message>您输入的验证码只能是字母和数字，且长度必须是6位</message>
+		</field-validator>
+	</field>
+</validators>

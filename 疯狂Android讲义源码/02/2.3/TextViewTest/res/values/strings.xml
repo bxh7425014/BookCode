@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, TextViewTest!</string>
+	<string name="app_name">不同字体、颜色、添加链接的文本</string>
+</resources>

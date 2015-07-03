@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ActivityForResult!</string>
+	<string name="app_name">启动并获取Activity的结果</string>
+</resources>

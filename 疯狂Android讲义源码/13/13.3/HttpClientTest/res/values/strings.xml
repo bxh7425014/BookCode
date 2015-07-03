@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="get">访问页面</string>
+	<string name="login">登录系统</string>
+	<string name="app_name">使用HttpClient</string>
+	<string name="name">用户名</string>
+	<string name="pass">密   码</string>
+</resources>

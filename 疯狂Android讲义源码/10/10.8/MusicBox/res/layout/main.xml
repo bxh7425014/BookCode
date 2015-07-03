@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<ImageButton
+	android:id="@+id/play"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/play"/>
+<ImageButton 
+	android:id="@+id/stop" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/stop"/>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<TextView
+	android:id="@+id/title"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textSize="25px"
+	android:textColor="#ffffff"
+	android:ellipsize="marquee"
+	android:layout_weight="1"
+	android:marqueeRepeatLimit="marquee_forever"/>
+<TextView
+	android:id="@+id/author"
+	android:textSize="15px"
+	android:gravity="center_vertical"
+	android:layout_weight="1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>	    	
+</LinearLayout>
+</LinearLayout>

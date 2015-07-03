@@ -1,0 +1,47 @@
+.pt9 {
+	font-size: 9pt;
+}
+.title {
+	font-size: 9pt;
+	color:#333333;
+}
+a:link {
+	font-size: 9pt;
+	color: #0099CC;
+	text-decoration: none;
+}
+a:visited {
+	color: #003366;
+	text-decoration: none;
+}
+a:hover {
+	color: #0033ff;
+	text-decoration: underline;
+}
+
+input {
+	border: 1px solid #666666;
+	font-size: 9pt;
+	color: #333333;
+}
+select {
+	border: 1px solid #333333;
+}
+.error {
+	border: 1px dashed #FF9900;
+	background-color: #99CCFF;
+	font-size: 9pt;
+	color: #FF0000;
+}
+td {
+	font-size: 9pt;
+	text-align: center;
+}
+body {
+	background-image: url(images/bg.jpg);
+}
+.mytitle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0099FF;
+}

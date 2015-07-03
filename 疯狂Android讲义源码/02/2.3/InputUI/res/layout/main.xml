@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TableRow>
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="用户名:"
+	android:textSize="10sp"
+	android:background="@drawable/bg_border"
+	/>	
+<EditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:hint="请填写登录帐号"
+	android:selectAllOnFocus="true"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="密码:"
+	android:textSize="10pt"	
+	android:background="@drawable/bg_border"
+	/>	
+<EditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:password="true"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="电话号码:"
+	android:textSize="10pt"	
+	android:background="@drawable/bg_border"
+	/>	
+<EditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:hint="请填写您的电话号码"
+	android:selectAllOnFocus="true"
+	android:phoneNumber="true"
+	/>
+</TableRow>
+<Button 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="注册"
+	/>
+</TableLayout>

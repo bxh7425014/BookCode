@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TextView  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="@string/numbers"
+	/>
+<EditText
+	android:id="@+id/numbers"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:editable="false"
+	android:cursorVisible="false"
+	android:lines="2"
+	/>
+<TextView  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="@string/content"
+	/>
+<EditText
+	android:id="@+id/content"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:lines="2"
+	/>
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	>
+<Button
+	android:id="@+id/select"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="@string/select"
+	/>	
+<Button
+	android:id="@+id/send"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="@string/send"
+	/>
+</LinearLayout>
+</LinearLayout>

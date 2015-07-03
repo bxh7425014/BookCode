@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="get">发送GET请求</string>
+	<string name="post">发送POST请求</string>
+	<string name="app_name">使用URLConnection发送请求</string>
+</resources>

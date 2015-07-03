@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ToggleButtonTest!</string>
+	<string name="app_name">状态开关按钮</string>
+</resources>

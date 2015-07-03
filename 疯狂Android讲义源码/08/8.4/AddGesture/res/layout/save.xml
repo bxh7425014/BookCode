@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="8dip"
+	android:text="@string/gesture_name"
+	 />
+<!-- 定义一个文本框来让用户输入手势名 -->	 
+<EditText
+	android:id="@+id/gesture_name"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"/>	
+</LinearLayout>
+<!-- 定义一个图片框来显示手势 -->	 
+<ImageView
+	android:id="@+id/show"
+	android:layout_width="128dp"
+	android:layout_height="128dp"
+	android:layout_marginTop="10dp" />
+</LinearLayout>

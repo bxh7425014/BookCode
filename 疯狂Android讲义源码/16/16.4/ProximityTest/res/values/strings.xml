@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">系统正在检测是否进入广州天河</string>
+	<string name="app_name">临近警告</string>
+</resources>

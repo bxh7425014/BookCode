@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定Spring配置文件的Schema信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- 定义数据源Bean，使用C3P0数据源实现 -->
+	<bean id="dataSource" destroy-method="close"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<!-- 指定连接数据库的驱动 -->
+		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<!-- 指定连接数据库的URL -->
+		<property name="jdbcUrl"
+			value="jdbc:mysql://localhost:3306/auction"/>
+		<!-- 指定连接数据库的用户名 -->
+		<property name="user" value="root"/>
+		<!-- 指定连接数据库的密码 -->
+		<property name="password" value="32147"/>
+		<!-- 指定连接数据库连接池的最大连接数 -->
+		<property name="maxPoolSize" value="40"/>
+		<!-- 指定连接数据库连接池的最小连接数 -->
+		<property name="minPoolSize" value="1"/>
+		<!-- 指定连接数据库连接池的初始化连接数 -->
+		<property name="initialPoolSize" value="1"/>
+		<!-- 指定连接数据库连接池的连接的最大空闲时间 -->
+		<property name="maxIdleTime" value="20"/>
+	</bean>
+
+	<!-- 定义Hibernate的SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 依赖注入数据源，注入上面定义的dataSource -->
+		<property name="dataSource" ref="dataSource"/>
+		<!-- mappingResouces属性用来列出全部映射文件 -->
+		<property name="mappingResources">
+			<list>
+				<!-- 以下用来列出Hibernate映射文件 -->
+				<value>org/crazyit/auction/model/AuctionUser.hbm.xml</value>
+				<value>org/crazyit/auction/model/Bid.hbm.xml</value>
+				<value>org/crazyit/auction/model/Item.hbm.xml</value>
+				<value>org/crazyit/auction/model/Kind.hbm.xml</value>
+				<value>org/crazyit/auction/model/State.hbm.xml</value>
+			</list>
+		</property>
+		<!-- 定义Hibernate的SessionFactory的属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<!-- 指定数据库方言 -->
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLInnoDBDialect</prop>
+				<!-- 是否根据需要每次自动创建数据库 -->
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<!-- 显示Hibernate持久化操作所生成的SQL -->
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- 将SQL脚本进行格式化后再输出 -->
+				<prop key="hibernate.format_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- 配置Hibernate的局部事务管理器，使用HibernateTransactionManager类 -->
+	<!-- 该类实现PlatformTransactionManager接口，是针对Hibernate的特定实现-->
+	<bean id="transactionManager" 
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<!-- 配置HibernateTransactionManager时需要依注入SessionFactory的引用 -->
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	<!-- 配置事务切面Bean,指定事务管理器 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<!-- 用于配置详细的事务语义 -->
+		<tx:attributes>
+			<!-- 所有以'get'开头的方法是read-only的 -->
+			<tx:method name="get*" read-only="true"/>
+			<!-- 其他方法使用默认的事务设置 -->
+			<tx:method name="*"/>
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<!-- 配置一个切入点，匹配指定包下所有以Impl结尾的类执行的所有方法 -->
+		<aop:pointcut id="leeService"
+			expression="execution(* org.crazyit.auction.service.impl.*Impl.*(..))"/>
+		<!-- 指定在leeService切入点应用txAdvice事务切面 -->
+		<aop:advisor advice-ref="txAdvice" 
+			pointcut-ref="leeService"/>
+	</aop:config>
+
+	<!-- 定义JavaMailSenderImpl，它用于发送邮件 -->
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<!-- 指定发送邮件的SMTP服务器地址 -->
+		<property name="host" value="smtp.163.com"/>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.timeout">25000</prop>
+			</props>
+		</property>
+		<!-- 指定登录邮箱的用户名、密码 -->
+		<property name="username" value="spring_test"/>
+		<property name="password" value="123abc"/>
+	</bean>
+	<!-- 定义SimpleMailMessage Bean，它代表了一份邮件 -->
+	<bean id="mailMessage"
+		class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="spring_test@163.com"/>
+		<!-- 指定邮件标题 -->
+		<property name="subject" value="竞价通知"/>
+	</bean>
+
+	<!-- 配置业务逻辑组件 -->
+	<bean id="mgr"
+		class="org.crazyit.auction.service.impl.AuctionManagerImpl">
+		<!-- 为业务逻辑组件注入所需的DAO组件 -->
+		<property name="userDao" ref="auctionUserDao"/>
+		<property name="bidDao" ref="bidDao"/>
+		<property name="itemDao" ref="itemDao"/>
+		<property name="kindDao" ref="kindDao"/>
+		<property name="stateDao" ref="stateDao"/>
+		<property name="mailSender" ref="mailSender"/>
+		<property name="message" ref="mailMessage"/>
+	</bean>
+	<!-- 配置一个TimerTask Bean -->
+	<bean id="checkWiner" class="org.crazyit.auction.schedule.CheckWiner">
+		<!-- 依赖注入业务逻辑组件 -->
+		<property name="mgr" ref="mgr"/>
+	</bean>
+	<!-- 将TimerTask Bean：checkWiner包装成可周期性执行的任务调度Bean -->
+	<bean id="scheduledTask"
+		class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<!-- 指定调度频率和延迟 -->
+		<property name="delay" value="0"/>
+		<property name="period" value="86400000"/>
+		<property name="timerTask" ref="checkWiner"/>
+	</bean>
+	<!-- 启动实际调度 -->
+	<bean id="timerFactory" 
+		class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<!-- 下面列出所有需要调用的任务调度Bean -->
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref bean="scheduledTask"/>
+			</list>
+		</property>
+	</bean>
+</beans>

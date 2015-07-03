@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">	
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">	
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/item_detail_title"
+	android:textSize="@dimen/label_font_size"	
+	android:gravity="center"
+	android:padding="@dimen/title_padding"
+	/>
+<!-- 显示物品名称的行 -->
+<TableRow>
+<TextView
+	android:text="@string/item_name"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemName"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<!-- 显示物品描述的行 -->
+<TableRow>
+<TextView
+	android:text="@string/item_desc"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemDesc"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>
+</TableRow>
+<!-- 显示物品备注的行 -->
+<TableRow>
+<TextView
+	android:text="@string/remark"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemRemark"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>	
+</TableRow>
+<!-- 显示物品种类的行 -->
+<TableRow>
+<TextView
+	android:text="@string/item_kind"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemKind"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>	
+</TableRow>
+<!-- 显示起拍价格的行 -->
+<TableRow>
+<TextView
+	android:text="@string/init_price"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/initPrice"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>
+</TableRow>
+<!-- 显示最高价格的行 -->
+<TableRow>
+<TextView
+	android:text="@string/max_price"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/maxPrice"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>
+</TableRow>
+<!-- 显示结束时间的行 -->
+<TableRow>
+<TextView
+	android:text="@string/end_time"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/endTime"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"/>
+</TableRow>
+<!-- 输入竞拍价格的行 -->
+<TableRow>
+<TextView
+	android:text="@string/you_bid"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/bidPrice"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"/>
+</TableRow>
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center">
+<Button
+	android:id="@+id/bnAdd"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/bid"
+	/>
+<Button
+	android:id="@+id/bnCancel"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/cancel"
+	/>
+</LinearLayout>
+</TableLayout>
+</ScrollView>

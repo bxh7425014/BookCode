@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Plane!</string>
+	<string name="app_name">飞行射击</string>
+</resources>

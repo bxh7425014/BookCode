@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ShaderTest!</string>
+	<string name="app_name">渲染测试</string>
+	<string name="bitmap">位图</string>	
+	<string name="line">线性渐变</string>
+	<string name="radial">圆形渐变</string>
+	<string name="sweep">角度渐变</string>
+	<string name="composite">混合</string>				
+</resources>

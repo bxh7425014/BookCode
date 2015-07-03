@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">	
+<TableRow>
+<TextView
+	android:text="@string/item_name"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemName"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:text="@string/item_kind"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemKind"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:text="@string/win_price"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/maxPrice"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:text="@string/init_price"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/initPrice"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:text="@string/end_time"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/endTime"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+<TableRow>
+<TextView
+	android:text="@string/remark"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<EditText
+	android:id="@+id/itemRemark"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cursorVisible="false"
+	android:editable="false"
+	/>
+</TableRow>
+
+</TableLayout>

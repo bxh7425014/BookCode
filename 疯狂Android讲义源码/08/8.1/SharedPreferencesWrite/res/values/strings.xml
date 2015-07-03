@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, SharedPreferencesWrite!</string>
+	<string name="app_name">SharedPreferences写入</string>
+	<string name="write">写入数据</string>
+	<string name="read">读取数据</string>
+</resources>

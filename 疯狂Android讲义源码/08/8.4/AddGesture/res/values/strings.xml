@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AddGesture!</string>
+	<string name="app_name">添加手势</string>
+	<string name="gesture_name">请填手势名</string>
+</resources>

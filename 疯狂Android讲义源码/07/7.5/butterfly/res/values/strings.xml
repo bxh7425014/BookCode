@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Butterfly!</string>
+	<string name="app_name">蝴蝶飞舞</string>
+</resources>

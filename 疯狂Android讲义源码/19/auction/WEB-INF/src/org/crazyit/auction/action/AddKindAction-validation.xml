@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC 
+	"-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<message>种类名必填！</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{2,20})]]></param>
+			<message>您输入的种类名的长度必须在2到20之间</message>
+		</field-validator>
+	</field>
+	<field name="desc">
+		<field-validator type="requiredstring">
+			<message>种类描述必填！</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{4,250})]]></param>
+			<message>您输入的种类描述的长度必须在4到250之间</message>
+		</field-validator>
+	</field>
+	<field name="vercode">
+		<field-validator type="requiredstring">
+			<message>验证码必填！</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{6,6})]]></param>
+			<message>您输入的验证码只能是字母和数字，且长度必须在6位</message>
+		</field-validator>
+	</field>
+</validators>

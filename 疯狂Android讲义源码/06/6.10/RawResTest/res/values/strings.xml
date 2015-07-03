@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, RawResTest!</string>
+	<string name="app_name">原生资源测试</string>
+	<string name="play_raw">播放Raw声音</string>
+	<string name="play_asset">播放Asset声音</string>
+</resources>

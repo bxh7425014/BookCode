@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<ImageView 
+	android:id="@+id/image"
+	android:layout_width="fill_parent" 
+	android:layout_height="240px" 
+	android:src="@drawable/lijiang"
+	/>
+<!-- 定义一个拖动条，并改变它的滑块外观 -->
+<SeekBar 
+	android:id="@+id/seekbar"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:max="255"
+	android:progress="255"
+	android:thumb="@drawable/icon"
+	/>
+</LinearLayout>

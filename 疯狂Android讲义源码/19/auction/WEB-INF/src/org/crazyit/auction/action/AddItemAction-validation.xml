@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 校验规则文件的DTD信息 -->
+<!DOCTYPE validators PUBLIC 
+	"-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+<!-- 校验规则文件的根元素 -->
+<validators>
+	<!-- 配置name表单域的校验规则 -->
+	<field name="name">
+		<!-- 指定name表单域必填 -->
+		<field-validator type="requiredstring">
+			<message>物品名必填！</message>
+		</field-validator>
+		<!-- 指定name表单域必须匹配一个正则表达式 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{2,10})]]></param>
+			<message>您输入的物品名的长度必须在2到10之间</message>
+		</field-validator>
+	</field>
+	<!-- 配置desc表单域的校验规则 -->
+	<field name="desc">
+		<!-- 指定desc表单域必须匹配一个正则表达式 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{4,250})]]></param>
+			<message>您输入的物品描述的长度必须在4到250之间</message>
+		</field-validator>
+	</field>
+	<!-- 配置remark表单域的校验规则 -->
+	<field name="remark">
+		<!-- 指定remark表单域必须匹配一个正则表达式 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{4,250})]]></param>
+			<message>您输入的物品描述的长度必须在4到250之间</message>
+		</field-validator>
+	</field>
+	<!-- 配置起拍价格的校验规则 -->
+	<field name="initPrice">
+		<field-validator type="required">
+			<message>起拍价格必填！</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="min">1</param>
+			<message>起拍价格必须大于1元</message>
+		</field-validator>
+	</field>
+	<!-- 配置vercode表单域的校验规则 -->
+	<field name="vercode">
+		<field-validator type="requiredstring">
+			<message>验证码必填！</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\S{6,6})]]></param>
+			<message>您输入的验证码只能是字母和数字，且长度必须是6位</message>
+		</field-validator>
+	</field>
+</validators>

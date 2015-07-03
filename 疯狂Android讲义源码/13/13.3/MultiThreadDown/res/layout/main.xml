@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:text="要下载的资源的URL："
+	/>
+<EditText
+	android:id="@+id/url"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:text="http://www.crazyit.org/attachment.php?aid=1093&amp;k=4ec76aeaa41ee84acf667b420e926783&amp;t=1297311085"
+	/>
+<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:text="目标文件："
+	/>
+<EditText
+	android:id="@+id/target"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:text="/mnt/sdcard/a.rar"
+	/>	
+<Button
+	android:id="@+id/down"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:text="@string/down"
+	/>
+<!-- 定义一个水平进度条,用于显示下载进度 -->
+<ProgressBar
+	android:id="@+id/bar"
+ 	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:max="100"
+	style="@android:style/Widget.ProgressBar.Horizontal"
+	/>
+</LinearLayout>

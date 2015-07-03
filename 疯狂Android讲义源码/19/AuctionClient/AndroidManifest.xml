@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.auction.client"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".Login"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Main"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".ViewItem"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".ManageKind"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".AddKind"
+				  android:label="@string/app_name">
+		</activity>		
+		<activity android:name=".ManageItem"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".AddItem"
+				  android:label="@string/app_name">
+		</activity>			
+		<activity android:name=".ViewBid"
+				  android:label="@string/app_name">
+		</activity>								
+		<activity android:name=".ChooseKind"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".ChooseItem"
+				  android:label="@string/app_name">
+		</activity>	
+		<activity android:name=".AddBid"
+				  android:label="@string/app_name">
+		</activity>						
+	</application>
+
+	<!-- 授权访问网络 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+</manifest> 

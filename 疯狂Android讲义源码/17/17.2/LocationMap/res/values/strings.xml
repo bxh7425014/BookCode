@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string	name="hello">Hello World, LocationMap!</string>
+	<string	name="app_name">定位</string>
+	<string	name="txtLong">经度:</string>
+	<string	name="txtLat">纬度:</string>
+	<string	name="loc">定位</string>
+	<string	name="lng">113.39</string>
+	<string	name="lat">23.13</string>
+	<string	name="satellite">卫星视图</string>
+	<string	name="normal">普通视图</string>
+</resources>

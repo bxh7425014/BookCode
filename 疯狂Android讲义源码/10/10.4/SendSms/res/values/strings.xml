@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, SendSms!</string>
+	<string name="app_name">发送短信</string>
+	<string name="number">收件人号码：</string>	
+	<string name="content">短信内容：</string>	
+	<string name="send">发送</string>
+</resources>

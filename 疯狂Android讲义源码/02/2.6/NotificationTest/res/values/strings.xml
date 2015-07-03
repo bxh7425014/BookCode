@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, NotificationTest!</string>
+	<string name="app_name">系统通知</string>
+	<string name="other_activity">Notification启动的Activity</string>
+</resources>

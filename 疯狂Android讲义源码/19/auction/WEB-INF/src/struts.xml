@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+
+	<constant name="struts.custom.i18n.resources"
+		value="messageResource"/>
+	<constant name="struts.i18n.encoding" value="GBK"/>
+
+	<package name="lee" extends="struts-default">
+
+		<!-- 配置系统的拦截器 -->
+		<interceptors>
+			<!-- 定义系统的登录控制的拦截器 -->
+			<interceptor name="authority" 
+				class="org.crazyit.auction.action.interceptor.AuthorityInterceptor"/>
+			<!-- 定义系统auctionStack拦截器栈 -->
+			<interceptor-stack name="auctionStack">
+				<!-- 引用系统的默认拦截器栈 -->
+				<interceptor-ref name="defaultStack"/>
+				<!-- 引用登录控制拦截器 -->
+				<interceptor-ref name="authority"/>
+			</interceptor-stack>
+		</interceptors>
+		<!-- 将自定义的拦截器栈定义成默认拦截器栈 -->
+		<default-interceptor-ref name="auctionStack"/>
+
+		<global-results>
+			<!-- 下面定义的结果对所有的Action都有效 -->
+			<result name="login">/WEB-INF/content/login.jsp</result>
+			<result name="exception">/WEB-INF/content/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<!-- 指Action抛出AuctionException异常时，转入名为exception的结果。 -->
+			<exception-mapping exception="org.crazyit.auction.exception.AuctionException" result="exception"/>
+			<!-- 指Action抛出Exception异常时，转入名为exception的结果。 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+		</global-exception-mappings>
+
+
+		<action name="index">
+			<result name="success">/WEB-INF/content/main.jsp</result>
+		</action>
+
+		<action name="viewItemSu" class="org.crazyit.auction.action.ViewSuAction">
+			<result name="success">/WEB-INF/content/viewSuccess.jsp</result>	
+		</action>
+
+		<action name="viewFailItem" class="org.crazyit.auction.action.ViewFailAction">
+			<result name="success">/WEB-INF/content/viewFail.jsp</result>	
+		</action>
+
+		<action name="viewBid" class="org.crazyit.auction.action.ViewBidAction">
+			<result name="success">/WEB-INF/content/viewBid.jsp</result>	
+		</action>
+
+		<action name="mgrItem" class="org.crazyit.auction.action.MgrItemAction">
+			<result name="success">/WEB-INF/content/mgrItem.jsp</result>
+		</action>
+
+		<action name="mgrKind" class="org.crazyit.auction.action.MgrKindAction">
+			<result name="success">/WEB-INF/content/mgrKind.jsp</result>	
+		</action>
+
+		<action name="viewKind" class="org.crazyit.auction.action.ViewKindAction">
+			<result name="success">/WEB-INF/content/viewKind.jsp</result>	
+		</action>
+
+		<action name="viewItem" class="org.crazyit.auction.action.ViewItemAction">
+			<result name="input">viewKind.action</result>	
+			<result name="success">/WEB-INF/content/viewItem.jsp</result>  
+		 </action>
+		<action name="viewDetail" class="org.crazyit.auction.action.ViewDetailAction">
+			<result name="error">/WEB-INF/content/error.jsp</result>
+			<result name="success">/WEB-INF/content/viewDetail.jsp</result>
+		</action>
+
+		<!-- 配置处理用户登录的Action -->
+		<action name="processLogin" class="org.crazyit.auction.action.LoginAction">
+			<!-- 配置处理用户登录后的Result -->
+			<result name="input">/WEB-INF/content/login.jsp</result> 
+			<result name="success">/WEB-INF/content/main.jsp</result>
+			<result name="failure">/WEB-INF/content/login.jsp</result>
+			<!-- 显式引用系统默认拦截器栈 -->
+			<interceptor-ref name="defaultStack"/>
+		</action>
+
+		<action name="proAddItem" class="org.crazyit.auction.action.AddItemAction">
+			<result name="input" type="chain">mgrItem</result>	
+			<result name="success" type="chain">mgrItem</result>
+		</action>
+		<action name="proAddKind" class="org.crazyit.auction.action.AddKindAction">
+			<result name="input" type="chain">mgrKind</result>	
+			<result name="success" type="chain">mgrKind</result>
+		</action>
+		<action name="bid" class="org.crazyit.auction.action.AddBidAction">
+			<result name="input" type="chain">viewDetail</result>	
+			<result name="success" type="chain">viewBid</result>
+		</action>
+
+	</package> 
+
+</struts>

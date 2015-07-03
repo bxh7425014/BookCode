@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定输入校验规则文件的DTD信息 -->
+<!DOCTYPE validators PUBLIC 
+	"-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+<!-- 输入校验规则文件的根元素 -->
+<validators>
+	<!-- 指定username表单域的校验规则 -->
+	<field name="username">
+		<!-- 指定username必填 -->
+		<field-validator type="requiredstring">
+			<message>用户名必填！</message>
+		</field-validator>
+		<!-- username必须匹配一个正则表达式 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{4,25})]]></param>
+			<message>您输入的用户名只能是字母和数字，且长度必须在4到25之间</message>
+		</field-validator>
+	</field>
+	<!-- 指定password表单域的校验规则 -->
+	<field name="password">
+		<!-- 指定password必填 -->
+		<field-validator type="requiredstring">
+			<message>密码必填！</message>
+		</field-validator>
+		<!-- password必须匹配一个正则表达式 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{4,25})]]></param>
+			<message>您输入的密码只能是字母和数字，且长度必须在4到25之间</message>
+		</field-validator>
+	</field>
+	<!-- 指定vercode表单域的校验规则 -->
+	<field name="vercode">
+		<!-- 指定vercode必填 -->
+		<field-validator type="requiredstring">
+			<message>验证码必填！</message>
+		</field-validator>
+		<!-- 指定vercode表单域的的长度必须是6，且只能是字母和数字 -->
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{6,6})]]></param>
+			<message>您输入的验证码只能是字母和数字，且长度必须等于6位</message>
+		</field-validator>
+	</field>
+</validators>

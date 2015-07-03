@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="org.crazyit.auction.model">
+	<class name="AuctionUser" table="auction_user">
+		<!-- 映射标识属性 -->
+		<id	name="id" type="int" column="user_id">
+			<!-- 指定主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="username" column="username" type="string"
+			not-null="true" length="50" unique="true"/>
+		<property name="userpass" column="userpass" type="string"
+			not-null="true" length="50"/>
+		<property name="email" column="email" type="string"
+			not-null="true"	length="100"/>
+		<!-- 映射该用户所拥有的全部Item -->
+		<set name="itemsByOwner" inverse="true">
+			<key column="owner_id"/>
+			<one-to-many class="Item"/>
+		</set>
+		<!-- 映射该用户所赢取的全部Item -->
+		<set name="itemsByWiner" inverse="true">
+			<key column="winer_id"/>
+			<one-to-many class="Item"/>
+		</set>
+		<!-- 映射该用户所参与的全部竞价 -->
+		<set name="bids" inverse="true">
+			<key column="user_id" />
+			<one-to-many class="Bid"/>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<Button
+	android:id="@+id/get"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="@string/get"
+	android:layout_gravity="center_horizontal"	
+	/>
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:text="@string/person"
+	/>
+<EditText
+	android:id="@+id/person"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	/>
+<ListView
+	android:id="@+id/show"  
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:textColor="#ffffff"	
+	android:cacheColorHint="#00000000"
+	/>	
+</LinearLayout>

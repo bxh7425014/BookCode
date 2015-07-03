@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, DBTest!</string>
+	<string name="app_name">数据库访问测试</string>
+	<string name="insert">插入</string>
+</resources>

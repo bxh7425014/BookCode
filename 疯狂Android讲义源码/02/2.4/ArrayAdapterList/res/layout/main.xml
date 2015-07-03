@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<!-- 直接使用数组资源给出列表项 -->
+<ListView  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:entries="@array/books"
+	android:divider="@drawable/red"
+	android:headerDividersEnabled="false"
+	/>
+<!-- 使用ArrayAdapter提供列表项的ListView -->
+<ListView  
+	android:id="@+id/list2"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:divider="@drawable/green"
+	/>
+</LinearLayout>

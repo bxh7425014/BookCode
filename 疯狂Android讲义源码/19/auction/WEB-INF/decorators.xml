@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<decorators defaultdir="/decorators">
+    <!-- 在excludes元素下指定的页面将不会由SiteMesh来装饰 -->
+    <excludes>
+		 <pattern>/android/*</pattern>
+    </excludes>
+	<!-- 创建一个名为main的装饰器，该装饰器页面为main.jsp,
+	     用于装饰pattern指定的URL的所有页面-->
+    <decorator name="main" page="main.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

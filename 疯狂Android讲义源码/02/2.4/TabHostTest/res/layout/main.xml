@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<!-- 定义第一个标签页的内容 -->
+<LinearLayout android:id="@+id/tab01"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="女儿国国王 - 2010/12/12"
+	android:textSize="11pt"
+	/>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="东海龙女 - 2010/12/18"
+	android:textSize="11pt"
+	/>
+</LinearLayout>
+<!-- 定义第二个标签页的内容 -->
+<LinearLayout android:id="@+id/tab02"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="白骨精  - 2010/08/12"
+	android:textSize="11pt"
+	/>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="蜘蛛精 - 2010/09/20"
+	android:textSize="11pt"
+	/>
+</LinearLayout>
+<!-- 定义第三个标签页的内容 -->
+<LinearLayout android:id="@+id/tab03"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:textSize="11pt"
+	>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="孙悟空 - 2010/09/19"
+	android:textSize="11pt"
+	/>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="猪八戒  - 2010/10/12"
+	android:textSize="11pt"
+	/>	
+</LinearLayout>		
+</TabHost>

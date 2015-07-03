@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+<!-- 定义一个文本框，它用于接受用户的输入 -->
+<EditText
+	android:id="@+id/input"  
+	android:layout_width="240px" 
+	android:layout_height="wrap_content" 
+	/>
+<Button
+	android:id="@+id/send"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:paddingLeft="8px"
+	android:text="@string/send"
+	/>
+</LinearLayout>
+<!-- 定义一个文本框，它用于显示来自服务器的信息 -->
+<EditText
+	android:id="@+id/show" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:gravity="top"
+	android:editable="false" 
+	android:cursorVisible="false" 
+	/>
+</LinearLayout>

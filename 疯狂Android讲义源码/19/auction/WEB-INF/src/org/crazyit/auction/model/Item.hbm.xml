@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="org.crazyit.auction.model">
+	<class name="Item" table="item">
+		<!-- 映射标识属性 -->
+		<id name="id" type="int" column="item_id">
+			<!-- 指定主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="itemRemark" column="item_remark" type="string"
+			not-null="false" length="255"/>
+		<property name="itemName" column="item_name" type="string"
+			not-null="true" length="255"/>
+		<property name="itemDesc" column="item_desc" type="string"
+			not-null="false" length="255"/>
+		<property name="addtime" column="addtime" type="date"
+			not-null="true" length="10"/>
+		<property name="endtime" column="endtime" type="date"
+			not-null="true" length="10"/>
+		<property name="initPrice" column="init_price" type="double"
+			not-null="true" length="12"/>
+		<property name="maxPrice" column="max_price" type="double"
+			not-null="true" length="12"/>
+		<!-- 映射该Item所属的AuctionUser -->
+		<many-to-one name="owner" column="owner_id" class="AuctionUser"
+			not-null="true" lazy="false"/>
+		<!-- 映射该Item所属的Kind -->
+		<many-to-one name="kind" column="kind_id" class="Kind"
+			not-null="true" lazy="false"/>
+		<!-- 映射赢取该Item的AuctionUser -->
+		<many-to-one name="winer" column="winer_id" class="AuctionUser"
+			not-null="false" lazy="false"/>
+		<!-- 映射该Item所处的State -->
+		<many-to-one name="itemState" column="state_id" class="State"
+			not-null="true" lazy="false"/>
+		<!-- 映射该Item关联的全部竞价 -->
+		<set name="bids" inverse="true">
+			<key column="item_id"/>
+			<one-to-many class="Bid"/>
+		</set>
+	</class>
+</hibernate-mapping>

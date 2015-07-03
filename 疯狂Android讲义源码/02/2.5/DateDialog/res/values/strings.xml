@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, DateDialog!</string>
+	<string name="app_name">日期、时间对话框</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, CanvasTest!</string>
+	<string name="app_name">绘图入门</string>
+	  <string name="circle">圆形</string>
+	  <string name="square">正方形</string>
+	  <string name="rect">长方形</string>
+	  <string name="round_rect">圆角矩形</string>
+	  <string name="oval">椭圆形</string>	  
+	  <string name="triangle">三角形</string>
+	  <string name="pentagon">五角形</string>	
+</resources>

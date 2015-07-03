@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="org.crazyit.auction.model">
+	<class	name="State" table="state">
+		<!-- 映射标识属性 -->
+		<id	name="id" type="int" column="state_id">
+			<!-- 指定主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="stateName" column="state_name"
+			type="string" not-null="false" length="10"/>
+		<!-- 映射处于该状态的全部Item -->
+		<set name="items" inverse="true">
+			<key column="state_id"/>
+			<one-to-many class="Item"/>
+		</set>
+	</class>	
+</hibernate-mapping>

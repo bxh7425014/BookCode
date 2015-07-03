@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MonitorPhone!</string>
+	<string name="app_name">监听手机来电</string>
+	<string name="listen">开始监听</string>
+</resources>

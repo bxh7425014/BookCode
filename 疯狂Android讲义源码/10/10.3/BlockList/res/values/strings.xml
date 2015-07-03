@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MonitorPhone!</string>
+	<string name="app_name">黑名单自动挂断</string>
+	<string name="managerBlock">管理黑名单</string>
+</resources>

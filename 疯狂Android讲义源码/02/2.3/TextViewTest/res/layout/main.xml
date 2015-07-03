@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<!-- 设置字体为20pt  -->
+	<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="我爱Java"
+	android:textSize="20pt"
+	/>
+	<!-- 设置中间省略 -->
+	<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true" 
+	android:text="我爱Java我爱Java我爱Java我爱Java我爱Java我aaaJava"
+	android:ellipsize="middle"
+	/>
+	<!-- 对邮件增加链接 -->
+	<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true" 
+	android:text="测试kongyeeku@163.com内容"
+	android:autoLink="email"
+	/>
+	<!-- 设置文字颜色 、大小，并使用阴影 -->
+	<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="测试文字"
+	android:shadowColor="#0000ff"
+	android:shadowDx="15.0"
+	android:shadowDy="20.0"
+	android:shadowRadius="45.0"
+	android:textColor="#ff0000"
+	android:textSize="25pt"
+	/>
+	<!-- 测试密码框 -->
+	<TextView android:id="@+id/passwd"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="@string/hello"
+	android:password="true"
+	/>
+</LinearLayout>

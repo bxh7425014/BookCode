@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AllProvidersTest!</string>
+	<string name="app_name">获取所有LocationProvider</string>
+	<string name="providerList">所有免费的LocationProvider列表</string>
+</resources>

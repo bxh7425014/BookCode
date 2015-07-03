@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<!-- 定义一个ImageSwitcher组件 -->
+<ImageSwitcher android:id="@+id/switcher"
+	android:layout_width="320dp"
+	android:layout_height="320dp"
+	/>
+<!-- 定义一个Gallery组件 -->
+<Gallery android:id="@+id/gallery"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="25dp" 
+	android:unselectedAlpha="0.6"
+	android:spacing="3pt"
+	/>	
+</LinearLayout>

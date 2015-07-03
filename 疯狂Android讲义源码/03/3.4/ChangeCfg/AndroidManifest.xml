@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.cfg"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<!-- 设置Activity允许修改屏幕方向（orientationorientation） -->
+		<activity android:name=".ChangeCfg"
+				  android:label="@string/app_name"
+				  android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+	<!-- 授予应用程序修改系统设置的权限 -->
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+</manifest> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="白骨精  - 2010/08/12"
+	android:textSize="11pt"
+	/>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="蜘蛛精 - 2010/09/20"
+	android:textSize="11pt"
+	/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.broadcast"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<service android:name=".LaunchService">
+		</service>
+		<!-- 定义一个BroadcastReceiver,监听系统开机广播  -->
+		<receiver android:name=".LaunchReceiver">    
+		    <intent-filter>    
+		       <action android:name="android.intent.action.BOOT_COMPLETED" />   
+		    </intent-filter>    
+		</receiver>
+	</application>
+	<!-- 授予应用程序访问系统开机事件的权限 -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest> 

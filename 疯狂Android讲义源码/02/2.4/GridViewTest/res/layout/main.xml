@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	>
+<!-- 定义一个GridView组件 -->
+<GridView  
+	android:id="@+id/grid01"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:horizontalSpacing="pt"
+	android:verticalSpacing="2pt"
+	android:numColumns="4"
+	android:gravity="center"
+	/>
+<!-- 定义一个ImageSwitcher组件 -->
+<ImageSwitcher android:id="@+id/switcher"
+	android:layout_width="320dp"
+	android:layout_height="320dp"
+	android:layout_gravity="center_horizontal"
+	/>	
+</LinearLayout>

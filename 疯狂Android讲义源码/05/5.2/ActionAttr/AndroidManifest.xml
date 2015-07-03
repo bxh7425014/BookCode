@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.intent"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".ActionAttr"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SecondActivity"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<!-- 指定该Activity能响应Action为指定字符串的Intent -->
+				<action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
+				<!-- 指定该Action能响应Action属性为helloWorld的Intent -->
+				<action android:name="helloWorld" />
+				<!-- 指定该Action能响应Category属性为指定字符串的Intent -->
+				<category android:name="android.intent.category.DEFAULT" />   
+			</intent-filter>
+		</activity>
+	</application>
+
+
+</manifest> 

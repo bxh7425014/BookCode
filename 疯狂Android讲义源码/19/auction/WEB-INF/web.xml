@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 配置Web应用配置文件的根元素，并指定配置文件的Schema信息 -->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<!-- 指定Spring配置文件的位置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name> 
+		<param-value>/WEB-INF/applicationContext.xml,
+			/WEB-INF/daoContext.xml</param-value>
+	</context-param>
+
+	<!-- 配置Web应用启动时候加载Spring容器 -->
+	<listener> 
+		<listener-class>org.springframework.web.context.ContextLoaderListener
+		</listener-class> 
+	</listener>
+
+	<!-- Struts 2整合Sitemesh必须的监听器 -->
+    <listener>
+        <listener-class>org.apache.struts2.dispatcher.ng.listener.StrutsListener
+		</listener-class>
+    </listener>
+
+	<!-- 定义StrutsPrepareFilter过滤器 -->
+    <filter>
+        <filter-name>struts-prepare</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter
+		</filter-class>
+    </filter>
+
+	<!-- 定义SiteMeshFilter过滤器 -->
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter
+		</filter-class>
+    </filter>
+
+	<!-- 定义StrutsExecuteFilter过滤器 -->
+    <filter>
+        <filter-name>struts-execute</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsExecuteFilter
+		</filter-class>
+    </filter>
+
+	<!-- 定义过滤器链 -->
+	<!-- 排在第一位的过滤器是：StrutsPrepareFilter过滤器 -->
+	<filter-mapping>
+		<filter-name>struts-prepare</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 排在第二位的过滤器是：SiteMesh的核心过滤器 -->
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 排在第二位的过滤器是：StrutsExecuteFilter过滤器 -->
+	<filter-mapping>
+		<filter-name>struts-execute</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 配置图形验证码Servlet -->
+	<servlet>
+		<servlet-name>img</servlet-name>
+		<servlet-class>org.crazyit.auction.web.AuthImg</servlet-class>
+	</servlet>
+	<!-- 为图形验证码Servlet指定URL -->
+	<servlet-mapping>
+		<servlet-name>img</servlet-name>
+		<url-pattern>/authImg.jpg</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, FileTest!</string>
+	<string name="app_name">文件读写入门</string>
+	<string name="read">读取</string>
+	<string name="write">写入</string>		
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, FatPo!</string>
+	<string name="app_name">功夫熊猫</string>
+	<string name="play">播放</string>
+	<string name="stop">停止</string>		
+</resources>

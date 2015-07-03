@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="label_font_size">20dip</dimen>
+	<dimen name="title_padding">30px</dimen>
+	<dimen name="sub_title_margin">20px</dimen>
+</resources>

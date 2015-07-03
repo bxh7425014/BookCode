@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<LinearLayout
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/sub_title_margin"
+	>	
+<TextView
+	android:text="@string/view_bid"	
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	/>
+<Button
+	android:id="@+id/bn_home" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="@dimen/label_font_size"
+	android:background="@drawable/home"
+	/>	
+</LinearLayout>
+<ListView
+	android:id="@+id/bidList"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+/>
+</LinearLayout>

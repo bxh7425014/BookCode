@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.crazyit.service"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<!-- 定义一个Service组件 -->
+		<service android:name=".ComplexService" >
+			<intent-filter>
+				<action android:name="org.crazyit.aidl.action.COMPLEX_SERVICE" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest> 

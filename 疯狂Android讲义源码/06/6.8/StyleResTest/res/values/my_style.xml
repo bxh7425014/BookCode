@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- 定义一个样式，指定字体大小、字体颜色 -->
+	<style name="style1"> 
+		<item name="android:textSize">20sp</item> 
+		<item name="android:textColor">#00d</item> 
+	</style>
+	<!-- 定义一个样式，继承前一个颜色 -->
+	<style name="style2" parent="@style/style1"> 
+		<item name="android:background">#ee6</item>
+		<item name="android:padding">8dp</item>
+		<!-- 覆盖父样式中指定的属性 -->
+		<item name="android:textColor">#000</item>
+	</style>
+	<style name="CrazyTheme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>		
+		<item name="android:windowFrame">@drawable/window_border</item>
+		<item name="android:windowBackground">@drawable/star</item>
+	</style>	
+</resources>

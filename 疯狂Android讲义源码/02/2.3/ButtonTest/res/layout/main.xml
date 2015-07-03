@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TableRow>
+<!-- 普通文字按钮 -->	
+<Button
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/red"
+	android:text="普通按钮"
+	android:textSize="10pt"
+/>
+<!-- 普通图片按钮 -->
+<ImageButton
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/blue"
+	android:background="#000000"
+/>
+</TableRow>
+<TableRow>
+<!-- 按下时显示不同图片的按钮 -->
+<ImageButton
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/button_selector"
+	android:background="#000000"
+/>
+<!-- 带文字的图片按钮-->
+<Button
+	android:id="@+id/test"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/button_selector"
+	android:text="带文字的图片按钮"
+/>
+</TableRow>
+</TableLayout>

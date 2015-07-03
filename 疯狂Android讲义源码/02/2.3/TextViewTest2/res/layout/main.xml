@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<!-- 通过android:background指定背景 -->
+<TextView
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="带边框的文本"
+	android:background="@drawable/bg_border"
+	/>
+<!-- 通过android:drawableLeft绘制一张图片 -->	
+<TextView  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="带图片的文本"
+	android:drawableLeft="@drawable/icon"
+	/>	
+</LinearLayout>

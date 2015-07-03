@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, CodeView!</string>
+	<string name="app_name">代码中控制UI界面</string>
+	<string name="ok">单击我</string>	
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, GroupSend!</string>
+	<string name="app_name">短信群发</string>
+	<string name="numbers">号码（多个号码以逗号隔开）</string>
+	<string name="content">短信内容</string>
+	<string name="select">选择收件人</string>
+	<string name="send">群发</string>
+</resources>

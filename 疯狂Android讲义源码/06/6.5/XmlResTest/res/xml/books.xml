@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book price="99.0" 出版日期="2008年">疯狂Java讲义</book>
+	<book price="89.0" 出版日期="2009年">轻量级Java EE企业应用实战</book>
+	<book price="69.0" 出版日期="2009年">疯狂Ajax讲义</book>
+</books>

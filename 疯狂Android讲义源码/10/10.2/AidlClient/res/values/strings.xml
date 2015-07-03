@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AidlClient!</string>
+	<string name="app_name">调用远程Service</string>
+	<string name="get">获取远程Service的状态</string>
+</resources>

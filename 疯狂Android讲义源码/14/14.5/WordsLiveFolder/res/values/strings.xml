@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, ContactsLiveFolder!</string>
+	<string name="app_name">生词本</string>
+	<string name="translation">单词翻译</string>
+	<string name="word">单词</string>
+	<string name="description">详细解释</string>		
+</resources>

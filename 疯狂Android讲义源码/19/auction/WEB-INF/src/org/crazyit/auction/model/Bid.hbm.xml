@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="org.crazyit.auction.model">
+	<class	name="Bid" table="bid" >
+		<!-- 映射标识属性 -->
+		<id	name="id" type="int" column="bid_id">
+			<!-- 指定主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="bidPrice" column="bid_price" type="double"
+			not-null="true"	length="12"/>
+		<property name="bidDate" column="bid_date"	type="date"
+			not-null="true"	length="10"/>
+		<!-- 映射该Bid所关联的Item物品 -->
+		<many-to-one name="bidItem"	column="item_id"
+			not-null="true" lazy="false"/>
+		<!-- 映射该Bid所关联的AuctionUser物品 -->
+		<many-to-one name="bidUser"	column="user_id"
+			not-null="true" lazy="false"/>
+	</class>	
+</hibernate-mapping>

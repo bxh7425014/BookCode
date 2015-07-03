@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TextView
+	android:text="@string/welcome"
+	android:id="@+id/TextView"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:padding="@dimen/title_padding"
+	/>
+<ListView
+	android:id="@+id/mainMenu"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:entries="@array/mainMenu"
+/>
+</LinearLayout>

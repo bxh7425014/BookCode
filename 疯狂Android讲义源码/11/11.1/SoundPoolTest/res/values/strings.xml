@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SoundPool播放音效</string>
+	<string name="bomb">爆炸声</string>	
+	<string name="shot">射击声</string>	
+	<string name="arrow">射箭声</string>	
+</resources>

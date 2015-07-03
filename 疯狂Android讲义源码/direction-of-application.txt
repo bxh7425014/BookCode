@@ -1,0 +1,109 @@
+﻿			疯狂Android讲义目录结构：
+
+第2章、Android应用程序界面设计，即View
+	2.2、布局管理(Layout)：LinearLayout、TableLayout、FrameLayout、RelativeLayout;
+	2.3、基本界面组件：TextView、EditText; Button、ImageButton; 9Patch; RadioButton、CheckBox;
+			ToggleButton;AnalogClock、DigitalClock; ImageView;
+	2.4、高级界面组件：AutoCompleteTextView; Spinner; DatePicker、TimePicker; ProgressBar;
+			SeekBar; RatingBar; TabHost; ScrollView; ListView、ListActivity; 
+			ExpandableListView; GridView、ImageSwitcher; Gallery;
+	2.5、对话框：AlertDialog; PopupWindow; DatePickerDialog、TimePickerDialog; ProgressDialog;
+	2.6、消息提示：Toast; Notification;
+	2.7、菜单：OptionMenu、SubMenu; ContextMenu;
+第3章、Android事件处理，包括按键响应机制和消息传递机制
+	3.2、基于监听器的事件处理：
+	3.3、基于回调的事件的处理：
+	3.4、响应系统设置的事件：
+	3.5、Handler消息传递机制：
+第4章、深入理解Activity
+	4.1、建立、配置和使用Activity：
+	4.2、Activity的回调机制：
+	4.3、Activity的生命周期：
+第5章、使用Intent和IntentFilter进行通信
+	5.1、Intent对象详解：
+	5.2、Intent的属性及intent-filter配置：Component属性; Action、Category属性与intent-filter配置;
+			Data、Type属性与intent-filter配置; Extra属性;
+	5.3、使用Intent创建Tab页面：
+第6章、Android应用的资源
+	6.1、资源的类型及存储方式：
+	6.2、使用字符串、颜色、尺寸资源：
+	6.3、数组资源：
+	6.4、使用Drawable资源：图片资源; StateListDrawable资源; LayerDrawable资源; ShapeDrawable资源;
+			ClipDrawable资源; AnimationDrawable资源;
+	6.5、使用原始XML资源：
+	6.6、使用Layout资源：
+	6.7、使用菜单(Menu)资源：
+	6.8、样式(Style)和主题(Theme)资源：
+	6.9、属性(Attribute)资源：
+	6.10、使用原始资源：
+	6.11、国际化和资源自适应：
+第7章、图形与图像处理
+	7.1、使用简单图片：Drawable; Bitmap、BitmapFactory;
+	7.2、绘图：Canvas; Paint; Path;
+	7.3、图形特效处理：使用Matrix控制变换; 使用drawBitmapMesh扭曲图像; 使用Shader填充图形;
+	7.4、逐帧(Frame)动画：AnimationDrawable;
+	7.5、补间(Tween)动画：Interpolator; 位置、大小、旋转度、透明度;
+	7.6、使用SurfaceView实现动画：
+第8章、Android的数据存储和IO
+	8.1、使用SharedPreferences：SharedPreferences; Editor;
+	8.2、File存储：openFileOutput和openFileInput; 读写SD卡文件;
+	8.3、SQLite数据库：SQL语句; SQLiteDatabase; SQLiteOpenHelper; sqlite3 tools;
+	8.4、手势(Gesture)：
+	8.5、自动朗读(TTS)：
+	
+	8.6、网络存储：
+第9章、使用ContentProvider实现数据共享
+	9.1、数据共享标准：ContentProvider; Uri; ContentResolver;
+	9.2、操作系统的ContentProvider：使用ContentProvider管理联系人和多媒体;
+	9.3、实现ContentProvider：创建ContentProvider的步骤;
+	9.4、监听ContentProvider的数据：ContentObserver;
+第10章、Service与BroadcastReceiver
+	10.1、Service：Service的创建、配置、启动、停止、绑定和通信; Service的生命周期;
+	10.2、跨进程调用Service(AIDL服务)：创建AIDL文件; 将接口暴露给客户端; 客户端访问AIDLService;
+	10.3、电话管理器：TelephoneManager;
+	10.4、短信管理器：SmsManager;
+	10.5、音频管理器：AudioManager;
+	10.6、振动器：Vibrator;
+	10.7、手机闹钟服务：AlarmManager;
+	10.8、接受广播信息：BroadcastReceiver;
+	10.9、接受系统广播消息：
+第11章、多媒体应用开发
+	11.1、音频和视频的播放：MediaPlayer; SoundPool; VideoView;
+	11.2、使用MediaRecorder录制音频：
+	11.3、控制摄像头拍照：Camera;
+第12章、OpenGL与3D应用开发
+	12.2、OpenGL ES基础：
+	12.3、绘制2D图形：
+	12.4、绘制3D图形：
+第13章、Android的网络应用
+	13.1、基于TCP协议的网络通信(套接字Socket)：Socket; ServerSocket;
+	13.2、使用URL访问网络资源：URL; URLConnection;
+	13.3、使用HTTP访问网络：HttpURLConnection; HttpClient;
+	13.4、使用WebView视图显示网页：
+	13.5、使用WebService进行网络编程：
+第14章、管理Android手机桌面
+	14.1、管理手机桌面：
+	14.2、改变手机壁纸：
+	14.3、桌面快捷方式：
+	14.4、管理桌面小控件：
+	14.5、实时文件夹(LiveFolder)：
+第15章、传感器应用开发
+	15.2、Android的常用传感器：方向传感器Orientation; 磁场传感器Magnetic Field;
+				温度传感器Temperature; 光传感器Light; 压力传感器Pressure;
+第16章、GPS应用开发
+	16.1、支持GPS的核心API：
+	16.2、获取LocationProvider：
+	16.3、获取定位信息：
+	16.4、临近警告：
+第17章、使用Google Map服务
+	17.1、调用Google Map的准备：
+	17.2、根据GPS信息在地图上定位：
+	17.3、GPS导航：
+	17.4、根据地址定位：
+	
+第18章、疯狂连连看
+
+第19章、电子拍卖系统
+
+
+

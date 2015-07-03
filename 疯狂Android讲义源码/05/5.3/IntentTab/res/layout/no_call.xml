@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="孙悟空 - 2010/09/19"
+	android:textSize="11pt"
+	/>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="猪八戒  - 2010/10/12"
+	android:textSize="11pt"
+	/>	
+</LinearLayout>	

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AccelerometerTest!</string>
+	<string name="app_name">加速度传感器</string>
+	<string name="tip">传感器返回的值</string>
+</resources>
