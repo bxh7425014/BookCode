@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 标题 -->
+    <TextView
+    	android:id="@+id/title"
+    	android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:text="@string/music"
+   		android:gravity="center_vertical|center_horizontal"
+   		android:textSize="20px"
+   		/>
+    <!-- 显示SD卡目录下的音乐文件列表 -->
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#aaaaaa"
+	/>
+</LinearLayout>

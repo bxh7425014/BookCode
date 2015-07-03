@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">文件管理器</string>
+    <string name="radio_currentpath">在当前目录下搜索</string>
+    <string name="radio_wholepath">在整个目录下搜索</string>
+    <string name="create_file">文本文件</string>
+    <string name="create_folder">文件夹</string>
+    <string name="edit_search_hint">请输入搜索关键字</string>
+    <string name="lable_title">标题</string>
+    <string name="lable_detail">内容</string>
+    <string name="button_refer">保存</string>
+    <string name="button_back">返回</string>
+    <string name="create_hint">请输入文件名称</string>
+</resources>

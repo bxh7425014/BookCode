@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tab1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="10dip">
+
+		<TextView android:layout_width="fill_parent" android:id="@+id/tab1_tv1"
+			android:layout_height="wrap_content" android:text="@string/start"
+			android:layout_alignParentTop="true" android:paddingBottom="5dip" />
+		<EditText android:id="@+id/tab1_et1" android:layout_width="fill_parent"
+			android:singleLine="true" android:layout_height="wrap_content"
+			android:layout_below="@id/tab1_tv1" />
+		<TextView android:id="@+id/tab1_tv2" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:padding="5dip"
+			android:layout_below="@id/tab1_et1" android:text="@string/end" />
+		<EditText android:id="@+id/tab1_et2" android:layout_below="@id/tab1_tv2"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:layout_height="wrap_content" />
+		<LinearLayout android:id="@+id/tab1_lay1"
+			android:layout_width="fill_parent" android:layout_below="@id/tab1_et2"
+			android:layout_height="10dip" xmlns:android="http://schemas.android.com/apk/res/android" />
+		<ImageButton android:id="@+id/tab1_b1"
+			android:layout_below="@id/tab1_lay1" android:layout_width="100dip"
+			android:layout_height="50dip" android:layout_centerHorizontal="true"
+			android:src="@android:drawable/ic_menu_search" />
+
+	</RelativeLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tab2" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="10dip">
+
+		<TextView android:layout_width="fill_parent"
+
+			android:layout_height="wrap_content" android:text="@string/line"
+			android:paddingBottom="10dip" />
+
+
+		<EditText android:id="@+id/tab2_et1" android:layout_width="fill_parent"
+			android:singleLine="true" android:layout_height="wrap_content" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="20dip" xmlns:android="http://schemas.android.com/apk/res/android" />
+		<ImageButton android:layout_width="100dip"
+			android:layout_height="50dip" android:layout_gravity="center_horizontal"
+			android:src="@android:drawable/ic_menu_search" android:id="@+id/tab2_b1" />
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tab3" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="10dip">
+		<!--
+        TextView goes on top...
+    -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/station"
+			android:paddingBottom="10dip" />
+
+
+		<EditText android:id="@+id/tab3_et1" android:layout_width="fill_parent"
+			android:singleLine="true" android:layout_height="wrap_content" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="20dip" xmlns:android="http://schemas.android.com/apk/res/android" />
+		<ImageButton android:layout_width="100dip"
+			android:layout_height="50dip" android:layout_gravity="center_horizontal"
+			android:src="@android:drawable/ic_menu_search" android:id="@+id/tab3_b1" />
+	</LinearLayout>
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tab4" android:orientation="vertical"
+		android:layout_width="fill_parent" android:scrollbars="vertical"
+		android:layout_height="wrap_content" android:padding="10dip">
+
+		<TableLayout android:id="@+id/menu" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TableRow>
+				<TextView android:id="@+id/tab4_h2" android:text="@string/line"
+					android:gravity="left" android:padding="3dip" />
+				<TextView android:id="@+id/tab4_et2" android:gravity="left"
+					android:padding="3dip" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:id="@+id/tab4_h3" android:text="@string/upload"
+					android:gravity="left" android:padding="3dip" />
+				<TextView android:id="@+id/tab4_et3" android:gravity="left"
+					android:padding="3dip" />
+
+
+			</TableRow>
+
+			<TableRow>
+				<TextView android:id="@+id/tab4_h4" android:text="@string/download"
+					android:gravity="left" android:padding="3dip" />
+				<TextView android:id="@+id/tab4_et4" android:gravity="left"
+					android:padding="3dip" />
+			</TableRow>
+			<TableRow>
+				<TextView android:id="@+id/tab4_h5" android:gravity="left"
+					android:padding="3dip" />
+				<TextView android:id="@+id/tab4_et5" android:gravity="left"
+					android:padding="3dip" />
+			</TableRow>
+		</TableLayout>
+
+
+	</ScrollView>
+
+
+</FrameLayout>
+

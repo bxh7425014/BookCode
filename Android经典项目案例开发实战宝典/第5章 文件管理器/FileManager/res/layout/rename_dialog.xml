@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent">
+  <!-- 用于填写新的文件名称 -->
+  <EditText android:id="@+id/new_filename"
+  					 android:layout_width="fill_parent"
+  					 android:layout_height="wrap_content"
+  					 android:autoText="false"
+  					 android:singleLine="true"
+  					 android:capitalize="none"
+  					 android:gravity="fill_horizontal"/>
+</LinearLayout>

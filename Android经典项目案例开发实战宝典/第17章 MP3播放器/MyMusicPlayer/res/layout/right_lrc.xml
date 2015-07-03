@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<!-- 左箭头 -->
+	<ImageView 
+		android:id="@+id/iv1"
+		android:src="@drawable/left_arrows"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="74dip"/> 
+	<!-- 歌词显示区域 -->
+  	<com.android.supermario.LrcView
+		android:id="@+id/LyricShow"
+		android:text="无歌曲播放"
+		android:textColor="#99ffffff" 
+		android:layout_width="fill_parent"
+		android:layout_height="230dip"
+		android:layout_marginTop="10dip"
+		android:gravity="center">
+	</com.android.supermario.LrcView>	
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 添加按钮 -->
+	<Button
+		android:id="@+id/btnAdd"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|center_horizontal"
+		android:text="添加"
+	/> 
+	<!-- 文章列表，用于显示所有备忘录 -->
+	<ListView
+		android:id="@+id/listview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/btnAdd"
+		android:layout_above="@+id/linearLayout1"
+	/>
+	<!-- 底部按钮 -->
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+		android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:gravity="center"
+    	android:layout_alignParentBottom="true"
+    	>
+    	<!-- 首页按钮 -->
+		<Button
+			android:id="@+id/btnFirst"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="首   页"
+		/>
+		<!-- 上一页按钮 -->
+		<ImageButton
+			android:id="@+id/btnPre"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/preview"
+		/>
+		<!-- 下一个按钮 -->
+		<ImageButton
+			android:id="@+id/btnNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/next"
+		/>
+		<!-- 下一页按钮 -->
+		<Button
+			android:id="@+id/btnEnd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="末   页"
+	/>
+		<!-- 进度条 -->
+	</LinearLayout>
+		<ProgressBar
+		android:id="@+id/progressBar"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	style="?android:attr/progressBarStyleLarge"
+    	android:max="100"
+    	android:progress="50"
+    	android:secondaryProgress="70"
+    	android:layout_centerInParent="true"
+    	android:visibility="gone"
+    	/>
+</RelativeLayout>

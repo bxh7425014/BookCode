@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main">
+		<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_marginTop="90dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<TextView 
+			android:text="对不起!" 
+			android:textColor="#ff0000"
+			android:textSize="20sp"
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content">
+		    </TextView>
+		</LinearLayout>
+		
+		<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_marginTop="10dp"
+		android:layout_height="wrap_content">
+			<TextView 
+			android:textColor="#f3ea32"
+			android:textSize="18sp"
+			android:text="闯关失败!" 
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content">
+		    </TextView>
+		</LinearLayout>
+		
+	    <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_marginTop="30dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageButton 
+			android:id="@+id/Fail_ImageButton_Replay"
+			android:layout_marginRight="20dp"
+			android:background="@drawable/replay_button"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			</ImageButton>
+			<ImageButton 
+			android:id="@+id/Fail_ImageButton_Back"
+			android:background="@drawable/back_button"
+			android:layout_marginLeft="20dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			</ImageButton>
+		</LinearLayout>
+</LinearLayout>

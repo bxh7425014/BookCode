@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 整体是一个LinearLayout
+	1、 布局方向为水平布局
+	2、 宽fill_parent 
+	3、 高wrap_content 
+	4、 内容的方向垂直居中 
+	5、 ImageView 
+		a) Id为lv_icon 
+		b) 距离父控件的顶部和底部都是5px 
+		c) 宽、高48px 
+	6、 LinearLayout 
+		a) 布局方向为垂直布局 
+		b) 宽wrap_content 
+		c) 高48px 
+		d) 左边预留5px的距离 
+		e) TextView 
+			i. Id为lv_item_appname 
+			ii. 宽fill_parent 
+			iii. 高wrap_content 
+			iv. 单行显示 
+			v. 字体大小16px 
+			vi. 字体样式:加粗
+			vii. 字体颜色:#fff 
+		f) TextView 
+			i. Id为lv_item_packagenam 
+			ii. 宽fill_parent 
+			iii. 高wrap_content 
+			iv. 单行显示 
+			v. 字体颜色#fff 
+-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+
+	<ImageView
+		android:id="@+id/lv_icon"
+		android:layout_width="48px"
+		android:layout_height="48px"
+		android:layout_marginTop="5px"
+		android:layout_marginBottom="5px" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="48px"
+		android:paddingLeft="5px">
+		<TextView
+			android:id="@+id/lv_item_appname"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:textSize="16px"
+			android:textStyle="bold"
+			android:textColor="#fff" />
+		<TextView
+			android:id="@+id/lv_item_packagename"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:textColor="#fff" />
+	</LinearLayout>
+
+</LinearLayout>

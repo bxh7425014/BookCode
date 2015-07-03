@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical" >
+  <!-- 二选一 -->
+<RadioGroup 
+	android:id="@+id/radiogroup_create"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<!-- 创建文件选项 -->
+	<RadioButton 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:text="@string/create_file" 
+	android:id="@+id/create_file" />
+	<!-- 创建文件夹选项 -->
+	<RadioButton 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:text="@string/create_folder" 
+	android:id="@+id/create_folder" />
+</RadioGroup>  
+	<!-- 文本框，供用户填写文件名称 -->
+	<EditText 
+	android:layout_height="wrap_content" 
+	android:id="@+id/new_filename" 
+	android:layout_width="fill_parent" 
+	android:hint="@string/create_hint"
+	android:singleLine="true" />	
+</LinearLayout>

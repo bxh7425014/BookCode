@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+	android:background="@drawable/bg">
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="查看联系人"
+            android:textColor="#ff44f3ff"
+            android:padding="15dip" />
+    </TableRow>
+    <!-- 间隔线 -->
+    <View
+        android:layout_height="3dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 姓名标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="姓名："
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+        <!-- 姓名 -->
+        <TextView
+			android:id="@+id/TextView_Name"
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 手机标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="手机："
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+        <!-- 手机 -->
+        <TextView
+			android:id="@+id/TextView_Mobile"
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 座机标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="座机："
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+        <!-- 座机 -->
+        <TextView
+			android:id="@+id/TextView_Home"
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 住址标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="地址："
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+        <!-- 住址 -->
+        <TextView
+			android:id="@+id/TextView_Address"
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 电子邮箱标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="邮箱："
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+        <!-- 电子邮箱 -->
+        <TextView
+			android:id="@+id/TextView_Email"
+            android:textColor="#ffffaaaf"
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+</TableLayout>

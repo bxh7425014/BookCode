@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:paddingTop="1dip"
+		android:paddingBottom="1dip">
+		<!-- 显示进程名称和一个按钮 -->
+        <RelativeLayout android:layout_width="match_parent" 
+            android:layout_height="27dip"  
+            android:background="#555555"
+            android:id="@+id/relativeLayout1">
+            <!-- 进程名称==标题 -->
+            <TextView android:textSize="7pt" 
+                android:layout_alignParentLeft="true" 
+                android:id="@+id/textView1" 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/detail_process_name" />
+            <!-- 强制结束==按钮 -->
+            <Button
+                android:id="@+id/btn_kill_process"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="0dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="0dip"
+                android:text="@string/kill_process"
+                android:textColor="#cc0033"
+                android:textSize="5pt" />
+        </RelativeLayout>
+        <!--进程标题==内容  -->
+	    <TextView 
+            android:id="@+id/detail_process_name"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />  
+        <!-- 版权信息==标题 -->        
+        <TextView 
+            android:text="@string/detail_process_copyright"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 版权信息==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_copyright"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 安装目录==标题 -->  
+        <TextView 
+            android:text="@string/detail_process_install_dir"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 安装目录==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_install_dir"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 数据目录==标题 -->   
+        <TextView 
+            android:text="@string/detail_process_data_dir"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 数据目录==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_data_dir"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 包的大小==标题 -->
+        <TextView 
+            android:text="@string/detail_process_package_size"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 包的大小==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_package_size"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序拥有的权限==标题 -->    
+        <TextView 
+            android:text="@string/detail_process_permission"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序拥有的权限==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_permission"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序包含的服务==标题 -->    
+        <TextView 
+            android:text="@string/detail_process_service"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序包含的服务==内容 -->
+        <TextView 
+            android:id="@+id/detail_process_service"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序的Activity==标题 -->    
+        <TextView 
+            android:text="@string/detail_process_activity"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序的Activity==内容 --> 
+        <TextView 
+            android:id="@+id/detail_process_activity"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+    </LinearLayout>
+</ScrollView>

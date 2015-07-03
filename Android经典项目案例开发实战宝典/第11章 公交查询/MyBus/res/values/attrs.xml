@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="net.youmi.android.AdView">                      
+                        <attr name="backgroundColor" format="color" /><!--广告条的纯色背景色 -->                        
+                        <attr name="textColor" format="color" />            <!--字体颜色 -->
+                        <attr name="backgroundTransparent"  format="integer"/> <!--背景透明度 -->
+  </declare-styleable>
+</resources>

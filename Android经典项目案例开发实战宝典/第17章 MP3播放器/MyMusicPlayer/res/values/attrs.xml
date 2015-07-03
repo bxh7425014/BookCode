@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="DragableLuncher">
+		<attr format="integer" name="default_screen"></attr>
+		<attr format="string" name="cwd"></attr>
+	</declare-styleable>
+</resources>

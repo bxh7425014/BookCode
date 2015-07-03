@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stocker</string>
+    <string name="no_stocks">没有添加任何股票</string>
+    <string name="button1">button1</string>
+    <string name="button2">button2</string>
+    <string name="add">添加</string>    
+    <string name="enter_symbols">添加股票代码</string>    
+    <string name="close">Close</string>    
+    <string name="ok">Ok</string>    
+    <string name="delete">删除</string>    
+</resources>

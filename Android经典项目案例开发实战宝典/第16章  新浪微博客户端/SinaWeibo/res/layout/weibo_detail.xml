@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:id="@+id/layout"  
+  android:orientation="vertical"  
+  android:background="@drawable/background"
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent">  
+  <!-- 标题显示部分 -->
+  <RelativeLayout  
+	  android:layout_width="fill_parent"  
+	  android:layout_height="wrap_content"  
+	  android:layout_margin="3px" >  
+	  <!-- 顶部的标题 --> 
+	  <TextView  
+		  android:id="@+id/showName"  
+		  android:layout_width="wrap_content"  
+		  android:layout_height="wrap_content"  
+		  android:layout_centerInParent="true"  
+		  android:textColor="#343434"  
+		  android:text="阅读微博"  
+		  android:textSize="16px" />
+	  <!-- 返回主页按键 -->
+	  <ImageButton  
+		  android:id="@+id/homeBtn"  
+		  android:layout_width="50px"  
+		  android:layout_height="50px"  
+		  android:layout_alignParentRight="true"  
+		  android:layout_marginLeft="12px"  
+		  android:background="@drawable/home" />  
+  </RelativeLayout>  
+  <!-- 分界线 -->
+  <LinearLayout  
+	  android:layout_width="fill_parent"  
+	  android:layout_height="1px"  
+	  android:background="#6B4226">  
+  </LinearLayout>  
+  <!-- 用户信息 -->  
+  <RelativeLayout  
+	  android:id="@+id/user_bg"  
+	  android:layout_width="fill_parent"  
+	  android:layout_height="78px"  
+	  android:background="@drawable/content_bg"
+	  android:paddingTop="8px"  
+	  android:paddingLeft="15px" >  
+	  <!-- 用户头像 -->
+      <ImageView  
+	      android:id="@+id/usericon"  
+	      android:layout_width="50px"  
+	      android:layout_height="50px"  
+	      android:layout_alignParentLeft="true" />   
+	      <!-- 用户昵称 -->
+      <TextView  
+	      android:id="@+id/username"  
+	      android:layout_width="wrap_content"  
+	      android:layout_height="wrap_content"  
+	      android:layout_toRightOf="@+id/user_icon"  
+	      android:layout_marginLeft="50px"  
+	      android:textColor="#000000" />   
+  </RelativeLayout>  
+  <!-- 内容主体部分 -->
+  <RelativeLayout  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+    <!-- 使用ScrollView存放微博内容 -->
+        <ScrollView  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="fill_parent"  
+	        android:paddingLeft="17px"  
+	        android:paddingRight="17px"  
+	        android:paddingBottom="5px"  
+	        android:layout_above="@+id/menu_layout">  
+	        <LinearLayout  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="fill_parent"  
+		        android:orientation="vertical">  
+		        <!-- 微博文本内容 -->
+	            <TextView  
+		            android:id="@+id/text"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:textColor="#000000"  
+		            android:textSize="15px" />   
+		            <!-- 微博图片 -->
+	            <ImageView  
+		            android:id="@+id/pic"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content" />  
+        	</LinearLayout>  
+        </ScrollView>  
+         <!-- 载入动画 -->
+        <LinearLayout  
+	        android:id="@+id/loadingLayout"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:orientation="vertical"  
+	        android:visibility="visible"  
+	        android:layout_centerInParent="true">  
+            <ProgressBar  
+	            android:id="@+id/loading"  
+	            android:layout_width="47px"  
+	            android:layout_height="47px"  
+	            android:layout_gravity="center"  
+	            style="@style/progressStyle">  
+            </ProgressBar>  
+            <TextView  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:text="正在载入"  
+	            android:textSize="12px"  
+	            android:textColor="#9c9c9c"  
+	            android:layout_gravity="center"  
+	            android:layout_below="@+id/loading" />  
+        </LinearLayout>  
+  <!-- 底部按钮 -->
+        <TableLayout  
+	        android:id="@+id/menu_layout"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content"  
+	        android:gravity="center"  
+	        android:layout_alignParentBottom="true"  
+	        android:layout_marginBottom="5px">  
+            <TableRow  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:gravity="center">  
+	            <!-- 转发按钮 -->
+	            <Button  
+		            android:id="@+id/btn_gz"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:textColor="#3882b8"  
+		            android:textSize="15px"  
+		            android:text="        转发(1231)"  />
+	            <!-- 评论按钮 -->
+	            <Button  
+		            android:id="@+id/btn_pl"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:textColor="#3882b8"  
+		            android:textSize="15px"  
+		            android:text="        评论(31)" />
+            </TableRow>  
+            <TableRow  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:gravity="center">  
+	            <!-- 刷新按钮 -->
+	            <Button  
+	                android:id="@+id/btn_refresh"
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:textColor="#3882b8"  
+		            android:textSize="15px"  
+		            android:text="刷新"  />
+	            <!-- 收藏按钮 -->
+	            <Button  
+	                 android:id="@+id/btn_sc"
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:textColor="#3882b8"  
+		            android:textSize="15px"  
+		            android:text="收藏"  />
+            </TableRow>              
+        </TableLayout>          
+  </RelativeLayout>  
+</LinearLayout>  

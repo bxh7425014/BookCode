@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fruit id="1" name="apple" ><fruit id="01" name="grap">10yuan</fruit></fruit>
+    <fruit id="2" name="banana" >
+     3yuan
+    </fruit>
+    <fruit id="3" name="pear" />
+</resources>

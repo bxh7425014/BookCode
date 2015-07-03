@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<!-- 使用RelativeLayout布局用于在一行中显示两个元素 -->
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<!-- 定义自动完成文本框，供用户输入单词 -->
+        <AutoCompleteTextView
+            android:id="@+id/word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/searchWord"
+            android:ems="20"
+            android:singleLine="true" >
+            <requestFocus />
+        </AutoCompleteTextView>
+		<!-- 搜索按钮，供用户点击查询单词 -->
+        <Button
+            android:id="@+id/searchWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/searchWord" />
+    </RelativeLayout>
+	<!-- 查询结果 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchLable" />
+    <!-- 用户显示查询的结果 -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.68"
+        android:background="@color/white"
+        android:textColor="@color/blue" />
+</LinearLayout>

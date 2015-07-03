@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/tray_bg">
+	<RelativeLayout
+		android:id="@+id/weblayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- 网页浏览器 -->
+		<android.webkit.WebView
+			android:id="@+id/webkit"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+		</android.webkit.WebView>
+		<!-- 放大缩小按钮 -->
+		<ZoomControls
+			android:id="@+id/zoomControls"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip"
+			android:layout_marginRight="5dip"></ZoomControls>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/loadingLayout"
+		android:background="#802B2B2B"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- 进度条 -->
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

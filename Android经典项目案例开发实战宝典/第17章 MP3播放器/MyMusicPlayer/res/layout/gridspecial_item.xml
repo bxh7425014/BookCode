@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <RelativeLayout android:id="@+id/rl1"
+  	android:layout_width="100dip"
+  	android:layout_height="115dip">
+  	
+  <ImageView 
+  	android:id="@+id/gridspecial_view1"
+  	android:background="@drawable/default_album"
+  	android:layout_width="72dip"
+  	android:layout_height="72dip"
+  	android:layout_centerHorizontal="true"/>
+  	
+  <TextView 
+  	android:id="@+id/artist_xxx"
+  	android:text="歌手"
+  	android:textSize="13sp"
+  	android:textColor="#cdffffff"
+  	android:layout_width="wrap_content"
+  	android:layout_height="17dip"
+  	android:layout_below="@id/gridspecial_view1"
+  	android:layout_centerHorizontal="true"/>
+  	
+  <TextView 
+  	android:id="@+id/album_xxx"
+  	android:text="专辑名"
+  	android:textSize="12sp"
+  	android:textColor="#cdffffff"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/artist_xxx"
+  	android:layout_centerHorizontal="true"
+  	android:singleLine="true"/>	
+  	
+  </RelativeLayout>
+</LinearLayout>

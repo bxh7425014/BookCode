@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">		 
+	<RelativeLayout		 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="1dip">		
+	<!-- 歌曲的图标 -->	
+	<ImageView 
+		android:id="@+id/iv1"
+		android:src="@drawable/ic_mp3"
+		android:layout_width="46dip"
+		android:layout_height="46dip"></ImageView>					
+		<RelativeLayout
+			android:id="@+id/relativelayout1"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/iv1">
+			<!-- 歌曲名字 -->
+			<TextView 
+				android:id="@+id/tv1"
+				android:text="TextView"
+				android:textSize="20sp"
+				android:textColor="#ffffff"
+				android:layout_width="228dip"
+				android:layout_height="wrap_content"
+				android:singleLine="true"></TextView>
+			<!-- 歌曲播放总时间 -->	
+			<TextView  
+				android:id="@+id/tv2"
+				android:text="TextView"
+				android:textSize="18sp"
+				android:textColor="#7eeb3d"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"></TextView>
+		</RelativeLayout>
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/iv1"
+			android:layout_below="@id/relativelayout1">	
+			<!-- 文件夹图标，用于标示文件路径 -->
+			<ImageView 
+				android:id="@+id/iv2"
+				android:src="@drawable/folder"
+				android:layout_width="19dip"
+				android:layout_height="19dip"/>		
+			<!-- 文件路径 -->
+			<TextView
+				android:id="@+id/tv3"
+				android:text="TextView"
+				android:textSize="13sp" 
+				android:textColor="#ffff00"
+				android:layout_width="215dip"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/iv2"
+				android:singleLine="true"></TextView>
+			<!-- 文件大小 -->	
+			<TextView
+				android:id="@+id/tv4" 
+				android:text="TextView"
+				android:textSize="13sp" 
+				android:textColor="#dadbe2"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"></TextView>
+		</RelativeLayout>		
+	</RelativeLayout>
+</LinearLayout>

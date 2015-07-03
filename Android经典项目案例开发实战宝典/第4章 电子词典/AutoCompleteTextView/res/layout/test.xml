@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent" 
+	 android:layout_height="fill_parent"
+ >
+ <!--位于左边的图像  -->
+ <ImageView 
+	  android:id="@+id/channellogo" 
+	  android:layout_height="wrap_content"
+	  android:src="@drawable/ic_launcher" 
+	  android:layout_width="wrap_content">
+ </ImageView>
+<!-- 位于右上方的文本 -->
+ <TextView 
+      android:id="@+id/startime"
+	  android:layout_width="wrap_content"
+	  android:textSize="16dp" 
+	  android:layout_height="wrap_content" 
+	  android:padding="3dp"
+	  android:scrollbars="vertical" 
+	  android:textColorHighlight="#ff0000ff"
+	  android:text="title" 
+	  android:layout_toRightOf="@+id/channellogo" />
+ <!-- 位于 右下方的文本 -->
+ <TextView 
+      android:id="@+id/program"
+	  android:layout_width="wrap_content" 
+	  android:textSize="16dp" 
+	  android:layout_height="wrap_content"
+	  android:padding="3dp"
+	  android:scrollbars="vertical"
+	  android:textColorHighlight="#ffff0000"
+	  android:layout_toRightOf="@+id/channellogo"
+	  android:text="description" 
+	  android:layout_below="@+id/startime"/>
+</RelativeLayout>
+

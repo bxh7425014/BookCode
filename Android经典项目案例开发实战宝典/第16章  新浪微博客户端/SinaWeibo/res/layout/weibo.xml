@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+xmlns:android="http://schemas.android.com/apk/res/android"  
+android:layout_width="wrap_content"  
+android:layout_height="wrap_content"  
+android:orientation="horizontal">  
+<!-- 用户Icon -->
+<ImageView  
+	android:id="@+id/wbicon"  
+	android:layout_width="50px"  
+	android:layout_height="50px"   
+	android:layout_margin="8px" />  
+	<!-- 微博内容 -->
+	<LinearLayout  
+		android:layout_width="fill_parent"  
+		android:layout_height="wrap_content"  
+		android:orientation="vertical"  
+		android:paddingLeft="0px"  
+		android:paddingRight="5px"  
+		android:layout_marginTop="5px"  
+		android:layout_marginBottom="5px">  
+		<!-- 微博标题部分 -->
+		<RelativeLayout  
+			android:layout_width="fill_parent"  
+			android:layout_height="wrap_content">  
+			<!-- 用户昵称 -->
+			<TextView  
+				android:id="@+id/wbuser"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:textSize="15px"  
+				android:textColor="#424952"  
+				android:layout_alignParentLeft="true" />   
+				<!-- 微博是否包含图片的标志，若有图片则显示，否则不现实 -->
+			<ImageView  
+				android:id="@+id/wbimage"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:layout_marginTop="3px"  
+				android:layout_marginRight="5px"  
+				android:layout_toLeftOf="@+id/wbtime" />  
+				<!--微博发布的时间-->
+			<TextView  
+				android:id="@+id/wbtime"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:layout_alignParentRight="true"  
+				android:textColor="#f7a200"  
+				android:textSize="12px" />  
+		</RelativeLayout>  
+		<!-- 微博内容 -->
+		<TextView  
+			android:id="@+id/wbtext"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:textColor="#424952"  
+			android:textSize="13px"  
+			android:layout_marginTop="4px" />  
+	</LinearLayout>  
+</LinearLayout>

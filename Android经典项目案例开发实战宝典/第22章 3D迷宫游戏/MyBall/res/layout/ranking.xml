@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main">
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_marginTop="90dp"
+			android:gravity="center_horizontal"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<!-- 向左选关 -->
+		  	<ImageButton 
+				android:id="@+id/ImageButton_Left" 
+				android:background="@drawable/left_button"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="20dp"
+				android:layout_width="50dp" 
+				android:layout_height="25dp" />
+		  	<!-- 当前查看的关数 -->
+			<TextView 
+				android:text="第一关" 
+				android:id="@+id/TextView_level" 
+				android:textSize="20sp"
+				android:textColor="#ff0000"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" />
+			<!-- 向右选关 -->
+			<ImageButton 
+				android:id="@+id/ImageButton_Right" 
+				android:background="@drawable/right_button"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="10dp"
+				android:layout_width="50dp" 
+				android:layout_height="25dp" />
+		</LinearLayout>		
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width="wrap_content" 
+			android:gravity="center_horizontal"
+			android:layout_height="wrap_content">
+			<!-- 成绩 -->
+			<TextView 
+				android:text="成绩" 
+				android:textColor="#ff0000"
+				android:textSize="18sp"
+				android:layout_marginRight="40dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" />
+			<!-- 游戏时间 -->
+			<TextView 
+				android:text="游戏时间" 
+				android:textSize="18sp"
+				android:textColor="#ff0000"
+				android:layout_marginLeft="40dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" />
+		</LinearLayout>	
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_marginTop="5dp"
+			android:gravity="center_horizontal"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<!-- 第一名 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				<!-- 成绩 -->
+				<TextView 
+					android:id="@+id/TextView_01" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginRight="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+				<!-- 游戏时间 -->
+				<TextView 
+					android:id="@+id/TextView_11" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginLeft="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<!-- 第二名 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				<!-- 成绩 -->
+				<TextView 
+					android:id="@+id/TextView_02" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginRight="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+				<!-- 游戏时间 -->
+				<TextView 
+					android:id="@+id/TextView_22" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginLeft="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<!-- 第三名 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				<!-- 成绩 -->
+				<TextView 
+					android:id="@+id/TextView_03" 
+				    android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginRight="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+				<!-- 游戏时间 -->
+				<TextView 
+					android:id="@+id/TextView_33" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginLeft="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<!-- 第四名 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				<!-- 成绩 -->
+				<TextView 
+					android:id="@+id/TextView_04" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginRight="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+				<!-- 游戏时间 -->
+				<TextView 
+					android:id="@+id/TextView_44" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginLeft="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<!-- 第五名 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				<!-- 成绩 -->
+				<TextView 
+					android:id="@+id/TextView_05" 
+					android:layout_width="wrap_content" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginRight="40dp"
+					android:layout_height="wrap_content" />
+				<!-- 游戏时间 -->
+				<TextView 
+					android:id="@+id/TextView_55" 
+					android:textColor="#f3ea32"
+					android:textSize="16sp"
+					android:layout_marginLeft="40dp"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/layout"  
+	android:background="@drawable/background"
+	android:orientation="vertical"  
+	android:layout_width="fill_parent"  
+	android:layout_height="fill_parent">  
+  	<!-- 最上面一行 -->
+	<RelativeLayout  
+		android:layout_width="fill_parent"  
+		android:layout_height="wrap_content"  
+		android:layout_margin="3px">    
+		<!-- 用于显示用户昵称 -->
+		<TextView  
+			android:id="@+id/showName"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_centerInParent="true"  
+			android:textColor="#343434"
+			android:textSize="15px" />  
+			<!-- 用于显示写微博图标 -->
+		<ImageButton  
+			android:id="@+id/writeBtn"  
+			android:layout_width="50px"  
+			android:layout_height="50px"  
+			android:layout_toLeftOf="@+id/refreshBtn"  
+			android:background="@drawable/write" />  
+			<!-- 用于显示刷新图标 -->
+		<ImageButton  
+			android:id="@+id/refreshBtn"  
+			android:layout_width="50px"  
+			android:layout_height="50px"  
+			android:layout_alignParentRight="true"  
+			android:layout_marginLeft="12px"  
+			android:background="@drawable/refresh" />  
+	</RelativeLayout>  
+  		<!-- 黑色分隔线 -->
+	  <LinearLayout  
+		  android:layout_width="fill_parent"  
+		  android:layout_height="1px"  
+		  android:background="#000000" />  
+		  <!-- 微博显示主体 -->
+	<RelativeLayout  
+	android:layout_width="fill_parent"  
+	android:layout_height="fill_parent">  
+	  	<!-- 微博列表 -->
+		<ListView  
+			android:id="@+id/Msglist"  
+			android:layout_width="fill_parent"  
+			android:layout_height="match_parent"  
+			android:dividerHeight="2px"  
+			android:layout_margin="0px"  
+			android:background="#BBFFFFFF"  
+			android:cacheColorHint="#00000000"  
+			android:layout_above="@+id/toolbarLayout"  
+			android:fastScrollEnabled="true"   
+			android:focusable="true" />  
+	  	<!-- 显示载入动画 -->
+		<LinearLayout  
+			android:id="@+id/loadingLayout"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:orientation="vertical"  
+			android:visibility="visible"  
+			android:layout_centerInParent="true">  
+			<!--载入进度条 -->
+			<ProgressBar  
+				android:id="@+id/loading"  
+				android:layout_width="47px"  
+				android:layout_height="47px"  
+				android:layout_gravity="center"  
+				style="@style/progressStyle" />   
+			<TextView  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="正在载入"  
+				android:textSize="12px"  
+				android:textColor="#9c9c9c"  
+				android:layout_gravity="center"  
+				android:layout_below="@+id/loading" />  
+		</LinearLayout>   
+	</RelativeLayout>  
+</LinearLayout>  

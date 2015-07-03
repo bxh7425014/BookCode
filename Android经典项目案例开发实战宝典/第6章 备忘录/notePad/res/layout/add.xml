@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 标题 -->
+    <EditText
+        android:id="@+id/noteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        android:textColor="#0000ff" />
+	<!-- 闹钟时间 -->
+    <EditText
+        android:id="@+id/noteTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteName"
+        android:editable="false"
+        android:textColor="#0000ff" />
+	<!-- 备忘录内容 -->
+    <view
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/noteMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/noteTime"
+        android:layout_above="@+id/relativeLayout1"
+        class="com.guo.memorandum.LinedEditText"
+        android:background="@drawable/background"
+        android:capitalize="sentences"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:padding="5dip"
+        android:scrollbars="vertical"
+		android:hint="请输入内容"
+        android:textColor="#0000ff" />
+	<!-- 底部按钮 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+		<!-- 保存按钮 -->
+        <Button
+            android:id="@+id/btnCommit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保  存" />
+        <!-- 取消按钮 -->
+	    <Button
+	        android:id="@+id/btnCancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/btnCommit"
+	        android:text="取  消" />
+    </RelativeLayout>
+</RelativeLayout>

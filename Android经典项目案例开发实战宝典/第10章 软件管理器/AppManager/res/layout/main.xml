@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#218868">
+
+	<!--LinearLayout 
+		a) 高度为28px 
+		b) 布局方向为水平布局 
+		c) 子控件的对齐方式：垂直居中 
+		d) 左边预留5px的空间 
+		e) 设置背景图片为top_bg 
+		f) 包含两个控件 
+			i. ImageView 
+				1. 宽18px 
+				2. 高18px 
+				3. 图片：manage 
+			ii. TextView 
+				1. 高：wrap_content 
+				2. 高：wrap_content 
+				3. 颜色：#000 
+				4. 大小：14px 
+				5. 显示文字为:应用程序 -->
+	<LinearLayout
+		android:layout_height="28px"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:paddingLeft="5px"
+		android:background="@drawable/top_bg">
+		<ImageView
+			android:layout_width="18px"
+			android:layout_height="18px"
+			android:src="@drawable/manage"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000"
+			android:textSize="14px"
+			android:text="应用程序"/>
+	</LinearLayout>
+	<!--GridView 
+		a) 配置id为:gv_apps 
+		b) 高、宽：fill_parent 
+		c) 列数：3 
+		d) Item之间的水平间隔和垂直间隔都是10px 
+		e) 当item选中时显示的图片为choose_gridview 
+		f) 距离父窗体的上下左右距离分别为28px、58px、5px、5px -->
+	<GridView
+		android:id="@+id/gridView"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:numColumns="3"
+		android:horizontalSpacing="10px"
+		android:verticalSpacing="10px"
+		android:listSelector="@drawable/choose_gridview"
+		android:layout_marginTop="28px"
+		android:layout_marginBottom="58px"
+		android:layout_marginLeft="5px"
+		android:layout_marginRight="5px"/>
+   <!--   
+	配置id为:lv_apps
+	高、宽：fill_parent
+	当item选中时显示的图片为choose_gridview
+	距离父窗体的上下左右距离分别为28px、58px、5px、5px
+	默认为不可见
+	-->
+    <ListView
+    	android:id="@+id/lv_apps"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:listSelector="@drawable/choose_listview"
+    	android:layout_marginTop="28px"
+    	android:layout_marginBottom="58px"
+    	android:layout_marginLeft="5px"
+    	android:layout_marginRight="5px"
+    	android:visibility="gone" />
+<!-- 
+	setVisibility(View.INVISIBLE);只是看不到，但位置仍然占用。
+	setVisibility(View.GONE);不仅看不到了，而且连占用的空间也释放了
+	
+ -->
+
+	<!--RelativeLayout:
+		a) 宽：fill_parent 
+		b) 高：58px 
+		c) 紧靠父控件底部 d) 
+		背景图片：bottom_bg 
+		e) 有两个ImageButton 
+			i. 设置id分别为：ib_change_view和ib_change_category 
+			ii. 一个紧靠左边，一个紧靠右边 
+			iii. 距离父窗体：5px、1px 
+			iv. 图片分别为list和all 
+			v. 宽高为别为：76px和54px -->
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="56px"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/bottom_bg">
+		<!--  -->
+		<ImageButton
+			android:id="@+id/ib_change_view"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5px"
+			android:layout_marginTop="5px"
+			android:src="@drawable/list"
+			android:layout_width="76px"
+			android:layout_height="52px"/>
+		<!-- 用户程序和所有程序切换按钮 -->
+		<ImageButton
+		    android:id="@+id/ib_change_category"
+		    android:layout_width="76px"
+		    android:layout_height="52px"
+		    android:layout_alignParentBottom="true"
+		    android:layout_toRightOf="@+id/ib_change_view"
+		    android:src="@drawable/all" />
+	</RelativeLayout>	
+</RelativeLayout>

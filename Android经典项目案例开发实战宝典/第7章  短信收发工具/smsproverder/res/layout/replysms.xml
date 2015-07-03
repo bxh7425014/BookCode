@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#50000000"
+        android:orientation="vertical" >
+		<!-- 收件人号码 -->
+        <TextView
+            android:id="@+id/renum"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+		<!-- 对方短信发送时间-->
+        <TextView
+            android:id="@+id/retime"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:gravity="right"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <!-- 对方短信内容 -->
+    <TextView
+        android:id="@+id/recontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:textColor="#000000"
+        android:background="#F5F5DC"
+        android:textSize="25dp"
+        android:autoLink="email|phone|web" />
+	<!-- 欲答复的内容 -->
+    <EditText
+        android:id="@+id/replybody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:hint="回复内容"
+        android:maxLines="4"
+        android:minLines="4" />
+	<!-- 回复按钮 -->
+    <Button
+        android:id="@+id/reply"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="回复" />
+</LinearLayout>

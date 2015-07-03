@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main">
+    <!-- 开始 -->
+  	<ImageButton 
+		android:id="@+id/ImageButton_Start" 
+		android:background="@drawable/start_button"
+		android:layout_marginTop="90dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+  	<!-- 排行榜 -->
+	<ImageButton 
+		android:id="@+id/ImageButton_Rank" 
+		android:background="@drawable/rank_button"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	<!-- 设置 -->
+	<ImageButton 
+		android:id="@+id/ImageButton_Set"
+		android:background="@drawable/set_button"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+</LinearLayout>

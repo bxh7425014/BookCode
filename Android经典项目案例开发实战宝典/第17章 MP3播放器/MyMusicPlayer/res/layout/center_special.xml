@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+ 	<!-- 专辑封面显示区 --> 
+	<RelativeLayout 
+		android:id="@+id/relativelayout1"
+		android:layout_width="wrap_content"
+		android:layout_height="250.6dip"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dip">
+		<!-- 显示倒影 -->
+		<ImageView 
+			android:id="@+id/inverted_view"
+			android:layout_width="160.5dip"
+			android:layout_height="250.6dip"
+			android:layout_marginTop="14.2dip"
+			android:layout_marginLeft="43.7dip"/>
+		<!-- 显示背景图片 -->
+    	<ImageView 
+			android:id="@+id/music_view"
+			android:src="@drawable/album_bkg"
+			android:layout_width="228.6dip"
+			android:layout_height="250.7dip"/>
+		<!-- 默认专辑封面 -->					
+		<ImageView 
+			android:id="@+id/music_AlbumArt"
+			android:src="@drawable/album"
+			android:layout_width="160.5dip"
+			android:layout_height="160.5dip"
+			android:layout_marginTop="14.1dip"
+			android:layout_marginLeft="43.8dip"/>				 				
+	</RelativeLayout>
+	<!-- 左箭头 -->		
+	<ImageView 
+		android:id="@+id/iv1"
+		android:src="@drawable/left_arrows"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="75dip"/>
+	<!-- 右箭头 -->
+	<ImageView 
+		android:id="@+id/iv2"
+		android:src="@drawable/right_arrows"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="75dip"/>  
+</RelativeLayout>

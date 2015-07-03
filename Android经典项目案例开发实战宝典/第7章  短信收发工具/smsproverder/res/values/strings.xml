@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmsActivity!</string>
+    <string name="app_name">Sms</string>
+    <string name="sendnum">收件人号码</string>
+    <string name="body">发送内容</string>
+    <string name="newsms">新建信息</string>
+    
+
+</resources>

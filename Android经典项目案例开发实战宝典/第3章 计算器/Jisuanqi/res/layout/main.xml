@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff808080"
+    > 
+    <!-- 结果显示框 -->
+    <EditText android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:gravity="right"
+        android:editable = "false"
+        android:text="0"                               />    
+    <!-- 接下去采TableRow的格式进行布局设计 -->
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+         	<!-- 用于显示存储结果 -->
+            <TextView android:id="@+id/M"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content"
+                android:text="  MEM :"                 />
+            <!-- 默认显示字符串0 -->
+            <TextView android:id="@+id/mem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"                       /> 
+    </TableRow>  
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >       
+         	<!-- 显示当前是角度还是弧度，默认是角度 -->
+            <TextView android:id="@+id/_drg"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content"
+                android:text="   DEG"                 />
+            <!-- 清除存储结果 -->
+            <Button android:id="@+id/mc"
+                android:text="MC"
+                android:layout_width="106sp"
+                android:layout_height="wrap_content"   /> 
+             <!-- 清除输出窗口的所有内容 -->
+            <Button android:id="@+id/c"
+             android:text="C"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"   />                                                                                                  
+    </TableRow>                      
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >  
+         	<!-- 在角度和弧度之间切换 -->
+            <Button android:id="@+id/drg"
+             android:text="DRG"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" /> 
+            <!-- 正弦计算 -->
+            <Button android:id="@+id/sin"
+             android:text="sin"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />
+            <!-- 余弦计算 -->
+            <Button android:id="@+id/cos"
+             android:text="cos"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 正切计算 -->
+            <Button android:id="@+id/tan"
+             android:text="tan"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 阶乘计算 -->
+            <Button android:id="@+id/factorial"
+             android:text="n!"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 退格键 -->
+            <Button android:id="@+id/bksp"
+             android:text="Bksp"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />                                                                                                              
+    </TableRow>                  
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >  
+         	<!-- 数字7 -->
+            <Button android:id="@+id/seven"
+             android:text="7"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />
+            <!-- 数字8 -->
+            <Button android:id="@+id/eight"
+             android:text="8"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />    
+            <!-- 数字9 -->
+            <Button android:id="@+id/nine"
+             android:text="9"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />    
+            <!-- 除号 -->
+            <Button android:id="@+id/divide"
+             android:text="÷"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 左括号 -->     
+            <Button android:id="@+id/left"
+             android:text="("
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 右括号 -->   
+            <Button android:id="@+id/right"
+             android:text=")"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />                                                                                           
+    </TableRow>        
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >  
+         	<!-- 数字4 -->
+            <Button android:id="@+id/four"
+             android:text="4"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />
+            <!-- 数字5 -->
+            <Button android:id="@+id/five"
+             android:text="5"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 数字6 -->    
+            <Button android:id="@+id/six"
+             android:text="6"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 乘号 -->    
+            <Button android:id="@+id/mul"
+             android:text="×"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 开方 -->  
+            <Button android:id="@+id/sqrt"
+             android:text="√"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 乘方 -->
+            <Button android:id="@+id/square"
+             android:text="^"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />                                                                                                               
+    </TableRow>            
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+            <!-- 数字1 -->   
+            <Button android:id="@+id/one"
+             android:text="1"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />
+            <!-- 数字2 -->
+            <Button android:id="@+id/two"
+             android:text="2"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 数字3 -->    
+            <Button android:id="@+id/three"
+             android:text="3"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 减号 -->    
+            <Button android:id="@+id/sub"
+             android:text="-"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 对数 -->     
+            <Button android:id="@+id/log"
+             android:text="log"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 自然对数 -->
+            <Button android:id="@+id/ln"
+             android:text="ln"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />                                                                                                   
+    </TableRow>         
+       <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="57sp"
+       >                      
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+         	<!-- 数字0 -->  
+            <Button android:id="@+id/zero"
+             android:text="0"
+                android:layout_width="53sp" 
+                android:layout_height="wrap_content" />
+            <!-- 小数点 -->
+            <Button android:id="@+id/dot"
+             android:text="."
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 等号 -->
+            <Button android:id="@+id/equal"
+             android:text="="
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 加号 -->     
+            <Button android:id="@+id/add"
+             android:text="+"
+                android:layout_width="53sp"
+                android:layout_height="wrap_content" />
+            <!-- 退出计算器 -->
+            <Button android:id="@+id/exit"
+             android:text="exit"
+                android:layout_width="106sp"
+                android:layout_height="wrap_content" />                                                                                                      
+    </TableRow>  
+    </TableLayout>    
+    <TableRow
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+    		<!-- 用于提示，告诉用户如何使用计算器的一些功能等 -->
+            <TextView android:id="@+id/T"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:text="提示："                 />
+            <TextView android:id="@+id/tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="欢迎使用！"                 /> 
+    </TableRow>     
+</LinearLayout>

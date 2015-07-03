@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/musicplayer_bkg" 
+    android:gravity="center" 
+    android:layout_gravity="top">
+   <!-- 类似于Luncher，用于在切换内部子界面 --> 
+    <com.android.supermario.BigDragableLuncher 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:guojs="http://schemas.android.com/apk/res/com.android.supermario"
+		android:id="@+id/all_space"
+		android:layout_width="fill_parent"  
+		android:layout_height="fill_parent" 
+		guojs:default_screen="1">
+		<!-- 第一个界面，音乐列表 -->
+		<include android:id="@+id/music_list" layout="@layout/musiclist"/> 
+    	<!-- 主界面根元素 -->
+	 <RelativeLayout
+	 	android:id="@+id/linearlayout1"
+	 	android:orientation="vertical"
+	 	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">   
+	    <!-- 上面部分，用于显示歌曲名称、歌手名字、歌曲序号和专辑名字 -->
+		<RelativeLayout 
+			android:id="@+id/linearlayout2"
+			android:orientation="vertical"  
+			android:layout_width="fill_parent" 
+			android:layout_height="100dip">		
+			<!-- 音乐名称 -->
+			<TextView 
+				android:id="@+id/music_name"
+				android:text="无歌曲播放"
+				android:textSize="19sp"
+				android:textStyle="bold"
+		    	android:textColor="#ddffffff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="11dip"
+				android:layout_marginLeft="20dip"
+				android:singleLine="true"/>
+			<!-- 音乐专辑名称 -->
+			<TextView 
+				android:id="@+id/music_album"
+				android:textSize="36sp"
+				android:textColor="#66ceedf9"
+		  		android:textStyle="bold"
+				android:layout_width="300dip"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="28dip"
+				android:layout_marginLeft="5dip"
+				android:singleLine="true"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:ellipsize="marquee"
+				android:marqueeRepeatLimit="marquee_forever"/>
+			<!-- 歌手名字 -->	
+			<TextView 
+				android:id="@+id/music_artist"
+				android:textSize="15sp"
+				android:textColor="#ffffff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="58dip"
+				android:layout_marginLeft="17dip"/>
+			<!-- 歌曲序号 -->
+			<TextView 
+				android:id="@+id/music_number"
+				android:text="0/0"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#bbf3731e"
+				android:layout_width="60dip"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="73dip"
+				android:layout_marginRight="20dip"
+				android:layout_alignParentRight="true"
+				android:gravity="center_horizontal"/>			
+		  </RelativeLayout>				
+	 	<!--中间可滚动部分  -->
+		<RelativeLayout 
+			android:id="@+id/relativelayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="260dip"
+			android:layout_below="@id/linearlayout2">
+		<!-- 仿Luncher设计，可左右滑动进行三个界面切换 -->			
+		<com.android.supermario.DragableLuncher xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:guojs="http://schemas.android.com/apk/res/com.android.supermario"
+				android:id="@+id/space"
+				android:layout_width="fill_parent"  
+				android:layout_height="fill_parent" 
+				guojs:default_screen="1">
+				 <!-- 左边显示动画界面 -->
+				<include android:id="@+id/left" layout="@layout/left_mediaview"/>
+				<!-- 中间显示专辑图片 -->
+				<include android:id="@+id/center" layout="@layout/center_special"/>
+				<!-- 右边显示歌词 -->
+		   		<include android:id="@+id/right" layout="@layout/right_lrc"/>
+		</com.android.supermario.DragableLuncher>			
+		</RelativeLayout>     
+		<!-- 最下面部分，用于显示歌曲进度和控制歌曲播放的按钮 --> 
+		  <RelativeLayout 
+			android:id="@+id/relativelayout2"
+			android:layout_width="fill_parent"
+			android:layout_height="72dip"
+			android:layout_below="@+id/relativelayout1">	
+			<!-- 歌曲进度显示 -->			
+			<LinearLayout 
+			    android:id="@+id/linearLayout3" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" 
+			    android:gravity="center">
+		 		<!--当前播放时间 -->
+				<TextView 
+					android:id="@+id/time_tv1"
+					android:text=" 00:00 "
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#bb7af9fe"
+					android:layout_width="35dip"
+					android:layout_height="18dip"
+					android:layout_weight="1"
+					android:gravity="left"/>
+				<!-- 进度条，显示播放进度 -->
+				<SeekBar   
+					android:id="@+id/player_seekbar"
+					android:layout_width="220dip"
+					android:layout_height="wrap_content"
+					android:progressDrawable="@drawable/seekbar_style"
+			 		android:background="@drawable/play_progress_background"
+					android:thumb="@drawable/thumb"
+					android:progress="0"
+					android:max="0"/>
+				<!-- 显示歌曲总时间 -->	
+				<TextView 
+					android:id="@+id/time_tv2"
+					android:text=" 00:00 "
+					android:textSize="16sp" 
+					android:textStyle="bold"
+					android:textColor="#bb7af9fe"
+					android:layout_width="35dip"
+					android:layout_height="18dip"
+					android:layout_weight="1"
+					android:gravity="right"/>				
+			</LinearLayout>	
+			<!-- 控制音乐播放按钮 -->
+		   <LinearLayout
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+			 android:layout_centerHorizontal="true"
+			 android:layout_alignParentBottom="true">	
+			 	<!-- 前一首 -->
+				<ImageButton 
+					android:id="@+id/ib1"
+					android:src="@drawable/left_button"
+					android:background="#00000000"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<!-- 暂停、播放按钮 -->
+				 <ImageButton 
+					android:id="@+id/ib2"		
+					android:background="@drawable/play_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="40dip"/>
+				<!-- 下一首 -->	
+				<ImageButton 
+					android:id="@+id/ib3"
+					android:src="@drawable/right_button"
+					android:background="#00000000"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="40dip"/>	 
+			</LinearLayout>
+	  </RelativeLayout>	  
+	  </RelativeLayout>		
+	<!-- 右边界面，显示专辑列表 -->
+	<include android:id="@+id/grid_special" layout="@layout/gridspecial" />
+</com.android.supermario.BigDragableLuncher>
+	<!-- 底部界面布局部分，用于显示歌曲列表，正在播放、专辑列表界面切换按钮 -->				
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="40dip" 
+		android:layout_alignParentBottom="true">
+		<!-- 歌曲播放按钮 -->
+		<Button
+	    	android:id="@+id/Button1"
+	    	android:text="歌曲列表"
+	    	android:textSize="18sp"
+	    	android:textStyle="bold"
+	    	android:textColor="#fafa2d"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="match_parent" 
+	    	android:layout_weight="1"></Button>
+		<!-- 正在播放按钮 -->
+		<Button
+	    	android:id="@+id/Button2"
+	    	android:text="正在播放"
+	    	android:textSize="18sp"
+	    	android:textStyle="bold"
+	    	android:textColor="#fafa2d"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="match_parent" 
+	    	android:layout_weight="1"></Button>
+	    <!-- 专辑列表按钮 -->	
+	    <Button
+	    	android:id="@+id/Button3"
+	    	android:text="专辑列表"
+	    	android:textSize="18sp"
+	    	android:textStyle="bold"
+	    	android:textColor="#fafa2d"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="match_parent" 
+	    	android:layout_weight="1"></Button>	
+	</LinearLayout>
+	<!-- 与上面的button位置重合，为button提供背景图片 -->	
+	<LinearLayout 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="40dip" 
+		android:layout_alignParentBottom="true">
+		<!-- 歌曲播放按钮 -->
+	    <ImageButton
+	    	android:id="@+id/imageButton1"
+	    	android:src="@drawable/big_button_style"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_weight="1"></ImageButton>
+		<!-- 正在播放按钮 -->
+		<ImageButton
+	    	android:id="@+id/imageButton2"
+	    	android:src="@drawable/big_button_style"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_weight="1"></ImageButton>
+	    <!-- 专辑列表按钮 -->		
+	    <ImageButton
+	    	android:id="@+id/imageButton3"
+	    	android:src="@drawable/big_button_style"
+	    	android:background="#00000000"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_weight="1"></ImageButton>   	    	
+	</LinearLayout>		
+</RelativeLayout>

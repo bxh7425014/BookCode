@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+<string name="app_name">我的公交</string>
+<string name="beijing">北京</string> 
+<string name="zhixiashi">直辖市</string> 
+<string name="shanghai">上海</string> 
+<string name="guangzhou">广州</string>
+<string name="shenzhen">深圳</string>
+<string name="chengdu">成都</string>
+<string name="fuzhou">福州</string>	
+<string name="hefei">合肥</string>
+<string name="wuhan">武汉</string>
+
+<string name="title">公交查询</string>
+<string name="interchage">换乘</string>
+<string name="start">起始站</string>
+<string name="end">终点站</string>
+<string name="ok">查询</string>
+<string name="line">线路</string>
+<string name="station">站点</string>
+<string name="result">结果</string>
+<string name="conform">确定</string>
+<string name="sorry">对不起</string>
+<string name="find_nothing">没有找到相关信息</string>
+<string name="cancel">取消</string>
+<string name="upload">去程</string>
+<string name="download">回程</string>
+<string name="time">时间</string>
+<string name="select_one_road">请选择线路</string>
+<string name="station_from_line">经过<b><i>%1$s</i></b>的线路有</string>
+<string name="suggst_road">建议线路</string>
+<string name="gongjiao">公交</string>
+<string name="bus_name">公交<b><i>%1$s</i></b>路</string>
+<string name="chufa1">先乘坐</string>
+<string name="daoda1">再乘坐</string>
+<string name="chufa">起始站</string>
+<string name="daoda">到达站</string>
+<string name="start_end">首末站</string>
+<string name="exit">退出</string>
+<string name="download_unneeded">无需下载</string>
+<string name="connecting_to">连接至</string>
+<string name="diag_msg">查询该城市公交?</string>
+<string name="diag_err">读取文件出错</string>
+<string name="pregress_diag">导入数据...</string>
+<string name="dl_from">从%s载入文件</string>
+<string name="error_dl_from">从 %s载入文件出错</string>
+<string name="error_write">写入文件%s出错</string>
+<string name="dl_progress">%1$.0f%% 完成: 文件 %2$s</string>
+<string name="dl_finished">Finished</string>
+<string name="failed_connecting_to">连接到%s失败</string>
+<string name="error_connecting_to">连接到 %s出错</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">计算器</string>
+    <dimen name="layout_width">250px</dimen>
+    <dimen name="btn_con_length">65px</dimen>
+    <dimen name="btn_con_marginLeft">55px</dimen>
+    <dimen name="btn_length">50px</dimen>
+</resources>

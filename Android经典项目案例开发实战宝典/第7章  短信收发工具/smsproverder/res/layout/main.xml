@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<!-- 新建信息按键 -->
+    <Button
+        android:id="@+id/newsms"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/button"
+        android:text="@string/newsms"
+        android:textColor="#65516A"
+        android:textSize="25dp" />
+<!--信息列表 -->
+    <ListView
+        android:id="@+id/msg_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:scrollbars="vertical"
+        android:text="@string/newsms" >
+    </ListView>
+</LinearLayout>

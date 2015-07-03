@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:gravity="left|center"
+	android:layout_height="38dp">
+	<!-- 图标 -->
+	<ImageView
+		android:id="@+id/image_list_childs"
+		android:layout_height="40dip"
+		android:layout_width="40dip"/>
+	<!--用于显示文件名的文本框  -->
+	<TextView
+		android:id="@+id/text_list_childs"
+		android:layout_width="fill_parent"
+		android:textSize="20sp"
+		android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

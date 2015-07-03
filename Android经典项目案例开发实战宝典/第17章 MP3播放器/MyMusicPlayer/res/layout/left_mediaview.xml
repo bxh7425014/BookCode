@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- 用于播放gif动画 -->
+	<RelativeLayout 
+		android:id="@+id/relativelayout1"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" 
+		android:layout_marginTop="10dip">	
+		<!-- 自定义播放动画视图类 -->		
+		<com.android.supermario.RunGif 
+			android:id="@+id/runGif1"
+			android:layout_width="fill_parent" 
+			android:layout_height="240dip" /> 
+	</RelativeLayout>
+	<!-- 向右箭头 -->
+	<ImageView 
+		android:id="@+id/iv2"
+		android:src="@drawable/right_arrows"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" 
+		android:layout_marginTop="76dip" />
+</RelativeLayout>

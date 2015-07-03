@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  >
+  	<!-- 用于放置程序的icon -->
+    <ImageView 
+        android:id="@+id/image_app" 
+        android:layout_height="48dip" 
+        android:layout_width="48dip" 
+        android:layout_marginRight="10dip"
+        android:layout_alignParentLeft="true"
+    />
+    <!-- 显示描述进程信息的文字 -->
+    <LinearLayout 
+        android:id="@+id/linearLayout1" 
+        android:orientation="vertical" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/image_app">
+        <!-- 程序的名称 -->
+        <TextView 
+            android:text="123" 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:id="@+id/name_app" 
+            android:textSize="8pt" />
+        <!-- 程序的包名 -->
+        <TextView 
+            android:text="123" 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:id="@+id/package_app" 
+            android:textSize="5pt" />
+        <!-- 程序占用的内存-->
+	    <TextView
+	        android:text="123" 
+	        android:id="@+id/cpumem_app"
+	        android:textColor="#00AA00"
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content" 
+	        android:textSize="5pt" />
+    </LinearLayout>
+</RelativeLayout>

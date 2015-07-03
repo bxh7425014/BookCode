@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main">
+    <!-- 第一排 -->
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_marginTop="100dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<!-- 第一关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map01" 
+			android:background="@drawable/map01_button"
+			android:layout_marginRight="20dp"
+			android:layout_width="120dp"  
+			android:layout_height="75dp" />
+		<!-- 第二关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map02" 
+			android:background="@drawable/map02_button"
+			android:layout_marginRight="20dp"
+			android:layout_width="120dp" 
+			android:layout_height="75dp" />
+		<!-- 第三关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map03" 
+			android:background="@drawable/map03_button"
+			android:layout_width="120dp" 
+			android:layout_height="75dp" />
+		</LinearLayout>
+	<!-- 第二排 -->
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<!-- 第四关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map04" 
+			android:layout_marginRight="20dp"
+			android:background="@drawable/map04_button"
+			android:layout_width="120dp" 
+			android:layout_height="75dp" />
+		<!-- 第五关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map05" 
+			android:layout_marginRight="20dp"
+			android:background="@drawable/map05_button"
+			android:layout_width="120dp" 
+			android:layout_height="75dp" />
+		<!-- 第六关 -->
+		<ImageButton 
+			android:id="@+id/ImageButton_map06" 
+			android:background="@drawable/map06_button"
+			android:layout_width="120dp" 
+			android:layout_height="75dp" />
+		</LinearLayout>
+</LinearLayout>	

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+    <!-- 用于显示当前用户icon的容器 -->
+		<RelativeLayout  
+			android:id="@+id/iconBg"  
+			android:layout_width="100px"  
+			android:layout_height="100px"  
+			android:background="@drawable/icon_bg"  
+			android:layout_above="@+id/selectLayout"  
+			android:layout_centerHorizontal="true" 
+			android:layout_marginTop="140px" >  
+			<!-- 显示用于Icon -->
+			<ImageView  
+				android:id="@+id/icon"  
+				android:layout_width="80px"  
+				android:layout_height="80px"  
+				android:layout_centerInParent="true" />  
+		</RelativeLayout>  
+		<RelativeLayout  
+			android:layout_width="fill_parent"  
+			android:layout_height="fill_parent">   
+			<RelativeLayout  
+				android:id="@+id/selectLayout"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:layout_centerInParent="true">  
+				<!-- 显示当前用户的昵称 -->
+				<EditText 
+					android:id="@+id/iconSelect"  
+					android:layout_width="200px"  
+					android:layout_height="wrap_content"   
+					android:maxLength="10"   
+					android:paddingLeft="20px"  
+					android:editable="false"  
+					android:enabled="false"  
+					android:textSize="15px" />   
+				<!-- 显示所有用户按钮 -->
+				<ImageButton
+				    android:id="@+id/iconSelectBtn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignBottom="@+id/iconSelect"
+				    android:layout_alignRight="@+id/iconSelect"
+				    android:layout_alignTop="@+id/iconSelect"
+				    android:layout_marginRight="1.0dip"
+				    android:background="@drawable/down" />
+	  			<!-- 登陆按钮 -->
+				<Button   
+					android:id="@+id/login"  
+					android:layout_width="100px"  
+					android:layout_height="40px"   
+					android:layout_marginLeft="5dip"  
+					android:layout_alignTop="@+id/iconSelectBtn"  
+					android:layout_toRightOf="@+id/iconSelectBtn"  
+					android:layout_alignBottom="@+id/iconSelectBtn"  
+					android:text="登陆" />  
+			</RelativeLayout>  
+		  <!-- 用于显示底部菜单栏 -->
+			<GridView
+				android:id="@+id/gridview_toolbar"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_alignParentBottom="true"></GridView>
+	</RelativeLayout>  
+</RelativeLayout>

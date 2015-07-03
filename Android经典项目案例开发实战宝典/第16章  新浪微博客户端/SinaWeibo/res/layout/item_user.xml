@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#bbFFF8DC" >
+    <!-- 用于用户的icon -->
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginRight="10dip" />
+    <!-- 用于显示用户的昵称 -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8pt" />
+</LinearLayout>

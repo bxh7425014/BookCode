@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.supermario.filemanager"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <uses-sdk android:minSdkVersion="10" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:name=".MainActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditTxtActivity" android:label="@string/app_name"></activity>
+        <activity android:name="com.supermario.filemanager.WebActivity" android:label="@string/app_name"></activity>
+        <service android:name="FileService">
+			<intent-filter>
+				<action android:name="com.android.service.FILE_SEARCH_START" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</service>
+    </application>
+</manifest> 

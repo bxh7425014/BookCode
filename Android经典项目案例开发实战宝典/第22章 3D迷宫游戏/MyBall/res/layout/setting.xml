@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main">
+    <!-- 选项 -->
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_marginTop="100dp"
+		android:layout_height="wrap_content">
+		<!-- 选项内容 -->
+		<TextView 
+			android:text="是否开启碰壁声音" 
+			android:textSize="25sp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<!-- 选项框 -->
+		<CheckBox 
+			android:id="@+id/CheckBox_collision" 
+			android:width="35dp"
+			android:height="35dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<!-- 确定按钮 -->
+	<ImageButton 
+		android:id="@+id/ImageButton_ok" 
+		android:layout_width="wrap_content" 
+		android:background="@drawable/ok_button"
+		android:layout_height="wrap_content" />
+</LinearLayout>

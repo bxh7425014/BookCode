@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:orientation="vertical"    
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"    
+    >    
+    <!-- 相机预览界面 -->
+    <SurfaceView 
+        android:id="@+id/surfaceView1"   
+   		android:layout_width="fill_parent"    
+    	android:layout_height="420dp"    
+     	android:layout_gravity="center">  
+     	<!-- 用户操作区 -->
+  	</SurfaceView>
+  	<LinearLayout   
+	    android:orientation="horizontal"    
+	    android:layout_width="fill_parent"    
+	    android:layout_height="fill_parent"   
+	    android:layout_marginTop="20dp" 
+	    > 
+	    <!-- 拍照按键 -->
+	  	<Button 
+	  	    android:id="@+id/capture"
+	  	    android:layout_width="100dp"
+	  	    android:layout_height="100dp"
+	  	    android:text="拍照"/>	
+	  	<!-- 生成的照片缩略图 -->
+	  	<ImageView 
+	  	    android:layout_marginLeft="50dp"
+	  	    android:id="@+id/editPic"
+	  	    android:layout_width="100dp"
+	  	    android:layout_height="100dp"
+	  	    android:contentDescription="照片"
+	  	     />"
+  	</LinearLayout>
+</LinearLayout>

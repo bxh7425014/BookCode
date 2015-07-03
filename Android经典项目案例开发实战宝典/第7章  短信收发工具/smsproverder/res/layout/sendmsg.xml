@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#555555"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<!-- logo图片 -->
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contact" />
+		<!-- 电话号码输入框 -->
+        <EditText
+            android:id="@+id/ednum"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#DEEBFE"
+            android:hint="@string/sendnum"
+            android:numeric="integer"
+            android:singleLine="true" />
+    </LinearLayout>	<!-- 发送内容 -->
+    <EditText
+        android:id="@+id/edbody"
+        style="@android:style/Theme.Translucent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="0.69"
+        android:background="#E0E0FC"
+        android:gravity="left"
+        android:hint="@string/body"
+        android:maxLines="11"
+        android:minLines="11"
+        android:scrollbars="vertical" />
+	<!-- 发送按钮 -->
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/send"
+        android:text="发送" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/quote_template"
+    android:orientation="horizontal" >
+    <!-- 显示股票代码 -->
+	<TextView
+		android:id="@+id/symbol"
+		android:layout_width="90sp"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:singleLine="true"
+		android:typeface="sans"
+		android:textStyle="bold"
+		android:paddingLeft="3sp"
+		android:paddingRight="3sp" />
+	<!-- 显示股票的名称 -->
+	<TextView
+	    android:id="@+id/name"
+	    android:layout_width="100sp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/symbol"
+	    android:gravity="left"
+	    android:paddingLeft="3dip"
+	    android:paddingRight="10dip"
+	    android:singleLine="true"
+	    android:textSize="18sp"
+	    android:textStyle="bold"
+	    android:typeface="sans" />
+	<!-- 显示股票的当前价格 -->
+	<TextView
+		android:id="@+id/current"
+		android:layout_width="60sp"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:singleLine="true"
+		android:typeface="sans"
+		android:gravity="left"
+		android:textStyle="bold"
+		android:paddingLeft="3dip"
+		android:paddingRight="5dip"
+		android:layout_toRightOf="@+id/name" />
+	<!-- 显示股票的涨跌百分比 -->
+	<TextView
+		android:id="@+id/percent"
+		android:layout_width="80sp"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:singleLine="true"
+		android:typeface="sans"
+		android:gravity="left"
+		android:textStyle="bold"
+		android:paddingLeft="3dip"
+		android:paddingRight="5dip"
+		android:layout_toRightOf="@+id/current"
+		android:layout_alignParentRight="true" />
+</RelativeLayout>

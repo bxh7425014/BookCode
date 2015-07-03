@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="horizontal" >
+	<!-- 显示头像 -->
+    <ImageView
+        android:id="@+id/imag"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="@drawable/people" />	<!-- 文本区域 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imag" >
+		<!-- 手机号码 -->
+        <TextView
+            android:id="@+id/listnum"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+		<!-- 显示“收”或者“发”，分别表示发件箱和收件箱的邮件 -->
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentRight="true"
+            android:textColor="#006633"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginRight="20dp"/>
+        <!-- 消息部分 -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listnum" >
+			<!-- 消息 -->
+            <TextView
+                android:id="@+id/listmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLength="10"
+                android:textColor="#000000" />
+			<!-- 日期 -->
+            <TextView
+                android:id="@+id/listtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+	<!-- 分割条 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/imag"
+        android:layout_alignParentLeft="true"
+        android:background="#bbbbbb" />
+</RelativeLayout>

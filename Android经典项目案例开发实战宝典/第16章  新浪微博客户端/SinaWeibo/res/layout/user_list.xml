@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_myview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >   
+    <!-- 用于显示所有用户的列表 -->
+	<ListView
+        android:id="@+id/userList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip"
+        android:listSelector="#BB000000" >
+    </ListView>   
+</LinearLayout>
