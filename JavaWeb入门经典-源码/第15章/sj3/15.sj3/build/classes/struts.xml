@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<package name="first" extends="struts-default"><!-- 定义一个package -->
+<!-- 对action返回结果的配置 -->
+	<action name="piao" class="com.zx.action.DealAction">
+		<result name="success">/result.jsp</result>
+	</action>
+</package>
+</struts>    

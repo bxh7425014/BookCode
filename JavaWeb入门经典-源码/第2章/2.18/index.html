@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>利用for、while和do…while循环语句将数字</title>
+<script language="javascript">
+var str="9";
+for(i=0;i<4;i++ ){
+	str="0"+str;
+}
+document.write(str+" ");
+
+/*应用while语句实现*/
+var i=0;
+var str="9";
+while(i<4){
+	str="0"+str;
+	i++;
+}
+document.write(str+" ");
+
+/*应do...用while语句实现*/
+var i=0;
+var str="9";
+do{
+	str="0"+str;
+	i++;
+} while(i<4);
+document.write(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

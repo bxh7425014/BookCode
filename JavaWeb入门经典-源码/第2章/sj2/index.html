@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>小写金额转换为大写金额</title>
+	<meta charset="utf-8">
+<script language="javaScript"> 
+
+	function convert(){
+		var money_num = document.getElementById("money_num").value;
+		if(money_num==""){
+			alert("请输入金额！");
+			document.getElementById("money_num").focus();
+			return;
+		}
+		if(isNaN(money_num)){
+			alert("请输入数字类型的金额 !");
+			return;
+		}
+		if(money_num>999999999999){
+			alert("您输入的金额不能大于999999999999!");
+			return;
+		}
+		//将小数点后保留两位小数
+		if(money_num.indexOf(".")>0){
+			var decimalStr = money_num.split(".");
+			if(decimalStr[1].length>2){
+				decimalStr[1]=decimalStr[1].substr(0,2);
+			}
+			money_num = decimalStr[0]+"."+decimalStr[1];
+		}
+		value=change(money_num); //调用自定义函数转换
+		document.getElementById("money_cn").value=value;  //将转换后的值赋给文本框
+	}
+	
+	function change(str){
+		je="零壹贰叁肆伍陆柒捌玖";			//大写的数字（0-9）
+		cdw="万仟佰拾亿仟佰拾万仟佰拾元角分";	//金额单位
+		var newstring=(str*100).toString();	//将金额值乘以100
+		newstringlog=newstring.length;		//乘以100之后的金额的长度
+		newdw=cdw.substr(cdw.length-newstringlog);
+		num0=0;     	//记录零的个数
+		wan=0;     		//记录万位出现的次数
+		dxje="";     	//记录大写金额
+		for(m=1;m<newstringlog+1;m++){
+			xzf=newstring.substr(m-1,1);   
+			dzf=je.substr(xzf,1);
+			dw=newdw.substr(m-1,1);
+			if(dzf=="零"){
+				dzf="";
+			if(dw=="亿"){
+			}else if(dw=="万"){
+				dzf="";
+				wan=1; 
+			}else if(dw=="元"){
+ 
+			}else{
+				dw="";	//记录单位		
+			}
+			num0=num0+1;
+			}else{
+				if(num0-wan>0){
+					if(dw!="角"){
+					dzf="零"+dzf;
+					}
+				}
+				num0=0;
+ 
+			}
+			dxje=dxje+dzf+dw;
+		}
+		if(newstring.length!=1){
+			if(newstring.substr(newstring.length-2)=="00"){
+				dxje=dxje+"整";
+			}else{
+				dxje=dxje;
+			}
+		}
+		return dxje;
+	} 	
+</script>
+	<style type="text/css">
+		ul{
+			font-size: 13px;	/*设置字体大小*/
+			color:navy;			/*设置文字颜色*/
+			list-style:none;	/*不显示项目符号*/
+		}
+		li{
+			padding:3px;	/*设置内边距*/
+		}
+		input{
+			font-size: 13px;
+			color:navy;
+		}
+		font{
+			font-size: 12px;
+			color:orangered;
+		}
+		.style1{
+			width: 380px;	/*设置宽度*/
+			height: 230px;	/*设置高度*/
+		}
+	</style>
+  </head>
+  
+  <body>
+    <fieldset class="style1"><legend>金额转换</legend>
+    
+   <form action="" id="myform">
+   <ul>
+   	<li>请输入小写金额：</li>
+    <li><input type="text"  id="money_num" size="40"> </li>
+    <li>转换后的大写金额：</li>
+    <li><textarea rows="5" cols="35" id="money_cn"></textarea></li>
+    <li><input type="button" value="转 换" onclick="convert()"></li>
+   </ul>
+  	
+   </form>
+   </fieldset>
+  </body>
+</html>

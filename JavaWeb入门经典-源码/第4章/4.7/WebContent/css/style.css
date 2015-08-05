@@ -1,0 +1,15 @@
+<!--
+a:hover {
+	font-size: 9pt;	color: #FF0000;
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #000000;
+	noline:expression(this.onfocus=this.blur);
+}
+	ul{list-style: none;}
+	li{
+	padding:5px;
+	font-size:12px;
+	}
+}
+-->

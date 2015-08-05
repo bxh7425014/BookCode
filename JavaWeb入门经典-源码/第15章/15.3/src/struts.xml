@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 声明包 -->
+	<package name="user" extends="struts-default" namespace="/user">
+		<!-- 定义action -->
+		<action name="userAction" class="com.wgh.UserAction">
+			<!-- 定义处理成功后的映射页面 -->
+			<result name="add">user_add.jsp</result>
+			<result name="update">user_update.jsp</result>
+		</action>
+	</package>
+</struts>

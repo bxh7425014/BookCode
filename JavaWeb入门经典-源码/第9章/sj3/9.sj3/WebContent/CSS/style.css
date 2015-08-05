@@ -1,0 +1,53 @@
+/*设置页面主体样式*/
+body {
+	FONT-SIZE: 9pt;
+	margin:0px;
+	SCROLLBAR-FACE-COLOR: #dddddd; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #fcfcfc; COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #eeeeee;
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #eeeeee;
+	SCROLLBAR-DARKSHADOW-COLOR: #666666;
+	BACKGROUND-COLOR: #FFF9F9;
+
+}
+section{
+	margin: 0 auto auto auto;
+	width:794px;
+}
+#top{
+	height:127px;
+	background-image:url(../images/top.jpg);
+}
+/*设置超链接的样式*/
+a:hover {
+	font-size: 9pt;	color: #FF6600;
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #777777;
+}
+#greeting{
+	padding-top:75px;
+	padding-right:510px;
+	color:#FFFFFF;
+}
+#login{
+	height:123px;
+	background-image:url(../images/ad.jpg);
+}
+#loginForm{
+	padding-top:5px;
+	padding-right:540px;
+}
+form{
+padding:0px;
+}
+ul{
+	list-style:none;
+	padding: 0px;
+}
+li{padding:5px;
+	margin: 0px;
+
+}

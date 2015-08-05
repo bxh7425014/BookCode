@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chat>
+	<messages>
+		<message>
+			<from>[系统公告]</from>
+			<face />
+			<to />
+			<content><![CDATA[<font color='gray'>无语走进了聊天室！</font>]]></content>
+			<sendTime>2012-8-6 13:20:29</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+		<message>
+			<from>[系统公告]</from>
+			<face />
+			<to />
+			<content><![CDATA[<font color='gray'>wgh走进了聊天室！</font>]]></content>
+			<sendTime>2012-8-6 13:20:53</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+		<message>
+			<from>wgh</from>
+			<face>微笑着</face>
+			<to>无语</to>
+			<content><![CDATA[<font color=''>大家好</font>]]></content>
+			<sendTime>2012-8-6 13:21:14</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+		<message>
+			<from>无语</from>
+			<face>微笑着</face>
+			<to>所有人</to>
+			<content><![CDATA[<font color=''>大家好</font>]]></content>
+			<sendTime>2012-8-6 13:21:26</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+		<message>
+			<from>[系统公告]</from>
+			<face />
+			<to />
+			<content><![CDATA[<font color='gray'>wgh离开聊天室！</font>]]></content>
+			<sendTime>2012-8-6 13:24:03</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+		<message>
+			<from>[系统公告]</from>
+			<face></face>
+			<to></to>
+			<content><![CDATA[<font color='gray'>无语离开聊天室！</font>]]></content>
+			<sendTime>2012-8-6 13:28:24</sendTime>
+			<isPrivate>false</isPrivate>
+		</message>
+	</messages>
+</chat>

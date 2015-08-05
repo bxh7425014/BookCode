@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<country name="中国">
+	<province id="00000" name="北京市">
+		<city id="00001" name="北京" area="东城区,西城区,崇文区,宣武区,朝阳区,丰台区,石景山区,海淀区,门头沟区,房山区,通州区,顺义区,冒平区,大兴区,怀柔区,平谷区,密云区,延庆县">
+		</city>
+	</province>
+	<province id="01000" name="上海市">
+		<city id="01001" name="上海" area="黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,浦东新区,青浦区,崇明县,其他">
+		</city>
+	</province>	
+	<province id="02000" name="天津市">
+		<city id="02001" name="天津" area="和平区,河东区,河西区,河南区,南开区,河北区,红桥区,塘沽区,汉沽区,大港区,东丽区,西青区,津南区,北辰区,武清区,宝坻区,宁河区,静河县,蓟县">
+		</city>
+	</province>
+	<province id="03000" name="重庆市">
+		<city id="03001" name="重庆" area="渝中区,大渡口,津北区,沙坪坝,九龙区,南岸区,北碚区,万盛区,双桥区,其他">
+		</city>
+	</province>
+	<province id="04000" name="黑龙江省">
+		<city id="04001" name="哈尔滨" area="松北,道里,南岗,道外,五常,其他">
+		</city>
+		<city id="04002" name="齐齐哈尔" area="龙沙,建华,铁锋,依安,龙江,其他">
+		</city>	
+		<city id="04003" name="牡丹江" area="爱民区,东安区,阳明区,西安区,东宁县,其他">
+		</city>	
+		<city id="04004" name="大庆" area="萨尔图区,龙凤区,红岗区,大同区,其他">
+		</city>	
+		<city id="04005" name="伊春" area="伊春区,南岔,友好,西林区,新青区,其他">
+		</city>
+		<city id="04006" name="双鸭山" area="尖山区,岭东区,安山区,友谊县,其他">
+		</city>	
+		<city id="04007" name="鹤岗" area="兴山区,向阳区,工农区,南山区,兴安区,其他">
+		</city>	
+		<city id="04008" name="鸡西" area="鸡冠区,恒山区,梨树区,麻山区,虎树区,密山区,鸡东县,其他">
+		</city>
+		<city id="04009" name="佳木斯" area="前进区,向阳区,东风区,郊区,同江区,其他">
+		</city>	
+		<city id="04010" name="七台河" area="桃山区,新兴区,茄子河区,勃利县,其他">
+		</city>	
+		<city id="04011" name="黑河" area="爱辉区,北安区,五大连池市,嫩江县,逊克县,孙吴县,其他">
+		</city>
+		<city id="04012" name="绥化" area="北林区,安达市,海伦市,兰西县,青冈县,庆安县,明水县,其他">
+		</city>	
+		<city id="04013" name="大兴安岭" area="呼玛县,塔河县,漠河县,新林区,呼中区,松岭区,加格达奇区">
+		</city>								
+	</province>	
+	<province id="05000" name="吉林省">
+		<city id="05001" name="长春" area="双阳区,德惠市,九台市,农安县,榆树市,南关区,宽城区,朝阳区,二道区,绿园区,经济技术开发区,高新区">
+		</city>
+		<city id="05002" name="延边朝鲜族自治州" area="延吉市,图们市,敦化市,珲春市,其他">
+		</city>	
+		<city id="05003" name="吉林" area="船营区,冒邑区,龙潭区,丰满区,蛟河市,桦甸市,其他">
+		</city>	
+		<city id="05004" name="白山" area="八道江区,江源区,临江区,抚松县,靖宇县,长白朝鲜族自治州">
+		</city>	
+		<city id="05005" name="白城" area="洮北区,洮南区,大安市,镇赉县,通榆县,其他">
+		</city>
+		<city id="05006" name="四平" area="梨树县,伊通满族自治县,公主岭市,双辽市,铁西区,铁东区">
+		</city>	
+		<city id="05007" name="松原" area="宁江区,长岭县,乾安县,扶余县,前郭">
+		</city>	
+		<city id="05008" name="辽源" area="龙山区,西安区,东丰县,东辽县,其他">
+		</city>
+		<city id="05009" name="通化" area="东冒区,二道江区,梅河口市,集安市,通化县,辉南县,柳河县">
+		</city>								
+	</province>		
+	<province id="06000" name="辽宁省">
+		<city id="06001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="07000" name="内蒙古">
+		<city id="07001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="08000" name="河北省">
+		<city id="08001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="09000" name="河南省">
+		<city id="09001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="10000" name="山东省">
+		<city id="10001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="11000" name="山西省">
+		<city id="11001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="12000" name="江苏省">
+		<city id="12001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="13000" name="安徽省">
+		<city id="13001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="14000" name="陕西省">
+		<city id="14001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="15000" name="宁夏回族自治区">
+		<city id="15001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="16000" name="甘肃省">
+		<city id="16001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="17000" name="青海省">
+		<city id="17001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="18000" name="湖北省">
+		<city id="18001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="19000" name="湖南省">
+		<city id="19001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="20000" name="浙江省">
+		<city id="20001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="21000" name="江西省">
+		<city id="21001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="22000" name="福建省">
+		<city id="22001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="23000" name="贵州省">
+		<city id="23001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="24000" name="四川省">
+		<city id="24001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="25000" name="广东省">
+		<city id="25001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="26000" name="珠海省">
+		<city id="26001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="27000" name="广西壮族自治区">
+		<city id="27001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="18000" name="云南省">
+		<city id="18001" name="其他" area="其他">
+		</city>
+	</province>	
+	<province id="29000" name="海南省">
+		<city id="29001" name="其他" area="其他">
+		</city>
+	</province>
+	<province id="30000" name="新疆维吾尔族自治区">
+		<city id="30001" name="其他" area="其他">
+		</city>
+	</province>		
+</country>

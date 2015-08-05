@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- User Bean -->
+	<bean id="user" class="com.mr.user.User">
+		<property name="name">
+			<value>明日科技</value>
+		</property>
+		<property name="age">
+			<value>11</value>
+		</property>
+		<property name="sex">
+			<value>男</value>
+		</property>
+	</bean>
+	<!-- 注入JavaBean -->
+	<bean name="/main.do" class="com.mr.main.Manager">
+		<property name="user">
+			<ref local="user"/>
+		</property>
+	</bean>
+
+</beans>
