@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function setFun(){
+			var id = new Array(1,2,3) ;
+			var value = new Array("北京","南京","上海") ;
+			// 取得下拉列表框的对象
+			var select = document.getElementById("area") ;
+			select.length = 1 ;	// 表示每次可以选择的内容是1个
+			select.options[0].selected = true ;	// 设置第一个为默认选中
+			for(var x=0;x<id.length;x++){
+				// 创建option的节点
+				var option = document.createElement("option") ;
+				option.setAttribute("value",id[x]) ;
+				// 在option子节点之中增加文本节点
+				option.appendChild(document.createTextNode(value[x])) ;
+				select.appendChild(option) ;	// 增加子节点
+			}
+		}
+	</script>
+</head>
+<body onload="setFun()">
+	<form>
+		<select name="area" id="area">
+			<option value="0">没有地区</option>
+		</select>
+	</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<authors>
+	<author>
+		<name id="MR&apos;LXH">李兴华</name>
+		<![CDATA[
+			这里面的内容不解析，会直接显示
+			可以作为注释出现在一个XML文件之中
+			与HTML中的“<!---->”功能类似
+		]]>
+	</author>
+</authors>

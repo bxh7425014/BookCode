@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function validate(f){
+			var value = f.email.value ;
+			if(!/^\w+@\w+.\w+$/.test(value)){
+				alert("EMAIL输入格式不正确！") ;
+				f.email.focus() ;	// 让email获得焦点
+				f.email.select() ;	// 让已有的内容全选
+				return false ;
+			}
+
+			return true ;
+		}
+	</script>
+</head>
+<body>
+<form action="test.htm" method="post" name="myform" onsubmit="return validate(this)">
+	EMAIL：<input type="text" name="email">
+	<input type="submit" value="提交">
+</form>
+</body>
+</html>

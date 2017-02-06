@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<addresslist>
+	<linkman id="lxh" name="裤">
+		<name>李兴华</name>
+		<email>mldnqa@163.com</email>
+	</linkman>
+	<linkman id="mldn" name="外">
+		<name>MLDN</name>
+		<email>mldnkf@163.com</email>
+	</linkman>
+</addresslist>

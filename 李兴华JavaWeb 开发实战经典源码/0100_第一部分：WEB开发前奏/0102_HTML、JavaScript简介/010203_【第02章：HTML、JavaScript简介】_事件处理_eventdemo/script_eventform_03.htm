@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function show(){
+			var name = document.myform.name.value ;
+			alert("姓名：" + name) ;
+			var sex ;	// 表示性别
+			if(document.myform.sex[0].checked) {
+				sex = document.myform.sex[0].value ;
+			} else {
+				sex = document.myform.sex[1].value ;
+			}
+			alert("性别：" + sex) ;
+			var inst = "" ;
+			for(i=0 ; i<document.myform.inst.length; i++){
+				if(document.myform.inst[i].checked){
+					inst += document.myform.inst[i].value + "、" ;
+				}
+			}
+			alert("兴趣：" + inst) ;
+		}
+	</script>
+</head>
+<body>
+<form action="test.htm" method="post" name="myform">
+	姓名：<input type="text" name="name"><br>
+	性别：<input type="radio" name="sex" value="男" checked>男
+			<input type="radio" name="sex" value="女">女<br>
+	兴趣：	<input type="checkbox" name="inst" value="唱歌">唱歌
+			<input type="checkbox" name="inst" value="游泳">游泳
+			<input type="checkbox" name="inst" value="跳舞">跳舞
+			<input type="checkbox" name="inst" value="编程" checked>编程
+			<input type="checkbox" name="inst" value="上网">上网<br>
+	<input type="button" value="显示" onclick="show()">
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function show(val){
+			document.myform.result.value = val ;
+		}
+	</script>
+</head>
+<body>
+<form action="test.htm" method="post" name="myform">
+	部门：	<select name="dept" onchange="show(this.value)">
+				<option value="技术部">技术部</option>
+				<option value="销售部">销售部</option>
+				<option value="财务部">财务部</option>
+			</select>
+	结果：	<input type="text" name="result" value="">
+</form>
+</body>
+</html>

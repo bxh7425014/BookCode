@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function returnValue(thisurl){
+			var city = document.myform.city.value ;	// 取出当前选择好的信息
+			var doc = window.opener.document ;	// 取得父窗口文档
+			doc.parentform.result.value = city ;	// 设置新内容
+			window.close() ;
+		}
+	</script>
+</head>
+<body>
+<form name="myform">
+	选择：	<select name="city">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="深圳">深圳</option>
+				<option value="广州">广州</option>
+				<option value="天津">天津</option>
+			</select>
+		<input type="button" value="返回" onclick="returnValue()">
+</form>
+
+</body>
+</html>

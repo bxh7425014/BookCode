@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		var count = 3 ;
+		function addrow(){
+			var table = document.getElementById("mytab") ;
+			var tr = table.insertRow() ;	// 增加一个新的行
+			var td1 = tr.insertCell(); // 增加列
+			var td2 = tr.insertCell() ;	// 
+			var td3 = tr.insertCell() ;	// 
+			td1.innerHTML = "MLDN_LXH" + count ;
+			td2.innerHTML = "李兴华 - " + count ;
+			td3.innerHTML = "<input type='button' value='-' onclick='deleterow(this)'>" ;
+			count ++ ;
+		}
+		function deleterow(btn){
+			var tr = btn.parentNode.parentNode ;
+			var table = document.getElementById("mytab") ;
+			table.deleteRow(tr.rowIndex) ;
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="+" onclick="addrow()">
+	<TABLE id="mytab" border="1">
+		<TR>
+			<TD>MLDN LXH-1</TD>
+			<TD>李兴华 - 1</TD>
+			<TD><input type="button" value="-" onclick="deleterow(this)"></TD>
+		</TR>
+		<TR>
+			<TD>MLDN LXH-2</TD>
+			<TD>李兴华 - 2</TD>
+			<TD><input type="button" value="-" onclick="deleterow(this)"></TD>
+		</TR>
+	</TABLE>
+</body>
+</html>

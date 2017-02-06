@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>www.mldnjava.cn，MLDN高端Java培训</title>
+	<script language="javascript">
+		function addrow(){
+			var tab = document.getElementById("mytab") ;	// 取得table的节点对象
+			var id = document.getElementById("id").value ;
+			var name = document.getElementById("name").value ;
+			var tr = document.createElement("tr") ;
+			var tbody = document.createElement("tbody") ;
+			var td_id = document.createElement("td") ;
+			var td_name = document.createElement("td") ;
+			td_id.appendChild(document.createTextNode(id)) ;
+			td_name.appendChild(document.createTextNode(name)) ;
+			tr.appendChild(td_id) ;
+			tr.appendChild(td_name) ;
+			tbody.appendChild(tr) ;
+			tab.appendChild(tbody) ;
+		}
+	</script>
+</head>
+<body>
+	新的编号：<input type="text" name="id">
+	新的姓名：<input type="text" name="name">
+	<input type="button" value="增加" onclick="addrow()">
+	<TABLE id="mytab" border="1">
+		<TR>
+			<TD>编号</TD>
+			<TD>姓名</TD>
+		</TR>
+	</TABLE>
+</body>
+</html>

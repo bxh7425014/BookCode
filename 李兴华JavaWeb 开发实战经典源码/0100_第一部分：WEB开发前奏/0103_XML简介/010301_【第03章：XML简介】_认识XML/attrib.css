@@ -1,0 +1,13 @@
+name{
+	display:block ;
+	color:blue ;
+	font-size:20pt ;
+	font-weight:bold ;
+}
+id,company,email,tel,site{
+	display:block ;
+	color:black ;
+	font-size:14pt ;
+	font-weight:normal ;
+	font-style:italic ;
+}
